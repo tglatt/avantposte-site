@@ -1,0 +1,13 @@
+version: "3"
+services:
+  www:
+    image: webdevops/php-apache-dev:8.0
+    networks:
+      - internal
+    ports:
+      - 8080:80
+    volumes:
+      - ./www/:/app/
+networks:
+  internal:
+    driver: bridge
