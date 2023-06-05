@@ -9,5 +9,7 @@ Icon
 
 *.sess
 /www/media
+/www/site/accounts
+/www/site/cache
 
 
