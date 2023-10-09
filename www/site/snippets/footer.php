@@ -1,6 +1,7 @@
 <footer class="footer">
     <div class="abonnez_vous">
         Abonnez-vous à notre lettre d’informations :
+            <input type="text" />
     </div>
     <div class="social_media">
 

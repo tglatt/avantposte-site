@@ -25,10 +25,11 @@
             <ul>
                 <?php foreach ($site->children()->listed() as $item) : ?>
                     <li>
+                    <a href="<?= $item->url() ?>">
                         <div class="menu_item">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
-                            <a href="<?= $item->url() ?>"><?= $item->title() ?></a>
-                        </div>
+                            <?= $item->title() ?>
+                        </div></a>
                     </li>
                 <?php endforeach ?>
             </ul>

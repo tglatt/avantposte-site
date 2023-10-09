@@ -94,10 +94,23 @@ footer {
   background-color: var(--color-primary);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 3rem 1rem 2rem 1rem;
+  justify-content: space-between;
+  padding: 3rem 5rem 2rem 5rem;
 }
+.abonnez_vous input{
+  width: 250px;
+  background: none;
+  border: none;
+  border-bottom: #000 solid 1px;
+  font-family: var(--font-family-sans);
 
+}
+.abonnez_vous input:focus{
+  /* background-color: tomato; */
+  /* background: none; */
+  border-bottom: #000 solid 1px;
+  outline: 0;
+}
 /* ------------- MAIN ------------- */
 main h1 {
   text-align: center;
