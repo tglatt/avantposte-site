@@ -1,0 +1,13 @@
+Title: Activités Artisanales
+
+----
+
+Text: Un atelier de tufting (confection de tapis) et un studio vidéo/photo
+
+----
+
+Linkto: activites/ateliers
+
+----
+
+Uuid: DHgcMb7DeuE8d7Pa

@@ -1,9 +1,0 @@
-Title: Accueil
-
-----
-
-Text: TEst
-
-----
-
-Uuid: 3OKmjkjVo4th8yXe

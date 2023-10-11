@@ -1,22 +1,38 @@
-<?php
-/*
-  Templates render the content of your pages.
-
-  They contain the markup together with some control structures
-  like loops or if-statements. The `$page` variable always
-  refers to the currently active page.
-
-  To fetch the content from each field we call the field name as a
-  method on the `$page` object, e.g. `$page->title()`.
-
-  This home template renders content from others pages, the children of
-  the `photography` page to display a nice gallery grid.
-
-  Snippets like the header and footer contain markup used in
-  multiple templates. They also help to keep templates clean.
-
-  More about templates: https://getkirby.com/docs/guide/templates/basics
-*/
-
-?>
 <?php snippet('header') ?>
+
+<main class="main">
+    <h1><?= $page->fulltitle() ?></h1>
+    <div class="carousel">
+        <img src="<?php $page->image('g1056.png')->url() ?>" alt="équipe de l'avant-poste">
+    </div>
+    <h2><?= $page->subtitle() ?></h2>
+    <ul class="domains">
+        <?php foreach ($page->children()->listed() as $domain) : ?>
+            <li>
+                <a href=" <?= page($domain->linkTo())->url() ?>">
+                    <div class="domain">
+                        <figure>
+                            <?php if ($domain->image()) {
+                                echo $domain->image()->crop(200, 200);
+                            }
+                            ?>
+                        </figure>
+                        <figcaption>
+                            <?= $domain->title() ?>
+                        </figcaption>
+                        <p>
+                            <?= $domain->text() ?>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        <?php endforeach ?>
+    </ul>
+    <div class="contactezNous">
+        <p><?= $page->text() ?></p>
+        <a href="<?= page('contact.php')->url() ?>"><button><?= $page->contactezNousButton() ?></button></a>
+    </div>
+    <h1>l'Agenda</h1>
+</main>
+
+<?php snippet('footer') ?>

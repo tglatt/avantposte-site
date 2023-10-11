@@ -1,0 +1,21 @@
+Title: Accueil
+
+----
+
+Fulltitle: Le tiers-Lieu coopératif de la Transition
+
+----
+
+Subtitle: Accueillir, valoriser et favoriser les initiatives du Diois liées à la Transition !
+
+----
+
+Text: Vous souhaitez réserver un espace, une place de coworking, proposer un événement, une idée d’activité, devenir sociétaire… ?
+
+----
+
+Contacteznousbutton: Contactez-nous !
+
+----
+
+Uuid: 3OKmjkjVo4th8yXe

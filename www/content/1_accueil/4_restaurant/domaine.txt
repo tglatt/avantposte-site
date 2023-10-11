@@ -1,0 +1,13 @@
+Title: Restaurant
+
+----
+
+Text: Un restaurant convivial qui mise sur la qualité, le bio,le circuit-court et participe à la vitalité du centre-ville.
+
+----
+
+Linkto: activites/restaurant
+
+----
+
+Uuid: DHgcMb7DeuE8d7Pa
