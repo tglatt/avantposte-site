@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Agipo;
-  src: url(/content/agipo-regular.otf);
+  src: url(/content/Agipo_Regular.otf);
 }
 
 :root {
@@ -129,4 +129,16 @@ main h2 {
   line-height: 1;
   margin: 1.5rem 0;
   font-family: var(--font-family-sans);
+}
+
+button{
+  margin: 1.5rem 0;
+  padding: 1rem 6rem;
+  font-size: 2.561rem;
+  font-family: var(--font-family-sans);
+  text-align: center;
+  border: black 1px solid;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
 }

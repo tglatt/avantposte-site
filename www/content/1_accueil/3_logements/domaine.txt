@@ -1,4 +1,4 @@
-Title: LOGEMENTS
+Title: Logements
 
 ----
 
@@ -6,4 +6,8 @@ Text: 4 appartements rénovés et sortis de la logique spéculative, des espaces
 
 ----
 
-Uuid: 3OKmjkjVo4th8yXe
+Linkto: activites/logements
+
+----
+
+Uuid: DHgcMb7DeuE8d7Pa

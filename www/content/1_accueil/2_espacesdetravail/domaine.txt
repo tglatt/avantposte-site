@@ -1,8 +1,13 @@
-Title: ESPACES DE TRAVAIL
+Title: Espaces de travail
 
 ----
 
 Text: 40 places de coworking pour des coworkers engagés et motivés par le projet commun ! Différents espaces et différentes formules (temps plein, nomade, etc.)
+
 ----
 
-Uuid: 3OKmjkjVo4th8yXe
+Linkto: activites/coworking
+
+----
+
+Uuid: DHgcMb7DeuE8d7Pa

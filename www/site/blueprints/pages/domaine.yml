@@ -1,0 +1,23 @@
+title: Domaine d'activité vu depuis la page d'accueil
+
+columns:
+  Partie1:
+    width: 1/2
+    type: fields
+    fields:
+      Title: 
+        label: Titre
+        type: text
+      Text:
+        label: résumé
+        type: textarea
+        size: small
+      LinkTo:
+        label: lien vers quelle page du site 
+        type: text
+  Partie1bis:
+    width: 1/2
+    sections:
+      gallery:
+        type: files
+        layout: card

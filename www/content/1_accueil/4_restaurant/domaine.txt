@@ -1,4 +1,4 @@
-Title: RESTAURANT
+Title: Restaurant
 
 ----
 
@@ -6,4 +6,8 @@ Text: Un restaurant convivial qui mise sur la qualité, le bio,le circuit-court 
 
 ----
 
-Uuid: 3OKmjkjVo4th8yXe
+Linkto: activites/restaurant
+
+----
+
+Uuid: DHgcMb7DeuE8d7Pa

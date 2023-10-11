@@ -7,26 +7,32 @@
     </div>
     <h2><?= $page->subtitle() ?></h2>
     <ul class="domains">
-    <?php foreach ($page->children()->listed() as $domain) : ?>
-        <li>
-            <div class="domain">
-                <figure>
-                    <?php if ($domain->image()){
-                        echo $domain->image()->crop(200,200);
-                    }
-                    ?>
-                </figure>
-                <figcaption>
-                    <?= $domain->title() ?>
-                </figcaption>
-                <p>
-                <?= $domain->text()?>
-                </p>
-            </div>
-        </li>
-    <?php endforeach ?>
+        <?php foreach ($page->children()->listed() as $domain) : ?>
+            <li>
+                <a href=" <?= page($domain->linkTo())->url() ?>">
+                    <div class="domain">
+                        <figure>
+                            <?php if ($domain->image()) {
+                                echo $domain->image()->crop(200, 200);
+                            }
+                            ?>
+                        </figure>
+                        <figcaption>
+                            <?= $domain->title() ?>
+                        </figcaption>
+                        <p>
+                            <?= $domain->text() ?>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        <?php endforeach ?>
     </ul>
-
+    <div class="contactezNous">
+        <p><?= $page->text() ?></p>
+        <a href="<?= page('contact.php')->url() ?>"><button><?= $page->contactezNousButton() ?></button></a>
+    </div>
+    <h1>l'Agenda</h1>
 </main>
 
-<?php snippet('footer') ?> 
+<?php snippet('footer') ?>

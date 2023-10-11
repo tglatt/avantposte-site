@@ -1,9 +1,0 @@
-Title: Événements Associatifs
-
-----
-
-Text: L’accueil d’événements avec la mise à disposition d’espaces pour les associations. D’autres services tels que la domiciliation, location d’utilitaire électrique, etc. 
-
-----
-
-Uuid: 3OKmjkjVo4th8yXe
