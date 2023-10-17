@@ -8,28 +8,29 @@
     <title><?= $site->title() ?></title>
 
     <?= css('assets/css/index.css') ?>
-    <?= css('assets/css/style.css') ?>
+    <?= css('assets/css/styles.css') ?>
     <?= css('@auto') ?>
 
 </head>
 
-<body>
+<body class="mx-auto max-w-6xl font-Agipo">
 
-    <header class="header">
+    <header class="px-4 pt-4 pb-8 bg-primary">
 
         <a href="<?= $site->url() ?>" class="logo">
             <img src="<?= $site->image('logo.svg')->url() ?>" />
         </a>
 
-        <nav class="menu">
-            <ul>
+        <nav>
+            <ul class="flex flex-wrap justify-between items-center text-xl">
                 <?php foreach ($site->children()->listed() as $item) : ?>
-                    <li>
-                    <a href="<?= $item->url() ?>">
-                        <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
-                            <?= $item->title() ?>
-                        </div></a>
+                    <li class="hover:text-white">
+                        <a href="<?= $item->url() ?>">
+                            <div class="relative">
+                                <img class="absolute opacity-0 hover:opacity-100" src="<?= $site->image('entoure.svg')->url() ?>" style="width: 250%;  height: 200%;  left: -75%;  top: -50%; max-width: none;" />
+                                <?= $item->title() ?>
+                            </div>
+                        </a>
                     </li>
                 <?php endforeach ?>
             </ul>

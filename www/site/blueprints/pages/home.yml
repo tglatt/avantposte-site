@@ -32,8 +32,8 @@ columns:
   Partie3:
     width: 3/4
     fields:
-      text:
-        label : Text
+      ContacteznousText:
+        label : Contactez-nous Texte
         type: textarea
         size: small
   Partie3bis:
@@ -42,4 +42,29 @@ columns:
       ContactezNousButton:
         label: Bouton contactez-nous
         type: text
+  Partie4:
+    width: 3/4
+    fields:
+      AgendaTitle:
+        label : Titre Agenda
+        type: text
+  Partie4bis:
+    width: 1/4
+    fields:
+      AgendaCompletButton:
+        label: Bouton Agenda
+        type: text
+  Partie5:
+    width: 1/4
+    fields:
+      SoutientsTitle:
+        label : Titre Soutients
+        type: text
+  Partie5bis:
+    width: 3/4
+    fields:
+      SoutientsText:
+        label: Texte soutients
+        type: textarea
+        size: small
 

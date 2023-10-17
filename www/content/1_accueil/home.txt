@@ -10,12 +10,21 @@ Subtitle: Accueillir, valoriser et favoriser les initiatives du Diois liées à 
 
 ----
 
-Text: Vous souhaitez réserver un espace, une place de coworking, proposer un événement, une idée d’activité, devenir sociétaire… ?
+ContacteznousText: Vous souhaitez réserver un espace, une place de coworking, proposer un événement, une idée d’activité, devenir sociétaire… ?
 
 ----
 
 Contacteznousbutton: Contactez-nous !
 
+----
+AgendaTitle: l'Agenda
+----
+
+AgendaCompletButton: Agenda Complet !
+----
+SoutientsTitle: Ils nous soutiennent
+----
+SoutientsText: des centaines de sociétaires citoyens et aussi :
 ----
 
 Uuid: 3OKmjkjVo4th8yXe
