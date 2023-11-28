@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -77,16 +77,6 @@ small {
 .color-grey {
   color: var(--color-text-grey);
 }
-
-/* .header {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: -1rem;
-  margin-left: -1rem;
-  margin-bottom: 6rem;
-} */
 
 .logo {
   padding: 1rem;
@@ -325,14 +315,6 @@ hr {
   padding: 2rem 0 2rem;
   line-height: 1.5em;
 }
-/* .footer:before {
-  content: "";
-  display: block;
-  width: 1.5rem;
-  height: 2px;
-  background: var(--color-black);
-  margin-bottom: 1.5rem;
-} */
 
 .footer h2 {
   font-weight: 600;
@@ -431,4 +413,4 @@ hr {
 }
 .note-excerpt-date {
   color: var(--color-text-grey);
-}
+} */

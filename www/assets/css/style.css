@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
+/* @font-face {
   font-family: Agipo;
   src: url(/content/Agipo_Regular.otf);
+} */
+.main{
+  font-family: "Agipo";
+  font-style:   normal;
+  font-weight:  400;
+  font-stretch: normal;
 }
 
 :root {
@@ -28,11 +34,11 @@
   --color-code-aqua: #8abeb7;
   --color-code-blue: #7e9abf;
   --color-code-purple: #b294bb;
-  --font-family-sans: Agipo, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  /* --font-family-sans: Agipo, "Times New Roman", "Lucida Handwriting", Verdana, Baskerville,-apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
-    Courier, monospace;
+   --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace; */
 }
 
 html {
