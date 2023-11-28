@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//webfonts3.radimpesko.com/RP-W-eeaadf78-9027-46dc-b0dc-378558cb6cf0" rel="stylesheet">
     <title><?= $site->title() ?></title>
-
     <?= css('assets/css/index.css') ?>
     <?= css('assets/css/style.css') ?>
     <?= css('@auto') ?>
