@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.agipo-regular {
+  /* font-family: "Agipo"; */
+  font-style:   normal;
+  font-weight:  400;
+  font-stretch: normal;
+  /* letter-spacing: -0.3em; */
+  letter-spacing: -20%;
+}
+/* @font-face {
+  font-family: Agipo;
+  src: url(/content/Agipo_Regular.otf);
+}
+
 @font-face {
-    font-family: Agipo;
-    src: url(/content/Agipo_Regular.otf);
+  font-family: Agipo;
+  src: url("//webfonts3.radimpesko.com/RP-W-eeaadf78-9027-46dc-b0dc-378558cb6cf0");
+} */
+
+/* @layer base {
+  html {
+    font-family: "Agipo", "Proxima Nova", system-ui, sans-serif;
   }
-  
-@layer base {
-    html {
-      font-family: "Proxima Nova", system-ui, sans-serif;
-    }
-  }
+} */

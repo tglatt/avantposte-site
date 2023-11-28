@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $site->title() ?></title>
-
+    <link href="//webfonts3.radimpesko.com/RP-W-eeaadf78-9027-46dc-b0dc-378558cb6cf0" rel="stylesheet">
     <?= css('assets/css/index.css') ?>
     <?= css('assets/css/styles.css') ?>
     <?= css('@auto') ?>
 
 </head>
 
-<body class="mx-auto max-w-6xl font-Agipo">
+<body class="mx-auto max-w-6xl agipo-regular">
 
     <header class="px-4 pt-4 pb-8 bg-primary">
 
