@@ -41,11 +41,11 @@
                     <!-- </a> -->
                     <div class="sub_menu" id="sub_menu_activite">
                         <ul>
-                            <li><a href="/activite/coworking">Coworking</a></li>
-                            <li><a href="/activite/associations">Associations</a></li>
-                            <li><a href="/activite/logements">Logements</a></li>
-                            <li><a href="/activite/restaurant">Restaurant</a></li>
-                            <li><a href="/activite/ateliers">Ateliers</a></li>
+                            <li><a href="/activites/coworking">Coworking</a></li>
+                            <li><a href="/activites/associations">Associations</a></li>
+                            <li><a href="/activites/logements">Logements</a></li>
+                            <li><a href="/activites/restaurant">Restaurant</a></li>
+                            <li><a href="/activites/ateliers">Ateliers</a></li>
                         </ul>
                     </div>
                 </li>
@@ -65,10 +65,10 @@
 
                     <div class="sub_menu" id="sub_menu_avantposte">
                         <ul>
-                            <li><a href="/avantposte/scic">la SCIC</a></li>
-                            <li><a href="/avantposte/lieu">le lieu</a></li>
-                            <li><a href="/avantposte/equipe">l'équipe</a></li>
-                            <li><a href="/avantposte/missionvaleurs">Mission & Valeurs</a></li>
+                            <li><a href="/avantposte/la-scic">la SCIC</a></li>
+                            <li><a href="/avantposte/le-lieu">le lieu</a></li>
+                            <li><a href="/avantposte/l-equipe">l'équipe</a></li>
+                            <li><a href="/avantposte/mission-valeurs">Mission & Valeurs</a></li>
                         </ul>
                     </div>
                 </li>

@@ -1,4 +1,4 @@
-Title: l'Avant-Poste
+Title: la SCIC
 
 ----
 
@@ -60,6 +60,7 @@ Nous avons été guidé(e)s par les principes suivants :
 - Efficacité
 - Caractère itératif : la gouvernance est améliorée par un groupe de travail dédié
 - Ouverture aux sociétaires
+
 Cela se matérialise par la création de groupes de travail :
 - autonomes sur leur périmètre avec un cadre de sécurité (sur les montants engagés et les décisions stratégiques)
 - ouverts aux sociétaires qui souhaiteraient s’impliquer
@@ -69,4 +70,4 @@ Voici le schéma de la gouvernance de l’Avant-Poste.
 
 ----
 
-Uuid: OSldK5hXe1jCy7Zb
+Uuid: DbiNA1FWrWGb2juO
