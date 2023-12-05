@@ -6,10 +6,10 @@
   font-family: Agipo;
   src: url(/content/Agipo_Regular.otf);
 } */
-.main{
-  font-family: "Agipo";
-  font-style:   normal;
-  font-weight:  400;
+.main {
+  /* font-family: "Agipo"; */
+  font-style: normal;
+  font-weight: 400;
   font-stretch: normal;
 }
 
@@ -34,11 +34,12 @@
   --color-code-aqua: #8abeb7;
   --color-code-blue: #7e9abf;
   --color-code-purple: #b294bb;
-  /* --font-family-sans: Agipo, "Times New Roman", "Lucida Handwriting", Verdana, Baskerville,-apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  --font-family-sans: Agipo, "Times New Roman", "Lucida Handwriting", Verdana,
+    Baskerville, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-   --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
-    Courier, monospace; */
+  --font-family-mono: agipo-regular, "SFMono-Regular", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
 }
 
 html {
@@ -70,15 +71,15 @@ header {
   background-color: var(--color-primary);
 }
 
-header .menu ul {
+header .menu .main_menu {
   /* display: inline; */
   /* flex-direction: row; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.22rem;
 }
-header .menu ul li:hover {
+header .menu .main_menu li .menu_item:hover {
   color: white;
 }
 .menu_item {
@@ -97,6 +98,30 @@ header .menu ul li:hover {
   opacity: 1;
 }
 
+#sub_menu_activite{
+  display: block;
+
+}
+.sub_menu ul {
+  /* display: list-item; */
+  /* display: block; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  /* justify-content: start;
+  align-items: start;
+  font-size: 1.22rem; */
+}
+.sub_menu li {
+  text-align: start;
+}
+header .menu .sub_menu li :hover {
+  color: white;
+}
+.show {
+  display: block;
+}
+
 /* ------------- FOOTER ------------- */
 footer {
   background-color: var(--color-primary);
@@ -105,15 +130,14 @@ footer {
   justify-content: space-between;
   padding: 3rem 5rem 2rem 5rem;
 }
-.abonnez_vous input{
+.abonnez_vous input {
   width: 250px;
   background: none;
   border: none;
   border-bottom: #000 solid 1px;
   font-family: var(--font-family-sans);
-
 }
-.abonnez_vous input:focus{
+.abonnez_vous input:focus {
   /* background-color: tomato; */
   /* background: none; */
   border-bottom: #000 solid 1px;
@@ -137,7 +161,7 @@ main h2 {
   font-family: var(--font-family-sans);
 }
 
-button{
+button {
   margin: 1.5rem 0;
   padding: 1rem 6rem;
   font-size: 2.561rem;
