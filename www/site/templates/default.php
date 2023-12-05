@@ -2,9 +2,8 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <h1><?= $page->fulltitle() ?></h1>
-    <?= $page->subtitle() ?>
-    <?= $page->text() ?>
+    <h1><?= $page->title() ?></h1>
+    <p><?= $page->text()->kt() ?></p>
 </main>
 
 <?php snippet('footer') ?> 

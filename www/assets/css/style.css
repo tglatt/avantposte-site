@@ -98,9 +98,8 @@ header .menu .main_menu li .menu_item:hover {
   opacity: 1;
 }
 
-#sub_menu_activite{
+#sub_menu_activite {
   display: block;
-
 }
 .sub_menu ul {
   /* display: list-item; */
@@ -159,6 +158,22 @@ main h2 {
   line-height: 1;
   margin: 1.5rem 0;
   font-family: var(--font-family-sans);
+}
+main h3 {
+  text-align: left;
+  /* padding: 0rem 7.5rem; */
+  font-size: 1.229rem;
+  line-height: 1;
+  margin: 1.5rem 0;
+  font-family: var(--font-family-sans);
+}
+main ul, main p {
+  margin-bottom: 0.6rem;
+
+}
+main ul li {
+  list-style: disc;
+  list-style-position: inside;
 }
 
 button {
