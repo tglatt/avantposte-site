@@ -13,6 +13,7 @@
 
 </head>
 
+
 <body>
 
     <header class="header">
@@ -22,16 +23,117 @@
         </a>
 
         <nav class="menu">
-            <ul>
-                <?php foreach ($site->children()->listed() as $item) : ?>
-                    <li>
-                    <a href="<?= $item->url() ?>">
+            <ul class="main_menu">
+                <li>
+                    <a href="/accueil">
                         <div class="menu_item">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
-                            <?= $item->title() ?>
-                        </div></a>
+                            Accueil
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <!-- <a href="activite"> -->
+                    <div class="menu_item" id="toggle_show_activite">
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        Activités
+                    </div>
+                    <!-- </a> -->
+                    <div class="sub_menu" id="sub_menu_activite">
+                        <ul>
+                            <li><a href="/activite/coworking">Coworking</a></li>
+                            <li><a href="/activite/associations">Associations</a></li>
+                            <li><a href="/activite/logements">Logements</a></li>
+                            <li><a href="/activite/restaurant">Restaurant</a></li>
+                            <li><a href="/activite/ateliers">Ateliers</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/acteurs">
+                        <div class="menu_item">
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                            Acteurs
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="menu_item" id="toggle_show_avantposte">
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        l'Avant Poste
+                    </div>
+
+                    <div class="sub_menu" id="sub_menu_avantposte">
+                        <ul>
+                            <li><a href="/avantposte/scic">la SCIC</a></li>
+                            <li><a href="/avantposte/lieu">le lieu</a></li>
+                            <li><a href="/avantposte/equipe">l'équipe</a></li>
+                            <li><a href="/avantposte/missionvaleurs">Mission & Valeurs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/actualite">
+                        <div class="menu_item">
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                            Actualités
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact">
+                        <div class="menu_item">
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                            Contact
+                        </div>
+                    </a>
+                </li>
+
+
+
+
+                <!-- <?php foreach ($site->children()->listed() as $item) : ?>
+                    <li>
+                        <a href="<?= $item->url() ?>">
+                            <div class="menu_item">
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                                <?= $item->title() ?>
+                            </div>
+                        </a>
                     </li>
-                <?php endforeach ?>
+                <?php endforeach ?> -->
             </ul>
         </nav>
     </header>
+
+
+
+
+
+    <script>
+        document.getElementById("sub_menu_activite").style.display = 'none'
+        document
+            .getElementById("toggle_show_activite")
+            .addEventListener("click",
+                () => {
+                    if (document.getElementById("sub_menu_activite").style.display == 'block') {
+                        document.getElementById("sub_menu_activite").style.display = 'none'
+                    } else {
+                        document.getElementById("sub_menu_activite").style.display = 'block'
+                        document.getElementById("sub_menu_avantposte").style.display = 'none'
+                    }
+                })
+
+        document.getElementById("sub_menu_avantposte").style.display = 'none'
+        document
+            .getElementById("toggle_show_avantposte")
+            .addEventListener("click",
+                () => {
+                    if (document.getElementById("sub_menu_avantposte").style.display == 'block') {
+                        document.getElementById("sub_menu_avantposte").style.display = 'none'
+                    } else {
+                        document.getElementById("sub_menu_avantposte").style.display = 'block'
+                        document.getElementById("sub_menu_activite").style.display = 'none'
+                    }
+                })
+    </script>

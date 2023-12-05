@@ -1,38 +1,47 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <h1><?= $page->fulltitle() ?></h1>
-    <div class="carousel">
+    <section>
+        <h1><?= $page->fulltitle() ?></h1>
+    </section>
+
+    <section class="carousel">
         <img src="<?php $page->image('g1056.png')->url() ?>" alt="équipe de l'avant-poste">
-    </div>
-    <h2><?= $page->subtitle() ?></h2>
-    <ul class="domains">
-        <?php foreach ($page->children()->listed() as $domain) : ?>
-            <li>
-                <a href=" <?= page($domain->linkTo())->url() ?>">
-                    <div class="domain">
-                        <figure>
-                            <?php if ($domain->image()) {
-                                echo $domain->image()->crop(200, 200);
-                            }
-                            ?>
-                        </figure>
-                        <figcaption>
-                            <?= $domain->title() ?>
-                        </figcaption>
-                        <p>
-                            <?= $domain->text() ?>
-                        </p>
-                    </div>
-                </a>
-            </li>
-        <?php endforeach ?>
-    </ul>
-    <div class="contactezNous">
+    </section>
+
+    <section class="listActivite">
+        <h2><?= $page->subtitle() ?></h2>
+        <ul class="domains">
+            <?php foreach ($page->children()->listed() as $domain) : ?>
+                <li>
+                    <a href=" <?= page($domain->linkTo())->url() ?>">
+                        <div class="domain">
+                            <figure>
+                                <?php if ($domain->image()) {
+                                    echo $domain->image()->crop(200, 200);
+                                }
+                                ?>
+                            </figure>
+                            <figcaption>
+                                <?= $domain->title() ?>
+                            </figcaption>
+                            <p>
+                                <?= $domain->text() ?>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            <?php endforeach ?>
+        </ul>
+    </section>
+
+    <section class="contactezNous">
         <p><?= $page->text() ?></p>
         <a href="<?= page('contact.php')->url() ?>"><button><?= $page->contactezNousButton() ?></button></a>
-    </div>
-    <h1>l'Agenda</h1>
+    </section>
+    <section class="agenda">
+        <h1>l'Agenda</h1>
+    </section>
 </main>
 
 <?php snippet('footer') ?>
