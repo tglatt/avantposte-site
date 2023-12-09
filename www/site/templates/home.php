@@ -5,9 +5,19 @@
         <h1><?= $page->fulltitle() ?></h1>
     </section>
 
-    <section class="carousel">
+    ICI
+    <?php snippet('carousel-images', slots: true) ?>
+        <?php slot('images') ?>
+            <?php foreach ($page->images() as $img) : ?>
+                <?= $img ?>
+                <img src="<?= $img->url() ?>" alt="<?= $img->alt() ?>">
+            <?php endforeach ?>
+        <?php endslot() ?>
+    <?php endsnippet() ?>
+Là
+    <!-- <section class="carousel">
         <img src="<?php $page->image('g1056.png')->url() ?>" alt="équipe de l'avant-poste">
-    </section>
+    </section> -->
 
     <section class="listActivite">
         <h2><?= $page->subtitle() ?></h2>
