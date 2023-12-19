@@ -38,8 +38,8 @@
     Baskerville, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  --font-family-mono: "SFMono-Regular", Consolas,
-    "Liberation Mono", Menlo, Courier, monospace;
+  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
 }
 
 html {
@@ -167,9 +167,9 @@ main h3 {
   margin: 1.5rem 0;
   font-family: var(--font-family-sans);
 }
-main ul, main p {
+main ul,
+main p {
   margin-bottom: 0.6rem;
-
 }
 main ul li {
   list-style: disc;
@@ -188,13 +188,44 @@ button {
   cursor: pointer;
 }
 
-
 /* ------------- CAROUSEL ------------- */
 
 .carousel-images {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 3rem;
+  column-gap: 3rem;
+  flex: none;
+}
+
+.carousel-inner img {
+  width: 100%;
+  filter: grayscale(100);
+}
+.carousel-inner img:hover {
+  filter: grayscale(0);
+}
+.carousel-wrap {
   width: 100%;
   height: 29.501rem;
   background: var(--color-primary);
-  padding: 1rem 1rem 2rem 1rem;
-  /* padding: 1.5rem 0; */
+  /* padding: 1rem 1rem 2rem 1rem; */
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#back-btn,
+#next-btn {
+  cursor: pointer;
+  padding: 20px;
+  width: 50px;
+  height: 30px;
+  background-color: tomato;
 }

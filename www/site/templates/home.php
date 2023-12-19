@@ -8,10 +8,7 @@
     ICI
     <?php snippet('carousel-images', slots: true) ?>
         <?php slot('images') ?>
-            <?php foreach ($page->images() as $img) : ?>
-                <?= $img ?>
-                <img src="<?= $img->url() ?>" alt="<?= $img->alt() ?>">
-            <?php endforeach ?>
+            
         <?php endslot() ?>
     <?php endsnippet() ?>
 Là
@@ -24,7 +21,7 @@ Là
         <ul class="domains">
             <?php foreach ($page->children()->listed() as $domain) : ?>
                 <li>
-                    <a href=" <?= page($domain->linkTo())->url() ?>">
+                    <a href=" <?= page($domain->linkTo()) ?>">
                         <div class="domain">
                             <figure>
                                 <?php if ($domain->image()) {
