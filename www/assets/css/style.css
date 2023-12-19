@@ -229,3 +229,9 @@ button {
   height: 30px;
   background-color: tomato;
 }
+.carousel-image-top{
+  padding: 0rem 3rem 6rem 3rem;
+}
+.carousel-image-bottom{
+  padding: 6rem 3rem 0rem 3rem;
+}
