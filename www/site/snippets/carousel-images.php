@@ -1,14 +1,18 @@
 <div class="carousel-wrap">
 	<span id="back-btn">
-		< 
-	</span>
+		< </span>
 			<div class="carousel-images">
+				<?php $i = 0; ?>
 
 
 				<?php foreach ($page->images() as $img) : ?>
 					<div class="carousel-inner">
-						<span>
-							<?= $img ?>
+						<span class="
+							<?php
+							if ($i % 2 == 0) echo "carousel-image-top ";
+							else echo "carousel-image-bottom ";
+							$i++; ?>">
+							<?= $img->crop(1000, 600); ?>
 
 						</span>
 					</div>
@@ -16,9 +20,12 @@
 
 				<?php foreach ($page->images() as $img) : ?>
 					<div class="carousel-inner">
-						<span>
-							<?= $img ?>
-
+						<span class="
+							<?php
+							if ($i % 2 == 0) echo "carousel-image-top ";
+							else echo "carousel-image-bottom ";
+							$i++; ?>">
+							<?= $img->crop(1000, 600); ?>
 						</span>
 					</div>
 				<?php endforeach ?>
