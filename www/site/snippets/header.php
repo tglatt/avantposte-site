@@ -25,7 +25,7 @@
         <nav class="menu">
             <ul class="main_menu">
                 <li>
-                    <a href="/accueil">
+                    <a href="/">
                         <div class="menu_item">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
                             Accueil
@@ -37,8 +37,8 @@
                     <div class="menu_item" id="toggle_show_activite">
                         <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
                         Activités
+                        <!-- </a> -->
                     </div>
-                    <!-- </a> -->
                     <div class="sub_menu" id="sub_menu_activite">
                         <ul>
                             <li><a href="/activites/coworking">Coworking</a></li>

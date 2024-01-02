@@ -22,10 +22,10 @@ Là
             <?php foreach ($page->children()->listed() as $domain) : ?>
                 <li>
                     <a href=" <?= page($domain->linkTo()) ?>">
-                        <div class="domain">
+                         <div class="domain">
                             <figure>
                                 <?php if ($domain->image()) {
-                                    echo $domain->image()->crop(200, 200);
+                                    echo $domain->image();
                                 }
                                 ?>
                             </figure>
