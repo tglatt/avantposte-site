@@ -14,26 +14,56 @@
 } */
 
 :root {
+  /******** Colors *********/
   --padding: 1.5rem;
   --color-primary: #29e76bff;
+  --color-secondary: #ffffff;
+  --color-text: #000;
 
-  --color-black: #000;
-  --color-white: #fff;
-  --color-grey: #777;
-  --color-light: #efefef;
-  --color-text: var(--color-black);
-  --color-text-grey: var(--color-grey);
-  --color-background: var(--color-white);
-  --color-code-light-grey: #cacbd1;
-  --color-code-comment: #a9aaad;
-  --color-code-white: #c5c9c6;
-  --color-code-red: #d16464;
-  --color-code-orange: #de935f;
-  --color-code-yellow: #f0c674;
-  --color-code-green: #a7bd68;
-  --color-code-aqua: #8abeb7;
-  --color-code-blue: #7e9abf;
-  --color-code-purple: #b294bb;
+  --color-A: #574cfe;
+  --color-B: #ff6d30;
+  --color-C: #685100;
+  --color-D: #cc9900;
+  --color-E: #ff9bff;
+  --color-F: #ff2f00;
+  --color-G: #00ab00;
+  --color-H: #29e76b; /* primary */
+
+  /******** Margin/Padding *********/
+  --space-1: 30px; /*bloc rouge (unité de base )*/
+  --space-2: 60px; /*bloc gris*/
+  --space-3: 90px; /*bloc bleu marine*/
+  --space-4: 120px; /*bloc rose*/
+  --space-5: 150px; /*bloc jaune*/
+
+  --space-menu: 20px; /*bloc vert*/
+  --space-agenda: 8px; /*bloc cyan*/
+
+  /******** Tailles Typo *********/
+  --typosize-h1: 110px; /* Titre 1 Taille*/
+  --typointerline-h1: 110px; /* Titre 1 Interligne*/
+
+  --typosize-chapeau: 50px; /* Chapeau Taille*/
+  --typointerline-chapeau: 54px; /* Chapeau Interligne*/
+
+  --typosize-h2: 50px; /* Titre 2 Taille*/
+  --typointerline-h2: 540px; /* Titre 2 Interligne*/
+
+  --typosize-p: 24px; /* Texte courant  Taille*/
+  --typointerline-p: 28px; /* Texte courant  Interligne*/
+
+  --typosize-btn: 50px; /* Bouton Taille*/
+
+  /******** Tailles Typo Agenda *********/
+  --typosize-infodate: 24px; /* Agenda InfoDate Taille*/
+  --typosize-agenda-h3: 32px; /* Agenda Titre Event Taille*/
+  --typointerline-agena-h3: 36px; /* Agenda Titre Event Interligne*/
+
+  /******** Tailles Typo Footer *********/
+  --typosize-footer-p: 18px; /* Footer Taille*/
+  --typointerline-footer-p: 22px; /* Footer Interligne*/
+
+  /******** Font Family *********/
   --font-family-sans: Agipo, "Times New Roman", "Lucida Handwriting", Verdana,
     Baskerville, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -51,7 +81,7 @@ img {
   width: 100%;
 }
 body {
-  padding: var(--padding);
+  padding: 0;
   max-width: 69.43rem;
   margin: 0 auto;
 }
@@ -85,7 +115,7 @@ header .menu .main_menu li .menu_item:hover {
 .menu_item {
   position: relative;
 }
-.menu ul{
+.menu ul {
   padding: 0;
   margin: 0;
 }
@@ -106,7 +136,7 @@ header .menu .main_menu li .menu_item:hover {
   display: contents;
 }
 .sub_menu ul {
-  margin:0;
+  margin: 0;
   padding: 0;
   /* display: list-item; */
   /* display: block; */
@@ -237,10 +267,10 @@ button {
   height: 30px;
   background-color: tomato;
 }
-.carousel-image-top{
+.carousel-image-top {
   /* height: 100%; */
   padding: 0rem 3rem 6rem 3rem;
 }
-.carousel-image-bottom{
+.carousel-image-bottom {
   padding: 6rem 3rem 0rem 3rem;
 }
