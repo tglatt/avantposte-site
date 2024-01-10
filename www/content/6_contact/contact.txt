@@ -1,0 +1,10 @@
+Title: Formulaire de contact
+
+----
+
+Text: Contactez-nous en remplissant le formulaire ci-dessous.
+Notre équipe fera le maximum pour vous répondre au plus vite !)
+----
+
+
+Uuid: OSldK5hXe1jCy7Zb

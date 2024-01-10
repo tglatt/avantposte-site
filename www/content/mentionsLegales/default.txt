@@ -2,8 +2,29 @@ Title: Mentions Légales
 
 ----
 
-Uuid: OSldK5hXe1jCy7Zb
+Text:
+
+Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du Site l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+
+## Édition du site 
+Le site avant-poste.org est édité par la SCIC l’Avant-Poste, société anonyme à capital variable, immatriculée au Registre du commerce et des sociétés de Romans sur Isère sous le n° RCS 910 719 426 et dont le siège social est situé au 3 rue Notre Dame 26150 Die
+
+## Responsable de publication 
+Monsieur Thomas Glatt, Président de la SCIC l’Avant-Poste
+
+## Hébergeur 
+Le site avant-poste.org est hébergé par la société [nom de la société - adresse - tel]. Le stockage des données personnelles des utilisateurs est exclusivement réalisé sur les centres de données ("clusters") de la société [nom de la société - adresse - tel]. Tous les clusters sur lesquels les données du Site sont stockées sont localisés dans des Etats membres de l'Union Européenne.
+
+## Nous contacter 
+Par email : contact@avant-poste.org
+Par courrier : L’Avant-Poste 3 rue Notre Dame 26150 Die
+
+## Votre vie privée
+Le traitement de vos données à caractère personnel est conforme au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 (« RGPD »).
+
+
+Conformément aux articles 39 et suivants de la loi n° 78-17 du 6 janvier 1978 modifiée en 2004 relative à l’informatique, aux fichiers et aux libertés, toute personne peut obtenir communication et, le cas échéant, rectification ou suppression des informations la concernant, en envoyant une demande à l’adresse suivante: L’Avant-Poste 3 rue Notre Dame 26150 Die (en indiquant "Vie Privée - Protection des Données") ou par email à contact@avant-poste.org.
 
 ----
 
-Text: TODO Je suis les mentions légales
+Uuid: OSldK5hXe1jCy7Zb
