@@ -1,28 +1,30 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section>
-        <h1><?= $page->fulltitle() ?></h1>
+    <section >
+        <div class="titre">
+            <h1><?= $page->fulltitle() ?></h1>
+        </div>
     </section>
-
-    ICI
-    <?php snippet('carousel-images', slots: true) ?>
+    <section class="sec_carousel">
+        <?php snippet('carousel-images', slots: true) ?>
         <?php slot('images') ?>
-            
         <?php endslot() ?>
-    <?php endsnippet() ?>
-Là
+        <?php endsnippet() ?>
+    </section>
     <!-- <section class="carousel">
         <img src="<?php $page->image('g1056.png')->url() ?>" alt="équipe de l'avant-poste">
     </section> -->
-
     <section class="listActivite">
-        <h2><?= $page->subtitle() ?></h2>
+        <div class="chapeau">
+            <p><?= $page->subtitle() ?></p>
+        </div>
+        <hr>
         <ul class="domains">
             <?php foreach ($page->children()->listed() as $domain) : ?>
                 <li>
                     <a href=" <?= page($domain->linkTo()) ?>">
-                         <div class="domain">
+                        <div class="domain">
                             <figure>
                                 <?php if ($domain->image()) {
                                     echo $domain->image();

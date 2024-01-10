@@ -19,6 +19,7 @@
   --color-primary: #29e76bff;
   --color-secondary: #ffffff;
   --color-text: #000;
+  --color-background: #ffffff;
 
   --color-A: #574cfe;
   --color-B: #ff6d30;
@@ -30,14 +31,17 @@
   --color-H: #29e76b; /* primary */
 
   /******** Margin/Padding *********/
-  --space-1: 30px; /*bloc rouge (unité de base )*/
-  --space-2: 60px; /*bloc gris*/
-  --space-3: 90px; /*bloc bleu marine*/
-  --space-4: 120px; /*bloc rose*/
-  --space-5: 150px; /*bloc jaune*/
+  --space-1: 30px; /*rouge (unité de base )*/
+  --space-2: 60px; /*gris*/
+  --space-3: 90px; /*bleu marine*/
+  --space-4: 120px; /*rose*/
+  --space-5: 150px; /*jaune*/
 
   --space-menu: 20px; /*bloc vert*/
   --space-agenda: 8px; /*bloc cyan*/
+
+  /******** Largeur breakpoint *********/
+  --maxwidth-xxl: 1365px;
 
   /******** Tailles Typo *********/
   --typosize-h1: 110px; /* Titre 1 Taille*/
@@ -47,7 +51,7 @@
   --typointerline-chapeau: 54px; /* Chapeau Interligne*/
 
   --typosize-h2: 50px; /* Titre 2 Taille*/
-  --typointerline-h2: 540px; /* Titre 2 Interligne*/
+  --typointerline-h2: 54px; /* Titre 2 Interligne*/
 
   --typosize-p: 24px; /* Texte courant  Taille*/
   --typointerline-p: 28px; /* Texte courant  Interligne*/
@@ -82,7 +86,8 @@ img {
 }
 body {
   padding: 0;
-  max-width: 69.43rem;
+
+  max-width: var(--maxwidth-xxl);
   margin: 0 auto;
 }
 li {
@@ -97,7 +102,9 @@ a {
 
 header {
   /* margin-bottom: 3rem; */
-  padding: 1rem 1rem 2rem 1rem;
+  padding-top: var(--space-menu);
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
   background-color: var(--color-primary);
 }
 
@@ -107,7 +114,9 @@ header .menu .main_menu {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 1.22rem;
+  font-size: var(--typosize-p);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
 }
 header .menu .main_menu li .menu_item:hover {
   color: white;
@@ -163,49 +172,95 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3rem 5rem 2rem 5rem;
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  font-size: var(--typosize-p);
 }
 .abonnez_vous input {
   width: 250px;
   background: none;
   border: none;
   border-bottom: #000 solid 1px;
+  font-size: var(--typosize-p);
   font-family: var(--font-family-sans);
 }
 .abonnez_vous input:focus {
-  /* background-color: tomato; */
-  /* background: none; */
   border-bottom: #000 solid 1px;
   outline: 0;
 }
 /* ------------- MAIN ------------- */
 main h1 {
   text-align: center;
-  padding: 0rem 4rem;
-  font-size: 5.635rem;
-  line-height: 1;
-  margin: 1.5rem 0 3rem 0;
-  font-family: var(--font-family-sans);
+  padding: 0;
+  font-size: var(--typosize-h1);
+  line-height: var(--typointerline-h1);
+  margin: 0;
+  /* font-family: var(--font-family-sans); */
+}
+section {
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-2);
+  margin: 0;
+}
+hr {
+  padding-top: var(--space-1);
+  padding-bottom: 0;
+  margin: 0;
+  color: transparent;
+}
+.sec_carousel {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+.titre {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+main h1 {
+  text-align: center;
+  font-size: var(--typosize-h1);
+  line-height: var(--typointerline-h1);
+  margin: 0;
+  padding: 0;
+}
+
+.chapeau {
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+}
+.chapeau p {
+  font-size: var(--typosize-chapeau);
+  line-height: var(--typointerline-chapeau);
+  /* font-family: var(--font-family-sans); */
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 main h2 {
+  font-size: var(--typosize-h2);
+  line-height: var(--typointerline-h2);
   text-align: center;
-  padding: 0rem 7.5rem;
-  font-size: 2.561rem;
-  line-height: 1;
-  margin: 1.5rem 0;
-  font-family: var(--font-family-sans);
+  padding: 0;
+  margin: 0;
+  /* font-family: var(--font-family-sans); */
 }
+/* 
 main h3 {
   text-align: left;
-  /* padding: 0rem 7.5rem; */
   font-size: 1.229rem;
   line-height: 1;
   margin: 1.5rem 0;
   font-family: var(--font-family-sans);
-}
-main ul,
+} */
 main p {
-  margin-bottom: 0.6rem;
+  margin: 0;
+  padding: 0;
+  font-size: var(--typosize-p);
+  line-height: var(--typointerline-p);
+  /* font-family: var(--font-family-sans); */
 }
 main ul li {
   list-style: disc;
