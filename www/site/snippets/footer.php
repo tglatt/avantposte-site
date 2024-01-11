@@ -1,4 +1,4 @@
-<footer class="footer">
+<section class="footer">
     <div class="abonnez_vous">
         Abonnez-vous à notre lettre d’informations :
             <input type="text" />
@@ -10,10 +10,7 @@
         <a href="<?= url('mentionsLegales') ?>">Mentions légales</a>
     </div>
     <div class="administration">
-        <a href="<?= url('administration') ?>">Administration</a>
+        <a href="<?= url('panel') ?>">Administration</a>
     </div>
 
-</footer>
-</body>
-
-</html>
+</section>

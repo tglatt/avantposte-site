@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section >
+    <section>
         <div class="titre">
             <h1><?= $page->fulltitle() ?></h1>
         </div>
@@ -44,13 +44,28 @@
         </ul>
     </section>
 
-    <section class="contactezNous">
-        <p><?= $page->text() ?></p>
-        <a href="<?= page('contact.php')->url() ?>"><button><?= $page->contactezNousButton() ?></button></a>
+    <section>
+        <div class="chapeau">
+
+            <p><?= $page->text() ?></p>
+        </div>
+        <hr>
+        <hr>
+        <div class="bouton">
+
+            <a href="<?= page('contact.php')->url() ?>">
+                <button class="btn_primary">
+                    <?= $page->contactezNousButton() ?>
+                </button>
+            </a>
+        </div>
     </section>
     <section class="agenda">
         <h1>l'Agenda</h1>
     </section>
+    <?php snippet('footer') ?>
 </main>
 
-<?php snippet('footer') ?>
+</body>
+
+</html>

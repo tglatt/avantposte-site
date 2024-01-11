@@ -1,4 +1,6 @@
 * {
+  font-family: var(--font-family-sans);
+
   /* margin: 0; */
   /* padding: 0; */
 }
@@ -166,39 +168,11 @@ header .menu .sub_menu li :hover {
   display: block;
 }
 
-/* ------------- FOOTER ------------- */
-footer {
-  background-color: var(--color-primary);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: var(--space-1);
-  padding-bottom: var(--space-1);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  font-size: var(--typosize-p);
-}
-.abonnez_vous input {
-  width: 250px;
-  background: none;
-  border: none;
-  border-bottom: #000 solid 1px;
-  font-size: var(--typosize-p);
-  font-family: var(--font-family-sans);
-}
-.abonnez_vous input:focus {
-  border-bottom: #000 solid 1px;
-  outline: 0;
-}
 /* ------------- MAIN ------------- */
-main h1 {
-  text-align: center;
-  padding: 0;
-  font-size: var(--typosize-h1);
-  line-height: var(--typointerline-h1);
-  margin: 0;
-  /* font-family: var(--font-family-sans); */
+section:nth-child(even){
+  background-color: var(--color-primary);
 }
+
 section {
   padding-top: var(--space-1);
   padding-bottom: var(--space-2);
@@ -219,14 +193,28 @@ hr {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
 }
-main h1 {
+h1 {
   text-align: center;
   font-size: var(--typosize-h1);
   line-height: var(--typointerline-h1);
   margin: 0;
   padding: 0;
 }
-
+h2 {
+  font-size: var(--typosize-h2);
+  line-height: var(--typointerline-h2);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* font-family: var(--font-family-sans); */
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: var(--typosize-p);
+  line-height: var(--typointerline-p);
+  /* font-family: var(--font-family-sans); */
+}
 .chapeau {
   padding-left: var(--space-5);
   padding-right: var(--space-5);
@@ -239,44 +227,65 @@ main h1 {
   margin: 0;
   padding: 0;
 }
-main h2 {
-  font-size: var(--typosize-h2);
-  line-height: var(--typointerline-h2);
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  /* font-family: var(--font-family-sans); */
-}
-/* 
-main h3 {
-  text-align: left;
-  font-size: 1.229rem;
-  line-height: 1;
-  margin: 1.5rem 0;
-  font-family: var(--font-family-sans);
-} */
-main p {
-  margin: 0;
-  padding: 0;
-  font-size: var(--typosize-p);
-  line-height: var(--typointerline-p);
-  /* font-family: var(--font-family-sans); */
-}
+
 main ul li {
   list-style: disc;
   list-style-position: inside;
 }
 
 button {
-  margin: 1.5rem 0;
-  padding: 1rem 6rem;
-  font-size: 2.561rem;
-  font-family: var(--font-family-sans);
+  margin: 0;
+  padding: var(--space-agenda) var(--space-4);
+  /* padding: 1rem 6rem; */
+  font-size: var(--typosize-btn);
+  /* font-family: var(--font-family-sans); */
   text-align: center;
   border: black 1px solid;
   border-radius: 15px;
   background-color: transparent;
   cursor: pointer;
+}
+.bouton {
+  text-align: center;
+}
+.btn_primary{
+  background-color: var(--color-primary);
+}
+.btn_primary:hover{
+  background-color: var(--color-secondary);
+}
+.btn_secondary{
+  background-color: var(--color-secondary);
+}
+.btn_secondary:hover{
+  background-color: var(--color-primary);
+}
+/* ------------- FOOTER ------------- */
+.footer {
+  /* background-color: var(--color-primary); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+
+  font-size: var(--typosize-footer-p);
+  line-height: var(--typointerline-footer-p);
+}
+.abonnez_vous input {
+  width: 250px;
+  background: none;
+  border: none;
+  border-bottom: #000 solid 1px;
+  font-size: var(--typosize-p);
+  font-family: var(--font-family-sans);
+}
+.abonnez_vous input:focus {
+  border-bottom: #000 solid 1px;
+  outline: 0;
 }
 
 /* ------------- CAROUSEL ------------- */
@@ -307,7 +316,7 @@ button {
 .carousel-wrap {
   width: 100%;
   height: 29.501rem;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   /* padding: 1rem 1rem 2rem 1rem; */
   padding: 1.5rem 0;
   display: flex;
