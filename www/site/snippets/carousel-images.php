@@ -1,59 +1,48 @@
-<div class="carousel-wrap">
-	<span id="back-btn">
-		< </span>
-			<div class="carousel-images">
-				<?php $i = 0; ?>
+<section class="slider-wrapper">
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
+  <ul class="slides-container" id="slides-container">
+  <?php foreach ($page->images() as $img) : ?>
+		<li class="slide">
+			<?= $img ?>
+		</li>
+
+	<?php endforeach ?>
+    <!-- <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li> -->
+  </ul>
+</section>
+
+<!-- <div class="carousel_footer">
+  Pen by <a href="https://www.jemimaabu.com" target="_blank" rel="noopener">Jemima Abu</a> <span class="heart">&hearts;</span>
+	</div> -->
 
 
-				<?php foreach ($page->images() as $img) : ?>
-					<div class="carousel-inner">
-						<span class="
-							<?php
-							if ($i % 2 == 0) echo "carousel-image-top ";
-							else echo "carousel-image-bottom ";
-							$i++; ?>">
-							<?= $img->crop(1000, 600); ?>
-
-						</span>
-					</div>
-				<?php endforeach ?>
-
-				<?php foreach ($page->images() as $img) : ?>
-					<div class="carousel-inner">
-						<span class="
-							<?php
-							if ($i % 2 == 0) echo "carousel-image-top ";
-							else echo "carousel-image-bottom ";
-							$i++; ?>">
-							<?= $img->crop(1000, 600); ?>
-						</span>
-					</div>
-				<?php endforeach ?>
 
 
-			</div>
-			<span id="next-btn">></span>
 
-</div>
+
+
 
 <script>
-	let scrollContainer = document.querySelector(".carousel-images");
-	let backBtn = document.querySelector("#back-btn");
-	let nextBtn = document.querySelector("#next-btn");
+	const slidesContainer = document.getElementById("slides-container");
+	const slide = document.querySelector(".slide");
+	const prevButton = document.getElementById("slide-arrow-prev");
+	const nextButton = document.getElementById("slide-arrow-next");
 
-	// scrollContainer.addEventListener("wheel", (evt) => {
-	// 	evt.preventDefault();
-	// 	console.log(evt);
-	// 	scrollContainer.scrollLeft += evt.deltaY ;
-
-	// });
-
-	nextBtn.addEventListener("click", (evt) => {
-		scrollContainer.style.scrollBehavior = "smooth";
-		scrollContainer.scrollLeft += 1000;
+	nextButton.addEventListener("click", () => {
+		const slideWidth = slide.clientWidth;
+		slidesContainer.scrollLeft += slideWidth;
 	});
-	backBtn.addEventListener("click", (evt) => {
-		scrollContainer.style.scrollBehavior = "smooth";
-		scrollContainer.scrollLeft -= 1000
+
+	prevButton.addEventListener("click", () => {
+		const slideWidth = slide.clientWidth;
+		slidesContainer.scrollLeft -= slideWidth;
 	});
 </script>

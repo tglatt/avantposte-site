@@ -12,9 +12,7 @@
         <?php endslot() ?>
         <?php endsnippet() ?>
     </section>
-    <!-- <section class="carousel">
-        <img src="<?php $page->image('g1056.png')->url() ?>" alt="équipe de l'avant-poste">
-    </section> -->
+
     <section class="listActivite">
         <div class="chapeau">
             <p><?= $page->chapeau() ?></p>
