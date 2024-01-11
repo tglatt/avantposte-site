@@ -1,0 +1,189 @@
+title: Page d'accueil
+
+columns:
+
+  Partie2:
+    width: 1
+    sections:
+      gallery:
+        type: files
+        layout: card
+  Partie3:
+    type: fields
+    fields:
+      Text1:
+        width: 1/2
+        label : Text1
+        type: textarea
+        size: medium
+      Lien1:
+        width: 1/2
+        label : Lien1 vers contact
+        type: textarea
+        size: small
+  Partie4:
+    type: fields
+    fields:
+      Sec4titre2:
+        width: 1
+        label : Section 4 Titre
+        type: text
+        size: small
+      Sec4titrecol1:
+        width: 1/2
+        label : Section 4 Titre col 1
+        type: text
+        size: small
+      Sec4titrecol2:
+        width: 1/2
+        label : Section 4 Titre col 2
+        type: text
+        size: small
+      Sec4textcol1:
+        width: 1/2
+        label : Section 4 Texte col 1
+        type: textarea
+        size: small
+      Sec4textcol2:
+        width: 1/2
+        label : Section 4 Texte col 2
+        type: textarea
+        size: small
+
+  Partie5:
+    type: fields
+    fields:
+      Sec5titre2:
+        width: 1
+        label : Section 5 Titre
+        type: text
+        size: medium
+      Sec5textcol1:
+        width: 1/2
+        label : Section 5 Texte col 1
+        type: textarea
+        size: small
+      Sec5textcol2:
+        width: 1/2
+        label : Section 5 Texte col 2
+        type: textarea
+        size: medium
+          
+  Partie6:
+    width: 1
+    type: fields
+    fields:
+      Sec6titre2:
+        label : Section 6 Titre
+        type: text
+        size: medium
+  Partie6A:
+    width: 1
+    type: fields
+    fields:
+      Sec6textmediuma:
+        label : Section 6A
+        type: text
+        size: small
+      Sec6aprix1:
+        width: 1/12
+        label : Prix 6A1
+        type: text
+        size: small
+      Sec6atext1:
+        width: 3/12
+        label : Texte 6A1
+        type: textarea
+        size: small
+      Sec6aprix2:
+        width: 1/12
+        label : Prix 6A2
+        type: text
+        size: small
+      Sec6atext2:
+        width: 3/12
+        label : Texte 6A2
+        type: textarea
+        size: small
+      Sec6aprix3:
+        width: 1/12
+        label : Prix 6A3
+        type: text
+        size: small
+      Sec6atext3:
+        width: 3/12
+        label : Texte 6A3
+        type: textarea
+        size: small
+
+  Partie6B:
+    type: fields
+    fields:
+      Sec6textmediumb:
+        width: 1
+        label : Section 6B
+        type: text
+        size: small
+      Sec6bprix1:
+        width: 1/12
+        label : Prix 6B1
+        type: text
+        size: small
+      Sec6btext1:
+        width: 3/12
+        label : Texte 6B1
+        type: textarea
+        size: small
+      Sec6bprix2:
+        width: 1/12
+        label : Prix 6B2
+        type: text
+        size: small
+      Sec6btext2:
+        width: 3/12
+        label : Texte 6B2
+        type: textarea
+        size: small
+      Sec6bprix3:
+        width: 1/12
+        label : Prix 6B3
+        type: text
+        size: small
+      Sec6btext3:
+        width: 3/12
+        label : Texte 6B3
+        type: textarea
+        size: small
+        
+  Partie7:
+    width: 1
+    type: fields
+    fields:
+      Sec7titre2:
+        label : Section 7 Titre
+        type: text
+        size: small
+      Sec7link1:
+        label : Partie 7 Lien vers contact 
+        type: text
+        size: small
+      Sec7text1:
+        label : Section 7 Texte
+        type: textarea
+        size: small
+  Partie8:
+    width: 1
+    type: fields
+    fields:
+      Sec8titre2:
+        label : Section 8 Titre
+        type: text
+        size: small
+      Sec8text1:
+        label : Section 8 Texte
+        type: textarea
+        size: small
+      Sec8button:
+        label : Partie 8 Button
+        type: text
+        size: small

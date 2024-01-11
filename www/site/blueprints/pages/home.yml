@@ -5,8 +5,8 @@ columns:
     width: 1/2
     type: fields
     fields:
-      fullTitle: 
-        label: Titre complet
+      fullTitle:
+        label: Titre
         type: text
   Partie1bis:
     width: 1/2
@@ -18,8 +18,8 @@ columns:
     width: 1/2
     type: fields
     fields:
-      subTitle:
-        label : Sous titre
+      chapeau:
+        label: Chapeau
         type: textarea
         size: small
   Partie2bis:
@@ -32,8 +32,8 @@ columns:
   Partie3:
     width: 3/4
     fields:
-      text:
-        label : Text
+      contactezNousText:
+        label: Texte contactez-nous
         type: textarea
         size: small
   Partie3bis:
@@ -42,4 +42,3 @@ columns:
       ContactezNousButton:
         label: Bouton contactez-nous
         type: text
-

@@ -1,8 +1,7 @@
 * {
   font-family: var(--font-family-sans);
-
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 @font-face {
   font-family: Agipo;
@@ -57,6 +56,9 @@
 
   --typosize-p: 24px; /* Texte courant  Taille*/
   --typointerline-p: 28px; /* Texte courant  Interligne*/
+
+  --typosize-medium_p: 32px; /* Texte courant  Taille*/
+  --typointerline-medium_p: 36px; /* Texte courant  Interligne*/
 
   --typosize-btn: 50px; /* Bouton Taille*/
 
@@ -169,7 +171,7 @@ header .menu .sub_menu li :hover {
 }
 
 /* ------------- MAIN ------------- */
-section:nth-child(even){
+section:nth-child(even) {
   background-color: var(--color-primary);
 }
 
@@ -193,10 +195,37 @@ hr {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
 }
+.info {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+.tarifs {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--space-1);
+  row-gap: var(--space-1);
+}
+.tarif {
+  border: 1px solid var(--color-text);
+  border-radius: 15px;
+  padding: var(--space-2) var(--space-1) var(--space-1) var(--space-1);
+  text-align: center;
+}
+.tarif_prix p {
+  font-size: var(--typosize-h1);
+  line-height: var(--typointerline-h1);
+  font-weight: 100;
+}
 h1 {
   text-align: center;
   font-size: var(--typosize-h1);
   line-height: var(--typointerline-h1);
+  font-weight: 100;
   margin: 0;
   padding: 0;
 }
@@ -206,14 +235,45 @@ h2 {
   text-align: center;
   padding: 0;
   margin: 0;
+  font-weight: 100;
   /* font-family: var(--font-family-sans); */
 }
 p {
   margin: 0;
   padding: 0;
+  text-align: center;
   font-size: var(--typosize-p);
   line-height: var(--typointerline-p);
   /* font-family: var(--font-family-sans); */
+}
+.link_blackToPrimary:hover {
+  color: var(--color-primary);
+}
+.link_blackToSecondary:hover {
+  color: var(--color-secondary);
+}
+.medium_p p,
+.medium_p a,
+.medium_p li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: var(--typosize-medium_p);
+  line-height: var(--typointerline-medium_p);
+}
+.small_p,
+.small_p p,
+.small_p a {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: var(--typosize-p);
+  line-height: var(--typointerline-p);
+}
+.small_p li {
+  padding: 0;
+  text-align: left;
+  /* list-style-type: none; */
 }
 .chapeau {
   padding-left: var(--space-5);
@@ -248,18 +308,29 @@ button {
 .bouton {
   text-align: center;
 }
-.btn_primary{
+.btn_primary {
   background-color: var(--color-primary);
 }
-.btn_primary:hover{
+.btn_primary:hover {
   background-color: var(--color-secondary);
 }
-.btn_secondary{
+.btn_secondary {
   background-color: var(--color-secondary);
 }
-.btn_secondary:hover{
+.btn_secondary:hover {
   background-color: var(--color-primary);
 }
+
+.two_col {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--space-3);
+  row-gap: var(--space-2);
+}
+
 /* ------------- FOOTER ------------- */
 .footer {
   /* background-color: var(--color-primary); */

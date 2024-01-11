@@ -8,13 +8,18 @@
   padding-right: var(--space-2);
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
   column-gap: var(--space-2);
   row-gap: var(--space-2);
 }
 .domains li {
   list-style-type: none;
+}
+.domains li a {
+  background-color: tomato;
+  margin: 0;
+  padding: 0;
 }
 .domain {
   text-align: center;
@@ -27,41 +32,12 @@
 }
 .domain figure {
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 .domain figure img {
   margin: 0;
   padding: auto;
-  width: 7rem;
-  height: 7rem;
+  width: 8rem;
+  height: 8rem;
 }
-.domain figcaption {
-  /* height: 2.437rem; */
-  font-size: 2.561rem;
-  line-height: 1;
-  padding-bottom: 1.5rem;
-  font-family: var(--font-family-sans);
-}
-.domain p {
-  font-size: 1.229rem;
-  line-height: 1;
-  padding-bottom: 1.5rem;
-}
-
-/* --------- CONTACTEZ-NOUS --------- */
-/* 
-.contactezNous {
-  width: 100%;
-  background: var(--color-primary);
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactezNous p {
-  padding: 1.5rem 7.5rem;
-  font-size: 2.561rem;
-  font-family: var(--font-family-sans);
-  text-align: center;
-} */
-/* .contactezNous  */

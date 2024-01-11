@@ -17,27 +17,27 @@
     </section> -->
     <section class="listActivite">
         <div class="chapeau">
-            <p><?= $page->subtitle() ?></p>
+            <p><?= $page->chapeau() ?></p>
         </div>
         <hr>
         <ul class="domains">
             <?php foreach ($page->children()->listed() as $domain) : ?>
                 <li>
-                    <a href=" <?= page($domain->linkTo()) ?>">
-                        <div class="domain">
-                            <figure>
-                                <?php if ($domain->image()) {
-                                    echo $domain->image();
-                                }
-                                ?>
-                            </figure>
-                            <figcaption>
-                                <?= $domain->title() ?>
-                            </figcaption>
+                    <a href="<?= page($domain->linkTo()) ?>" class="domain">
+                        <figure>
+                            <?php if ($domain->image()) {
+                                echo $domain->image();
+                            }
+                            ?>
+                        </figure>
+                        <hr>
+                        <figcaption>
+                            <h2><?= $domain->title() ?></h2>
+                            <hr>
                             <p>
                                 <?= $domain->text() ?>
                             </p>
-                        </div>
+                        </figcaption>
                     </a>
                 </li>
             <?php endforeach ?>
@@ -47,7 +47,7 @@
     <section>
         <div class="chapeau">
 
-            <p><?= $page->text() ?></p>
+            <p><?= $page->contactezNousText() ?></p>
         </div>
         <hr>
         <hr>
@@ -60,9 +60,9 @@
             </a>
         </div>
     </section>
-    <section class="agenda">
+    <!-- <section class="agenda">
         <h1>l'Agenda</h1>
-    </section>
+    </section> -->
     <?php snippet('footer') ?>
 </main>
 
