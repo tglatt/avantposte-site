@@ -1,0 +1,178 @@
+Title: Nous accueillons tous vos événements associatifs !
+
+----
+
+Text1:
+
+L’Avant-Poste a pour vocation d’être un lieu de vie central pour les associations du Diois : accueil d’événements internes ou ouverts aux publics, réservation de salles, services utiles, échanges, formations, valorisation de vos projets associatifs.
+<br><br>Vous pouvez notamment réserver la grande salle ou la salle d’activité pour vos événements associatifs : assemblée générale, réunions associatives, ateliers, conférences, formations, etc.
+
+----
+
+Lien1: Réservez un espace pour votre événement associatif !
+
+----
+
+Sec4titre2: Les espaces
+
+----
+
+Sec4titrecol1: Grande Salle
+
+----
+
+Sec4textcol1: Cette salle, d’une capacité maximum de 40 personnes, est accessible pour les personnes à mobilité réduite.<br><br>Elle est située au rez-de-chaussée et donne directement accès au joli jardin de l’Avant-Poste !
+
+----
+
+Sec4titrecol2: Salle d’activité
+
+----
+
+Sec4textcol2: Cette belle salle avec parquet bois, située au second étage, a une superficie de 80 m2. <br><br>Elle est idéale pour vos activités artistiques, culturelles, méditation, yoga, etc.
+
+----
+
+Sec5titre2: Services et matériel disponibles
+
+----
+
+Sec5textcol1:
+
+Sont compris dans les locations des espaces :<br><br>
+* Tableau de type paperboard
+* Connexion Internet
+* Chaises et tables (dans la mesure de nos capacités) 
+* Accès WC
+
+<br><br>Sont compris spécifiquement dans la location de Grande salle : <br><br>
+
+* Vaisselle
+* Mise à disposition de la cuisine pour réchauffer des plats ou se faire un café
+* Rétro-projecteur
+* WC PMR (pour la Grande Salle)
+
+----
+
+Sec5textcol2:
+
+En option:<br><br>
+* Le Hobo, restaurant situé au sein de de l’Avant-Poste vous propose plusieurs formules pour accompagner vos événements : grands plats “à la bonne franquette” , service traiteur, etc.
+
+----
+
+Sec6titre2: Nos tarifs standards
+
+----
+
+Sec6textmediuma: Grande salle
+
+----
+
+Sec6aprix1: 24€
+
+----
+
+Sec6atext1:
+
+2h <br>
+TTC
+Du lundi au vendredi
+En journée : 8h30 - 12h30 puis 14h - 18h
+En soirée : 18h30 – 22h30
+
+----
+
+Sec6aprix2: 40€
+
+----
+
+Sec6atext2:
+
+Demi-journée<br>
+TTC
+Du lundi au vendredi
+8h30 - 12h30 / 14h - 18h
+
+----
+
+Sec6aprix3: 72€
+
+----
+
+Sec6atext3:
+
+Journée<br>
+TTC 
+8h30 - 12h30 puis 14h - 18h
+
+----
+
+Sec6textmediumb: Salle d’activité
+
+----
+
+Sec6bprix1: 36€
+
+----
+
+Sec6btext1:
+
+2h en journée<br>
+HT
+8h30-22h30
+
+----
+
+Sec6bprix2: 60€
+
+----
+
+Sec6btext2:
+
+Demi-journée<br>
+HC
+
+----
+
+Sec6bprix3: 90€
+
+----
+
+Sec6btext3:
+
+Journée<br>
+HC
+
+----
+Sec7titre2: Réservation des espaces
+----
+
+Sec7link1: Réservez vos espaces via le formulaire de contact.
+
+----
+
+Sec7text1: Merci de préciser le nombre de personnes, les horaires, les besoins en matière de matériel / prestations traiteur.
+
+----
+
+Sec8titre2: Autres services utiles pour les associations du Diois
+
+----
+
+Sec8text1:
+
+En étant sociétaire de l’Avant-Poste [lien vers page SCIC], vous accédez également à un ensemble de services :
+<br>
+- Domiciliation du siège social & réception du courrier des associations
+- Location de la kangoo électrique
+<br>et si vous en avez besoin, vous pouvez bien entendu <a class="link_blackToSecondary" href="/contact">réserver un poste de travail !</a>
+<br>Vous souhaitez en savoir plus ?
+
+----
+
+Sec8button: Contactez-nous !
+
+----
+
+Uuid: 2yKiNm999KJb6Sz6

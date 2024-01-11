@@ -1,66 +1,43 @@
-
-
 /* --------- DOMAINES D'ACTIVITE --------- */
 
 .domains {
-    padding: 0 1.5rem;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
-  column-gap: 0.2rem;
-  row-gap: 0.5rem;
+  column-gap: var(--space-2);
+  row-gap: var(--space-2);
 }
-.domains li{
-    list-style-type: none;
+.domains li {
+  list-style-type: none;
 }
-.domain{
-    text-align: center;
-    /* width: 100%; */
-    padding: 0 1.5rem;
+.domains li a {
+  background-color: tomato;
+  margin: 0;
+  padding: 0;
 }
-.domain:hover{
-    color: var(--color-primary);
-    cursor: pointer;
+.domain {
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
-.domain figure{
-    /* width: 4.875rem;
-    height: 4.875rem; */
-    margin:0;
-width: 100%;
+.domain:hover {
+  color: var(--color-primary);
+  cursor: pointer;
 }
-.domain figure img{
-    margin:0;
-    padding: auto;
-    width: 7rem;
-    height: 7rem;
+.domain figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-.domain figcaption{
-    /* height: 2.437rem; */
-    font-size: 2.561rem;
-    line-height: 1;
-    padding-bottom: 1.5rem;
-    font-family: var(--font-family-sans);
+.domain figure img {
+  margin: 0;
+  padding: auto;
+  width: 8rem;
+  height: 8rem;
 }
-.domain p{
-    font-size: 1.229rem;
-    line-height: 1;
-    padding-bottom: 1.5rem; 
-}
-
-/* --------- CONTACTEZ-NOUS --------- */
-
-.contactezNous{
-    width: 100%;
-  background: var(--color-primary);
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactezNous p{
-    padding: 1.5rem 7.5rem;
-    font-size: 2.561rem;
-    font-family: var(--font-family-sans);
-    text-align: center;
-}
-/* .contactezNous  */
