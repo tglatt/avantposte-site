@@ -69,10 +69,8 @@
 
                     <div class="sub_menu" id="sub_menu_avantposte">
                         <ul>
-                            <li><a href="/avantposte/la-scic">la SCIC</a></li>
+                            <li><a href="/avantposte/la-cooperative">la coopérative</a></li>
                             <li><a href="/avantposte/le-lieu">le lieu</a></li>
-                            <li><a href="/avantposte/l-equipe">l'équipe</a></li>
-                            <li><a href="/avantposte/mission-valeurs">Mission & Valeurs</a></li>
                         </ul>
                     </div>
                 </li>

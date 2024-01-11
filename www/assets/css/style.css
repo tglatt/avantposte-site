@@ -272,10 +272,14 @@ p {
 }
 .small_p li {
   padding: 0;
-  text-align: left;
+  /* text-align: left; */
   /* list-style-type: none; */
 }
 .chapeau {
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+}
+.image{
   padding-left: var(--space-5);
   padding-right: var(--space-5);
 }
