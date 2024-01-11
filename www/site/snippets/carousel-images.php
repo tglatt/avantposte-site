@@ -1,54 +1,48 @@
-<ul class="gallery">
-
-	<?php foreach ($page->images() as $img) : ?>
-		<li>
-		<?= $img ?>
-	</li>
+<section class="slider-wrapper">
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
+  <ul class="slides-container" id="slides-container">
+  <?php foreach ($page->images() as $img) : ?>
+		<li class="slide">
+			<?= $img ?>
+		</li>
 
 	<?php endforeach ?>
+    <!-- <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+    <li class="slide"></li> -->
+  </ul>
+</section>
 
-	<!-- <li style="background: #f6bd60;"></li>
-	<li style="background: #f7ede2;"></li>
-	<li style="background: #f5cac3;"></li>
-	<li style="background: #84a59d;"></li>
-	<li style="background: #f28482;"></li> -->
-</ul>
+<!-- <div class="carousel_footer">
+  Pen by <a href="https://www.jemimaabu.com" target="_blank" rel="noopener">Jemima Abu</a> <span class="heart">&hearts;</span>
+	</div> -->
+
+
+
+
+
+
+
 
 <script>
-	const slider = document.querySelector('.gallery');
-	let isDown = false;
-	let startX;
-	let scrollLeft;
+	const slidesContainer = document.getElementById("slides-container");
+	const slide = document.querySelector(".slide");
+	const prevButton = document.getElementById("slide-arrow-prev");
+	const nextButton = document.getElementById("slide-arrow-next");
 
-	slider.addEventListener('mousedown', e => {
-		isDown = true;
-		slider.classList.add('active');
-		startX = e.pageX - slider.offsetLeft;
-		scrollLeft = slider.scrollLeft;
+	nextButton.addEventListener("click", () => {
+		const slideWidth = slide.clientWidth;
+		slidesContainer.scrollLeft += slideWidth;
 	});
-	slider.addEventListener('mouseleave', _ => {
-		isDown = false;
-		slider.classList.remove('active');
-	});
-	slider.addEventListener('mouseup', _ => {
-		isDown = false;
-		slider.classList.remove('active');
-	});
-	slider.addEventListener('mousemove', e => {
-		if (!isDown) return;
-		e.preventDefault();
-		const x = e.pageX - slider.offsetLeft;
-		const SCROLL_SPEED = 3;
-		const walk = (x - startX) * SCROLL_SPEED;
-		slider.scrollLeft = scrollLeft - walk;
+
+	prevButton.addEventListener("click", () => {
+		const slideWidth = slide.clientWidth;
+		slidesContainer.scrollLeft -= slideWidth;
 	});
 </script>
-
-
-
-
-
-
-
-
-
