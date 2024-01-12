@@ -1,4 +1,8 @@
-title: Page d'accueil
+title: Page Associations
+options:
+  changeSlug: false
+  delete: false
+
 
 columns:
 

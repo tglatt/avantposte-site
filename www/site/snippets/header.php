@@ -45,11 +45,11 @@
                     </div>
                     <div class="sub_menu" id="sub_menu_activite">
                         <ul>
-                            <li><a href="/activites/coworking">Coworking</a></li>
+                            <!-- <li><a href="/activites/coworking">Coworking</a></li> -->
                             <li><a href="/activites/associations">Associations</a></li>
-                            <li><a href="/activites/logements">Logements</a></li>
-                            <li><a href="/activites/restaurant">Restaurant</a></li>
-                            <li><a href="/activites/ateliers">Ateliers</a></li>
+                            <!-- <li><a href="/activites/logements">Logements</a></li> -->
+                            <!-- <li><a href="/activites/restaurant">Restaurant</a></li> -->
+                            <!-- <li><a href="/activites/ateliers">Ateliers</a></li> -->
                         </ul>
                     </div>
                 </li>

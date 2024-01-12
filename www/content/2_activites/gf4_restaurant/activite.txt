@@ -1,9 +1,0 @@
-Title: Restaurant
-
-----
-
-Uuid: VmRvdJPSApTGMvZQ
-
-----
-
-Text: 
