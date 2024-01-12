@@ -27,10 +27,16 @@
         <div class="info">
             <h2><?= $page->sec4titre2() ?></h2>
             <hr>
-            <img>
+
             <div class="two_col">
                 <div class="col1">
                     <div class="medium_p"><?= $page->sec4titreCol1()->kt() ?></div>
+                    <hr>
+                    <div class="imageInCol">
+                        <?php if ($image = $page->image('NOTONCAROUSEL_GrandeSalle.jpg')) : ?>
+                            <img src="<?= $image->url() ?>" alt="">
+                        <?php endif ?>
+                    </div>
                     <hr>
                     <div class="small_p"><?= $page->sec4textCol1()->kt() ?></div>
                 </div>
@@ -38,6 +44,12 @@
                     <div class="medium_p"><?= $page->sec4titreCol2()->kt() ?></div>
                     <hr>
                     <div class="small_p"><?= $page->sec4textCol2()->kt() ?></div>
+                    <hr>
+                    <div class="imageInCol">
+                        <?php if ($image = $page->image('NOTONCAROUSEL_SalleActivite.jpg')) : ?>
+                            <img src="<?= $image->url() ?>" alt="">
+                        <?php endif ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,6 +147,7 @@
     <section>
         <div class="info">
             <h2><?= $page->sec7Titre2() ?></h2>
+            <hr>
             <div class="medium_p">
                 <a class="link_blackToPrimary" href="/contact"><?= $page->sec7Link1()->kt() ?></a>
             </div>
