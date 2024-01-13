@@ -1,0 +1,23 @@
+title: Page Acteurs
+options:
+  changeSlug: false
+  delete: false
+
+
+columns:
+  LesActeurs:
+    width: 1/2
+    type: fields
+    fields:
+      Sec2text:
+        label : Text
+        type: textarea
+        size: large
+  LesActeurs2:
+    width: 1/2
+    sections:
+      pages:
+        label: Personnes
+        type: pages
+        template: personne
+    

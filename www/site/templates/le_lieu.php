@@ -41,7 +41,7 @@
                 <hr>
                 <div class="imageInCol">
                     <?php if ($image = $page->image('NOTONCAROUSEL_depenses.png')) : ?>
-                        <img src="<?= $image->url() ?>" alt="">
+                        <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
                     <?php endif ?>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <hr>
                 <div class="imageInCol">
                     <?php if ($image = $page->image('NOTONCAROUSEL_financements.png')) : ?>
-                        <img src="<?= $image->url() ?>" alt="">
+                        <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
                     <?php endif ?>
                 </div>
             </div>

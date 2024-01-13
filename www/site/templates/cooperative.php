@@ -72,7 +72,7 @@
         <hr>
         <div class="image">
             <?php if ($image = $page->image('NOTONCAROUSEL_gouvernance.png')) : ?>
-                <img src="<?= $image->url() ?>" alt="">
+                <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
             <?php endif ?>
         </div>
         <hr>

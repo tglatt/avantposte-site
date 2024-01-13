@@ -23,7 +23,7 @@
     <header class="header">
 
         <a href="<?= $site->url() ?>" class="logo">
-            <img src="<?= $site->image('logo.svg')->url() ?>" />
+            <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
         </a>
 
         <nav class="menu">
@@ -31,7 +31,7 @@
                 <li>
                     <a href="/">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Accueil
                         </div>
                     </a>
@@ -39,7 +39,7 @@
                 <li>
                     <!-- <a href="activite"> -->
                     <div class="menu_item" id="toggle_show_activite">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                         Activités
                         <!-- </a> -->
                     </div>
@@ -56,14 +56,14 @@
                 <li>
                     <a href="/acteurs">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Acteurs
                         </div>
                     </a>
                 </li>
                 <li>
                     <div class="menu_item" id="toggle_show_avantposte">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                         l'Avant Poste
                     </div>
 
@@ -77,7 +77,7 @@
                 <li>
                     <a href="/actualite">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Actualités
                         </div>
                     </a>
@@ -85,7 +85,7 @@
                 <li>
                     <a href="/contact">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Contact
                         </div>
                     </a>

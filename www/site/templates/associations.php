@@ -34,7 +34,7 @@
                     <hr>
                     <div class="imageInCol">
                         <?php if ($image = $page->image('NOTONCAROUSEL_GrandeSalle.jpg')) : ?>
-                            <img src="<?= $image->url() ?>" alt="">
+                            <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
                         <?php endif ?>
                     </div>
                     <hr>
@@ -47,7 +47,7 @@
                     <hr>
                     <div class="imageInCol">
                         <?php if ($image = $page->image('NOTONCAROUSEL_SalleActivite.jpg')) : ?>
-                            <img src="<?= $image->url() ?>" alt="">
+                            <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
                         <?php endif ?>
                     </div>
                 </div>

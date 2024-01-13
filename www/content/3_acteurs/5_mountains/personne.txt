@@ -1,7 +1,17 @@
 Title: RandoMan
+
 ----
-job : Randonneur en milieu agréable
+
+Job: Randonneur en milieu agréable
+
 ----
-entreprise: J'use mes pompes
+
+Entreprise: J'use mes pompes
+
 ----
-siteweb: jusemespompes.com
+
+Siteweb: jusemespompes.com
+
+----
+
+Uuid: wxoOs0yD7Wmnx2WB

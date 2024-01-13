@@ -1,7 +1,17 @@
 Title: Pierre Gratus
+
 ----
-job : Maître du monde, Maître de l'univers, Assistant de Léo Gratus
+
+Job: Maître du monde, Maître de l'univers, Assistant de Léo Gratus
+
 ----
-entreprise: Planète terre
+
+Entreprise: Planète terre
+
 ----
-siteweb: bimbim.com
+
+Siteweb: bimbim.com
+
+----
+
+Uuid: hxdmeLxu63EzpS4J

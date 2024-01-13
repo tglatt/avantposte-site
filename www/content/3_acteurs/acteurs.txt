@@ -1,4 +1,12 @@
-Title: Les acteurs de l'Avant Poste
+Title: Les acteurs de <br>l'Avant Poste
+
 ----
-sec2text : Entrepreneurs, indépendants, PME locales, associations, coopératives d’intérêts collectifs : explorez le riche écosystème de l’Avant-Poste ! 
+
+Sec2text:
+
+Entrepreneurs, indépendants, PME locales, associations, coopératives d’intérêts collectifs : explorez le riche écosystème de l’Avant-Poste ! 
 <br>Découvrez des projets au service de la transition écologique et sociale et rejoignez-nous ! 
+
+----
+
+Uuid: buSHUfp4YDjXdJ0C
