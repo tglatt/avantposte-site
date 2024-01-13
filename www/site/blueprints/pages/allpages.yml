@@ -1,0 +1,13 @@
+title: Activités
+options:
+  changeSlug: false
+  delete: false
+
+
+columns:
+
+  Partie1:
+    width: 1/2
+    sections:
+      pages:
+        type: pages

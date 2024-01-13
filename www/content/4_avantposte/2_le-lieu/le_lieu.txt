@@ -1,39 +1,53 @@
 Title: L’Avant-Poste : entre histoire et modernité
 
 ----
-sec2titre2: Réouvrir aux Diois un grand bâtiment de l’hyper-centre !
+
+Sec2titre2: Réouvrir aux Diois un grand bâtiment de l’hyper-centre !
+
 ----
-sec2text:Nous sommes encore en recherche sur l’origine exacte de ce grand bâtiment situé juste à côté de la Cathédrale (et que nous supposons donc à vocation religieuse..). 
+
+Sec2text:
+
+Nous sommes encore en recherche sur l’origine exacte de ce grand bâtiment situé juste à côté de la Cathédrale (et que nous supposons donc à vocation religieuse..). 
 <br>Nous sommes heureusement plus précis sur son histoire moderne ! 
 <br>D’une surface d’environ 700 m2, comprenant en outre des caves, un atelier et un jardin de 220 m², l’Avant-Poste était occupé jusqu’alors par deux cabinets médicaux et un grand logement. 
-<br>Les médecins ayant déménagé leur cabinet à la maison de santé de Die en septembre 2021, le bâtiment servait de maison secondaire à la famille du propriétaire. 
-
-
+<br>Les médecins ayant déménagé leur cabinet à la maison de santé de Die en septembre 2021, le bâtiment servait de maison secondaire à la famille du propriétaire.
 
 ----
 
-sec3titre2: La genèse du projet
+Sec3titre2: La genèse du projet
+
 ----
-sec3text: Suite à sa mise en vente en 2020 par le propriétaire, la SCIC de l’Avant-Poste va se créer pour racheter le lieu.
+
+Sec3text:
+
+Suite à sa mise en vente en 2020 par le propriétaire, la SCIC de l’Avant-Poste va se créer pour racheter le lieu.
 <br>Deux acteurs sont à l’origine de la coopérative : 
 Dwatts, opérateur énergétique territorial en Biovallée, cherchait de nouveaux locaux pour son équipe 
 et un collectif de citoyens souhaitaient créer un lieu ouvert au public, centré sur le thème de la transition écologique. 
 <br>La SCIC se met alors en recherche de financements et finit par les trouver auprès de citoyens, des banques et d’organismes tels Villages Vivants et Oasis.
 
 ----
-sec3subtitle
-----
-sec3titreCol1: Dépenses
-----
-sec3titreCol2: Financement
-----
-sec3text2 : Merci à tous ceux qui ont cru dans le projet et l’ont rendu possible ! <3
+
+Sec3titrecol1: Dépenses
 
 ----
 
-sec4titre2: Rénover efficacement tout en respectant le caractère du lieu
+Sec3titrecol2: Financement
+
 ----
-sec4text: En s’appuyant sur l’état des lieux proposé plus haut, le projet architectural avait notamment pour objectifs : 
+
+Sec3text2: Merci à tous ceux qui ont cru dans le projet et l’ont rendu possible ! <3
+
+----
+
+Sec4titre2: Rénover efficacement tout en respectant le caractère du lieu
+
+----
+
+Sec4text:
+
+En s’appuyant sur l’état des lieux proposé plus haut, le projet architectural avait notamment pour objectifs : 
 de faire du lieu de référence sur la transition énergétique et sociétale, 
 d’ouvrir le bâtiment sur la ville, de contribuer à en faire un lieu de rencontre,
 d’identifier les possibilités de mutualisation entre les espaces. 
@@ -41,3 +55,7 @@ d’identifier les possibilités de mutualisation entre les espaces.
 <br>Les plans et la supervision du chantier ont été confiés à l’architecte Camille Behagel, architecte spécialisé dans les tiers-lieux et habitats participatifs (https://www.atelier108architecture.com/). 
 <br>Le chantier, supervisé par Bruno Daniel, a été mené tambour battant par des artisans majoritairement locaux et sensibles à nos enjeux. 
 <br>Merci aux entreprises GBat, Aplomb, Smarki, Menuiserie REYNAUD, Plomberie du Diois, Combet et Bessat !
+
+----
+
+Uuid: GKtt6HZNrYPZYYYl

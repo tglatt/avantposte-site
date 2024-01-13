@@ -5,10 +5,20 @@ options:
 
 
 columns:
-
+  
   Partie2:
     width: 1
     sections:
+      
+      infoGallery:
+        # width: 1/4
+        label: Information sur les images du carousel
+        type: info
+        text: | 
+          Ici on peut insérer et supprimer autant d'image que l'on souhaite pour le carousel d'image. Attention, les images qui ont un nom commençant par ```NOTONCAROUSEL``` sont des images qui se trouvent ailleurs dans la page. (et pas dans le carousel, NOT ON CAROUSEL ... Tu vois ce que je veux dire...)
+
+          **Merci de NE PAS SUPPRIMER les images NOTONCAROUSEL**
+
       gallery:
         type: files
         layout: card
@@ -38,6 +48,7 @@ columns:
         label : Section 4 Titre col 1
         type: text
         size: small
+      
       Sec4titrecol2:
         width: 1/2
         label : Section 4 Titre col 2
@@ -53,6 +64,34 @@ columns:
         label : Section 4 Texte col 2
         type: textarea
         size: small
+      info:
+        width: 1/2
+        label: Information sur l'image de gauche
+        type: info
+        text: | 
+          Si vous souhaitez modifier l'image qui est inséré ici c'est possible. 
+          
+          Pour celà il faut remplacer l'image qui a pour nom 
+          
+          ```NOTONCAROUSEL_GrandeSalle.jpg```
+          
+          avec la nouvelle image qui devra porter exactement le même nom ainsi que la même extension
+          
+          Ici nous avons une image en jpg, la nouvelle image ne peut donc PAS être un jpeg ou png.
+      info 2:
+        width: 1/2
+        label: Information sur l'image de droite
+        type: info
+        text: | 
+          Si vous souhaitez modifier l'image qui est inséré ici c'est possible. 
+          
+          Pour celà il faut remplacer l'image qui a pour nom 
+          
+          ```NOTONCAROUSEL_SalleActivite.jpg```
+          
+          avec la nouvelle image qui devra porter exactement le même nom ainsi que la même extension
+          
+          Ici nous avons une image en jpg, la nouvelle image ne peut donc PAS être un jpeg ou png.
 
   Partie5:
     type: fields
