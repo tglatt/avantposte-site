@@ -9,6 +9,9 @@
         <hr>
         <hr>
         <p><?= $page->sec1text()->kt() ?></p>
+        <p class="link_blackToPrimary"><a href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></p>
+        <hr>
+        <p><?= $page->sec1text2()->kt() ?></p>
     </section>
 
     <!-- Section 2 -->

@@ -2,8 +2,12 @@ Title: Formulaire <br>de contact
 
 ----
 
-sec1text: Contactez-nous en remplissant le formulaire ci-dessous.
-Notre équipe fera le maximum pour vous répondre au plus vite !
+sec1text: N'hésitez pas à nous contacter sur :
+----
+mailContact : contact@avant-poste.org
+----
+sec1text2: Notre équipe fera le maximum pour vous répondre au plus vite !
+
 ----
 sec2title2: Se rendre à l’Avant-Poste
 ----
