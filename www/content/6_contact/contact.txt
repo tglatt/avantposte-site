@@ -1,9 +1,28 @@
-Title: Formulaire de contact
+Title: Formulaire <br>de contact
 
 ----
 
-Text: Contactez-nous en remplissant le formulaire ci-dessous.
-Notre équipe fera le maximum pour vous répondre au plus vite !)
+sec1text: Contactez-nous en remplissant le formulaire ci-dessous.
+Notre équipe fera le maximum pour vous répondre au plus vite !
+----
+sec2title2: Se rendre à l’Avant-Poste
+----
+sec2textCol1 : Adresse : 3 rue notre dame, 26150 – Die
+Horaires de permanence :
+Tous les jours de X à Y heures<br>
+À PIED
+Accès derrière la Cathédrale,
+à côté de la poste. Accès PMR<br>
+EN TRAIN/BUS
+Gare de Die puis 10 minutes à pied<br>
+EN VÉLO
+Arceau vélo en face de l’Avant-Poste<br>
+EN VOITURE
+1h en voiture de Valence
+Parking sur la place de la République
+Parking en face de l’ESCDD
+Parking de Meyrosse
+
 ----
 
 
