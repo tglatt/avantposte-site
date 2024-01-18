@@ -1,0 +1,25 @@
+title: Page personne
+options:
+  changeSlug: false
+  delete: false
+  
+columns:
+  Partie1:
+    type: fields
+    width: 2/3
+    fields:
+      Job:
+        label : Job
+        type: text
+      Entreprise:
+        label : Entreprise
+        type: text
+      Siteweb:
+        label : Siteweb
+        type: text
+  Partie2:
+    width: 1/3
+    sections:
+      gallery:
+        type: files
+        # layout: card

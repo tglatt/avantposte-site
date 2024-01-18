@@ -1,11 +1,14 @@
 <?php snippet('header') ?>
 
 <main class="main">
+    <!-- Section 1 -->
     <section>
         <div class="titre">
             <h1><?= $page->fulltitle() ?></h1>
         </div>
     </section>
+
+    <!-- Section 2 -->
     <section class="sec_carousel">
         <?php snippet('carousel-images', slots: true) ?>
         <?php slot('images') ?>
@@ -13,6 +16,7 @@
         <?php endsnippet() ?>
     </section>
 
+    <!-- Section 3 -->
     <section class="listActivite">
         <div class="chapeau">
             <p><?= $page->chapeau() ?></p>
@@ -42,6 +46,7 @@
         </ul>
     </section>
 
+    <!-- Section 4 -->
     <section>
         <div class="chapeau">
 
@@ -58,9 +63,29 @@
             </a>
         </div>
     </section>
+    <!-- Section 5 -->
     <!-- <section class="agenda">
         <h1>l'Agenda</h1>
     </section> -->
+
+    <!-- Section 6 -->
+    <section>
+        <div class="titre">
+            <h1><?= $page->fulltitle() ?></h1>
+            <hr>
+            <hr>
+            <div class="medium_p"><?= $page->sec6Text()->kt() ?></div>
+        </div>
+        <hr>
+        <hr>
+        <div class="mecenes">
+            <?php foreach ($page->images() as $img) : ?>
+                <?php if (str_contains($img->name(), 'MECENE_LOGO')) : ?>
+                        <?= $img ?>
+                <?php endif ?>
+            <?php endforeach ?>
+        </div>
+    </section>
     <?php snippet('footer') ?>
 </main>
 

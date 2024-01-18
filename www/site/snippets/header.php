@@ -23,7 +23,7 @@
     <header class="header">
 
         <a href="<?= $site->url() ?>" class="logo">
-            <img src="<?= $site->image('logo.svg')->url() ?>" />
+            <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
         </a>
 
         <nav class="menu">
@@ -31,7 +31,7 @@
                 <li>
                     <a href="/">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Accueil
                         </div>
                     </a>
@@ -39,47 +39,45 @@
                 <li>
                     <!-- <a href="activite"> -->
                     <div class="menu_item" id="toggle_show_activite">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                         Activités
                         <!-- </a> -->
                     </div>
                     <div class="sub_menu" id="sub_menu_activite">
                         <ul>
-                            <li><a href="/activites/coworking">Coworking</a></li>
+                            <!-- <li><a href="/activites/coworking">Coworking</a></li> -->
                             <li><a href="/activites/associations">Associations</a></li>
-                            <li><a href="/activites/logements">Logements</a></li>
-                            <li><a href="/activites/restaurant">Restaurant</a></li>
-                            <li><a href="/activites/ateliers">Ateliers</a></li>
+                            <!-- <li><a href="/activites/logements">Logements</a></li> -->
+                            <!-- <li><a href="/activites/restaurant">Restaurant</a></li> -->
+                            <!-- <li><a href="/activites/ateliers">Ateliers</a></li> -->
                         </ul>
                     </div>
                 </li>
                 <li>
                     <a href="/acteurs">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Acteurs
                         </div>
                     </a>
                 </li>
                 <li>
                     <div class="menu_item" id="toggle_show_avantposte">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                         l'Avant Poste
                     </div>
 
                     <div class="sub_menu" id="sub_menu_avantposte">
                         <ul>
-                            <li><a href="/avantposte/la-scic">la SCIC</a></li>
+                            <li><a href="/avantposte/la-cooperative">la coopérative</a></li>
                             <li><a href="/avantposte/le-lieu">le lieu</a></li>
-                            <li><a href="/avantposte/l-equipe">l'équipe</a></li>
-                            <li><a href="/avantposte/mission-valeurs">Mission & Valeurs</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <a href="/actualite">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Actualités
                         </div>
                     </a>
@@ -87,7 +85,7 @@
                 <li>
                     <a href="/contact">
                         <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Contact
                         </div>
                     </a>

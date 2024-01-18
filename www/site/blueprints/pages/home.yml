@@ -1,5 +1,8 @@
 title: Page d'accueil
-
+options:
+  changeSlug: false
+  delete: false
+  
 columns:
   Partie1:
     width: 1/2

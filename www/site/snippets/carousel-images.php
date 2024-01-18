@@ -7,9 +7,11 @@
   </button>
   <ul class="slides-container" id="slides-container">
   <?php foreach ($page->images() as $img) : ?>
-		<li class="slide">
-			<?= $img ?>
-		</li>
+	<?php if (!str_contains($img->name(), 'NOTONCAROUSEL')) : ?>
+			<li class="slide">
+				<?= $img ?>
+			</li>
+			<?php endif ?>
 
 	<?php endforeach ?>
     <!-- <li class="slide"></li>
