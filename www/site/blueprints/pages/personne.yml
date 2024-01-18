@@ -1,7 +1,6 @@
 title: Page personne
 options:
   changeSlug: false
-  delete: false
   
 columns:
   Partie1:

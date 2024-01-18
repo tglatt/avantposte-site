@@ -71,7 +71,7 @@
     <!-- Section 6 -->
     <section>
         <div class="titre">
-            <h1><?= $page->fulltitle() ?></h1>
+            <h1><?= $page->Sec6Title1() ?></h1>
             <hr>
             <hr>
             <div class="medium_p"><?= $page->sec6Text()->kt() ?></div>

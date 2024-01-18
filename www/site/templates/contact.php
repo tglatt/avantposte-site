@@ -7,7 +7,6 @@
             <h1><?= $page->title() ?></h1>
         </div>
         <hr>
-        <hr>
         <p><?= $page->sec1text()->kt() ?></p>
         <p class="link_blackToPrimary"><a href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></p>
         <hr>

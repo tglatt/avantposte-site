@@ -399,15 +399,16 @@ button {
 /* ------------- CAROUSEL ------------- */
 .slider-wrapper {
   /* margin: 1rem; */
-  
   position: relative;
   overflow: hidden;
   padding-left: var(--space-5);
   padding-right: var(--space-5);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
 }
 
 .slides-container {
-  max-height: 500px;
+  max-height: 600px;
   height: calc(100vh - 2rem);
   width: 100%;
   display: flex;

@@ -74,14 +74,14 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="/actualite">
                         <div class="menu_item">
                         <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Actualités
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="/contact">
                         <div class="menu_item">
