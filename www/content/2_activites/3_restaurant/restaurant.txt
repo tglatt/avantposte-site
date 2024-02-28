@@ -1,0 +1,52 @@
+Title: La démarche du Hobo
+
+----
+
+Sec3titre2: La démarche du Hobo
+
+----
+
+Sec3text1:
+
+Yann et son équipe servent une cuisine inventive et sincère faite à partir de produits bruts, majoritairement locaux et bio.
+<br>Les menus sont élaborés dans le respect de ce que la nature nous offre au fil des saisons.
+<br>Les assiettes sont composées de 3 textures et 3 saveurs.
+<br>Les vins proposés sont fabriqués le plus naturellement possible par des artisans vignerons soucieux du goût et de leurs terroirs.
+<br>La démarche est la même pour la sélection de spiritueux.
+
+----
+
+Sec4titre2: Hobo c'est aussi 2 ambiances :
+
+----
+
+Sec4textcol1: en intérieur une atmosphère chaleureuse dans une salle aménagée par des artisans du Diois et pavées de tomettes anciennes. Une bibliothèque de romans de Jack London, John Steinbeck, Jim Tully ou Nels Anderson sur la thématique des Hobos et des livres de cuisine qui inspirent l'équipe en cuisine.
+
+----
+
+Sec4textcol2: en extérieur, loin de l'agitation de la ville, dans le calme du jardin, à l'ombre du grand tilleul, entouré d'herbes aromatiques
+
+----
+
+Sec5titre2: Horaires et réservations
+
+----
+
+Sec5text1:
+
+Déjeuners : du mardi au samedi de 12h à 13h30
+<br>Diners : du mercredi ou samedi de 19h à 20h30
+<br>Contacter l'équipe pour l'organisation de réception
+<br>Téléphone : 04 81 57 00 00
+
+----
+
+Lieninstahobo: Instagram
+
+----
+
+Lienfacebookhobo: Facebook
+
+----
+
+Uuid: 953uY6twtZuJ5d3Z

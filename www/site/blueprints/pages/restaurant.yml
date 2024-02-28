@@ -1,0 +1,66 @@
+title: Page La coopérative
+options:
+  changeSlug: false
+  delete: false
+
+columns:
+  Partie1:
+    width: 1
+    sections:
+      gallery:
+        type: files
+        layout: card
+  Partie3:
+    type: fields
+    fields:
+      Sec3titre2:
+        width: 1
+        label: Section 3 Titre
+        type: text
+        size: small
+      sec3text1:
+        width: 1
+        label: Section 3 Texte 1
+        type: textarea
+        size: small
+  Partie4:
+    type: fields
+    fields:
+      sec4Titre2:
+        width: 1
+        label: Section 4 Titre
+        type: text
+        size: small
+      sec4textCol1:
+        width: 1
+        label: Section 4 Texte
+        type: textarea
+        size: small
+      sec4textCol2:
+        width: 1
+        label: Section 4 Texte
+        type: textarea
+        size: small
+  Partie5:
+    type: fields
+    fields:
+      sec5Titre2:
+        width: 1
+        label: Section 5 Titre
+        type: text
+        size: small
+      sec5Text1:
+        width: 1
+        label: Section 5 Texte
+        type: textarea
+        size: small
+      LienInstaHobo:
+        width: 1
+        label: Lien vers instagram hobo
+        type: text
+        size: small
+      LienFacebookHobo:
+        width: 1
+        label: Lien vers facebook hobo
+        type: text
+        size: small
