@@ -1,0 +1,75 @@
+title: Page La coopérative
+options:
+  changeSlug: false
+  delete: false
+
+
+columns:
+
+  Partie2:
+    type: fields
+    fields:
+      Sec2titre2:
+        width: 1
+        label : Section 2 Titre
+        type: text
+        size: small
+      sec2titre3:
+        width: 1
+        label : Section 2 Texte 1
+        type: text
+        size: small
+      sec2text2:
+        width: 1
+        label : Section 2 Texte 2
+        type: textarea
+        size: small
+  Partie3:
+    type: fields
+    fields:
+      sec3Titre2:
+        width: 1
+        label : Section 3 Titre
+        type: text
+        size: small
+      sec3titre3:
+        width: 1
+        label : Section 3 SousTitre 1
+        type: text
+        size: small
+      sec3text2:
+        width: 1
+        label : Section 3 Texte 1
+        type: textarea
+        size: small
+      sec3titre3bis:
+        width: 1
+        label : Section 3 SousTitre 2
+        type: text
+        size: small
+      sec3text3:
+        width: 1
+        label : Section 3 Texte 2
+        type: textarea
+        size: small
+      sec3titre3ter:
+        width: 1
+        label : Section 3 SousTitre 3
+        type: text
+        size: small
+      sec3text4:
+        width: 1
+        label : Section 3 Texte 3
+        type: textarea
+        size: small
+      sec3titre3quar:
+        width: 1
+        label : Section 3 SousTitre 4
+        type: text
+        size: small
+      LienPageLieu:
+        width: 1
+        label : Lien vers la page le lieu
+        type: textarea
+        size: small
+  
