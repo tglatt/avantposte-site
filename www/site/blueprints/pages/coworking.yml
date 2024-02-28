@@ -1,0 +1,116 @@
+title: Page La coopérative
+options:
+  changeSlug: false
+  delete: false
+
+
+columns:
+
+  Partie1:
+    width: 1
+    sections:
+      gallery:
+        type: files
+        layout: card
+  Partie3:
+    type: fields
+    fields:
+      Sec3titre2:
+        width: 1
+        label : Section 3 Titre
+        type: text
+        size: small
+      Sec3titre3:
+        width: 1
+        label : Section 3 SousTitre
+        type: text
+        size: small
+      sec3text1:
+        width: 1
+        label : Section 3 Texte 1
+        type: textarea
+        size: small
+      sec3titre3bis:
+        width: 1
+        label : Section 3 SousTitre 2
+        type: text
+        size: small
+      sec3text2:
+        width: 1
+        label : Section 3 Texte 2
+        type: textarea
+        size: small
+      contactezNousButton:
+        width: 1
+        label : Bouton vers contact
+        type: text
+        size: small
+  Partie4:
+    type: fields
+    fields:
+      Sec4titre2:
+        width: 1
+        label : Section 4 Titre
+        type: text
+        size: small
+      Sec4text1:
+        width: 1
+        label : Section 4 Texte
+        type: textarea
+        size: small
+  Partie5:
+    type: fields
+    fields:
+      Sec5titre2:
+        width: 1
+        label : Section 5 Titre
+        type: text
+        size: small
+      Sec5text1:
+        width: 1
+        label : Section 5 Texte
+        type: textarea
+        size: small
+      Sec5titre3:
+        width: 1
+        label : Section 5 SousTitre 1
+        type: text
+        size: small
+      Sec5text2:
+        width: 1
+        label : Section 5 Texte 2
+        type: textarea
+        size: small
+      Sec5titre3bis:
+        width: 1
+        label : Section 5 SousTitre 2
+        type: text
+        size: small
+      Sec5text3:
+        width: 1
+        label : Section 5 Texte 3
+        type: textarea
+        size: small
+      Sec5titre3ter:
+        width: 1
+        label : Section 5 SousTitre 3
+        type: text
+        size: small
+      Sec5text4:
+        width: 1
+        label : Section 5 Texte 4
+        type: textarea
+        size: small
+  Partie6:
+    type: fields
+    fields:
+      Sec6titre2:
+        width: 1
+        label : Section 6 Titre
+        type: text
+        size: small
+      Sec6text1:
+        width: 1
+        label : Section 6 Texte
+        type: textarea
+        size: small
