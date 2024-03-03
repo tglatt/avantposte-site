@@ -2,9 +2,11 @@
 
 <main class="main">
     <section>
-        <div class="section-content">
-            <div class="titre">
-                <h1><?= $page->title() ?></h1>
+        <div class='section-hero'>
+            <div class="section-content">
+                <div class="titre">
+                    <h1><?= $page->title() ?></h1>
+                </div>
             </div>
         </div>
     </section>

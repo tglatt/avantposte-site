@@ -208,8 +208,8 @@ section {
   padding-bottom: 20px; /* Ajoute un peu d'espace autour du contenu */
 }
 
-.section-heroe {
-  margin-top: 320px;
+.section-hero {
+  margin-top: 320px; /*Taille du header fixe sans le logo*/
 }
 
 .sec_padd1 {

@@ -154,13 +154,18 @@
             // Faites défiler vers le bas
             header.style.top = '-250px'; // Masquez le header en déplaçant vers le haut
             logo.style.opacity = '0'; // Masquez le logo en le rendant transparent
-            
+            //header.style.backgroundColor = '#fff'; // Masquez le logo en le rendant transparent
+            //header.style.border='1px solid #f4f4f4'
+            header.style.boxShadow = '0 4px 4px rgba(0, 0, 0, 0.05)'; // Ajoutez une légère ombre au header
         } 
         
         if(scrollTop==0){
             // Faites défiler vers le haut
             header.style.top = '0'; // Affichez le header en le déplaçant vers le bas
             logo.style.opacity = '1'; // Affichez le logo en le rendant opaque
+            header.style.backgroundColor = '#29e76bff'; // Masquez le logo en le rendant transparent
+            header.style.boxShadow = 'none'; // Supprimez l'ombre du header
+            
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Empêchez la valeur de la position de défilement d'être inférieure à 0
