@@ -1,7 +1,7 @@
 version: "3"
 services:
   www:
-    image: webdevops/php-apache-dev:8.0
+    image: webdevops/php-apache-dev:8.3
     networks:
       - internal
     ports:
