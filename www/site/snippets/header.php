@@ -28,84 +28,81 @@
                 <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
             </a>
 
-        <nav class="menu">
-            <ul class="main_menu">
-                <li>
-                    <a href="/">
-                        <div class="menu_item">
+            <nav class="menu">
+                <ul class="main_menu">
+                    <li>
+                        <a href="/">
+                            <div class="menu_item">
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                Accueil
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="activite"> -->
+                        <div class="menu_item" id="toggle_show_activite">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                            Accueil
+                            Activités
+                            <!-- </a> -->
                         </div>
-                    </a>
-                </li>
-                <li>
-                    <!-- <a href="activite"> -->
-                    <div class="menu_item" id="toggle_show_activite">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                        Activités
-                        <!-- </a> -->
-                    </div>
-                    <div class="sub_menu" id="sub_menu_activite">
-                        <ul>
-                            <li><a href="/activites/coworking">Coworking</a></li>
-                            <li><a href="/activites/associations">Associations</a></li>
-                            <li><a href="/activites/logements">Logements</a></li>
-                            <li><a href="/activites/restaurant">Restaurant</a></li>
-                            <!-- <li><a href="/activites/ateliers">Ateliers</a></li> -->
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="/acteurs">
-                        <div class="menu_item">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                            Acteurs
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <div class="menu_item" id="toggle_show_avantposte">
-                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                        l'Avant Poste
-                    </div>
-
-                        <div class="sub_menu" id="sub_menu_avantposte">
+                        <div class="sub_menu" id="sub_menu_activite">
                             <ul>
-                                <li><a href="/avantposte/la-cooperative">la coopérative</a></li>
-                                <li><a href="/avantposte/le-lieu">le lieu</a></li>
+                                <li><a href="/activites/coworking">Coworking</a></li>
+                                <li><a href="/activites/associations">Associations</a></li>
+                                <li><a href="/activites/logements">Logements</a></li>
+                                <li><a href="/activites/restaurant">Restaurant</a></li>
                             </ul>
                         </div>
                     </li>
-                    <!-- <li>
-                        <a href="/actualite">
-                            <div class="menu_item">
-                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                                Actualités
-                            </div>
-                        </a>
-                    </li> -->
                     <li>
-                        <a href="/contact">
+                        <a href="/acteurs">
                             <div class="menu_item">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                                Contact
+                                Acteurs
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <div class="menu_item" id="toggle_show_avantposte">
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                            l'Avant Poste
+                        </div>
 
-
-
-
-                    <!-- <?php foreach ($site->children()->listed() as $item) : ?>
-                        <li>
-                            <a href="<?= $item->url() ?>">
+                            <div class="sub_menu" id="sub_menu_avantposte">
+                                <ul>
+                                    <li><a href="/avantposte/la-cooperative">la coopérative</a></li>
+                                    <li><a href="/avantposte/le-lieu">le lieu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <a href="/actualite">
                                 <div class="menu_item">
-                                    <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
-                                    <?= $item->title() ?>
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                    Actualités
+                                </div>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="/contact">
+                                <div class="menu_item">
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                    Contact
                                 </div>
                             </a>
                         </li>
-                    <?php endforeach ?> -->
+
+                        <!-- <?php foreach ($site->children()->listed() as $item) : ?>
+                            <li>
+                                <a href="<?= $item->url() ?>">
+                                    <div class="menu_item">
+                                        <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" />
+                                        <?= $item->title() ?>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endforeach ?> -->
+                    </li>
                 </ul>
             </nav>
         </div>
