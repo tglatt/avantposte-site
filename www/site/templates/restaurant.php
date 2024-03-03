@@ -11,14 +11,12 @@
 
     <!-- Section 2 Carrousel -->
     <section>
-        <div class="section-content">
             <div class="sec_carousel">
                 <?php snippet('carousel-images', slots: true) ?>
                 <?php slot('images') ?>
                 <?php endslot() ?>
                 <?php endsnippet() ?>
             </div>
-        </div>
     </section>
 
     <!-- Section 3 -->

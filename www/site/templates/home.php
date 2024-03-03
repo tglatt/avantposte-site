@@ -12,7 +12,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content">
+        <div class="section-content-gallery">
             <div class="sec_carousel">
                 <?php snippet('carousel-images', slots: true) ?>
                 <?php slot('images') ?>

@@ -69,7 +69,6 @@
 
     <!-- Section 4 -->
     <section>
-        <div class="section-content">
             <div class="sec_carousel">
                 <hr>
                 <div class="titre">
@@ -88,7 +87,6 @@
                 <hr>
                 <hr>
             </div>
-        </div>
     </section>
 
     <?php snippet('footer') ?>
