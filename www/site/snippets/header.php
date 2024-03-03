@@ -139,3 +139,30 @@
                     }
                 })
     </script>
+
+    <script>
+        const header = document.querySelector('.header');
+        const logo = document.querySelector('.logo');
+
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Vérifiez si la position de défilement est supérieure à la dernière position de défilement
+        if (scrollTop > lastScrollTop) {
+            // Faites défiler vers le bas
+            header.style.top = '-250px'; // Masquez le header en déplaçant vers le haut
+            logo.style.opacity = '0'; // Masquez le logo en le rendant transparent
+            
+        } 
+        
+        if(scrollTop==0){
+            // Faites défiler vers le haut
+            header.style.top = '0'; // Affichez le header en le déplaçant vers le bas
+            logo.style.opacity = '1'; // Affichez le logo en le rendant opaque
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Empêchez la valeur de la position de défilement d'être inférieure à 0
+        });
+        </script>
