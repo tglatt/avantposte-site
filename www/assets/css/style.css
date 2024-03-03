@@ -105,10 +105,20 @@ a {
 /* ------------- HEADER ------------- */
 
 .header {
-  /* margin-bottom: 3rem; */
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000; /* Assurez-vous que le header est au-dessus de tout le reste */
+  transition: top 0.3s; /* Ajoutez une transition fluide lors du défilement */
+
   padding-top: var(--space-menu);
   background-color: var(--color-primary);
+}
+
+.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out; /* Ajouter une transition pour un mouvement fluide */
 }
 
 .header .header-content {
@@ -196,6 +206,10 @@ section {
   margin: 0 auto; /* Centre le contenu horizontalement */
   padding-top: 20px; /* Ajoute un peu d'espace autour du contenu */
   padding-bottom: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
+.section-hero {
+  margin-top: 320px; /*Taille du header fixe sans le logo*/
 }
 
 .sec_padd1 {

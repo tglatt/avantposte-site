@@ -3,15 +3,17 @@
 <main class="main">
     <!-- Section 1 -->
     <section>
-        <div class="section-content">
-            <div class="title">
-                <h1><?= $page->title() ?></h1>
+        <div class='section-hero'>
+            <div class="section-content">
+                <div class="title">
+                    <h1><?= $page->title() ?></h1>
+                </div>
+                <hr>
+                <p><?= $page->sec1text()->kt() ?></p>
+                <p class="link_blackToPrimary"><a href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></p>
+                <hr>
+                <p><?= $page->sec1text2()->kt() ?></p>
             </div>
-            <hr>
-            <p><?= $page->sec1text()->kt() ?></p>
-            <p class="link_blackToPrimary"><a href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></p>
-            <hr>
-            <p><?= $page->sec1text2()->kt() ?></p>
         </div>
     </section>
 

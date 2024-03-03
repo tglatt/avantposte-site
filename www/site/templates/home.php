@@ -3,9 +3,11 @@
 <main class="main">
     <!-- Section 1 -->
     <section>
-        <div class="section-content">
-            <div class="titre">
-                <h1><?= $page->fulltitle() ?></h1>
+        <div class='section-hero'>
+            <div class="section-content">
+                <div class="titre">
+                    <h1><?= $page->fulltitle() ?></h1>
+                </div>
             </div>
         </div>
     </section>
