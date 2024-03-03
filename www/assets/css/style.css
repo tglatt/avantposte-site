@@ -7,12 +7,12 @@
   font-family: Agipo;
   src: url(/assets/font/Agipo_Regular.otf);
 }
-/* .main {
-  font-family: "Agipo";
+.main {
+  font-family: 'Agipo';
   font-style: normal;
   font-weight: 200;
   font-stretch: normal;
-} */
+}
 
 :root {
   /******** Colors *********/
@@ -84,14 +84,14 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background: var(--color-background);
+  padding: 0;
+  margin: 0;
 }
 img {
   width: 100%;
 }
 body {
-  padding: 0;
-
-  max-width: var(--maxwidth-xxl);
+  width: 100%;
   margin: 0 auto;
 }
 li {
@@ -104,15 +104,19 @@ a {
 
 /* ------------- HEADER ------------- */
 
-header {
+.header {
   /* margin-bottom: 3rem; */
+  width: 100%;
   padding-top: var(--space-menu);
-  padding-left: var(--space-1);
-  padding-right: var(--space-1);
   background-color: var(--color-primary);
 }
 
-header .menu .main_menu {
+.header .header-content {
+  max-width: var(--maxwidth-xxl);
+  margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+.header .menu .main_menu {
   /* display: inline; */
   /* flex-direction: row; */
   display: flex;
@@ -122,7 +126,7 @@ header .menu .main_menu {
   padding-top: var(--space-1);
   padding-bottom: var(--space-1);
 }
-header .menu .main_menu li .menu_item:hover {
+.header .menu .main_menu li .menu_item:hover {
   color: white;
 }
 .menu_item {
@@ -176,10 +180,18 @@ section:nth-child(even) {
 }
 
 section {
+  width: 100%;
   padding-top: var(--space-1);
   padding-bottom: var(--space-2);
-  margin: 0;
 }
+
+.section-content {
+  max-width: var(--maxwidth-xxl);
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding-top: 20px; /* Ajoute un peu d'espace autour du contenu */
+  padding-bottom: 20px; /* Ajoute un peu d'espace autour du contenu */
+}
+
 .sec_padd1 {
   padding-top: var(--space-1);
   padding-bottom: var(--space-1);
@@ -188,7 +200,7 @@ section {
 .sec_carousel {
   padding-top: 0;
   padding-bottom: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 hr {
   padding-top: var(--space-1);
@@ -372,17 +384,20 @@ button {
 /* ------------- FOOTER ------------- */
 .footer {
   /* background-color: var(--color-primary); */
+  width: 100%;
+}
+.footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--space-1);
-  padding-bottom: var(--space-1);
   padding-left: var(--space-4);
+  margin: 0 auto;
   padding-right: var(--space-4);
-
   font-size: var(--typosize-footer-p);
   line-height: var(--typointerline-footer-p);
+  max-width: var(--maxwidth-xxl);
 }
 .abonnez_vous input {
   width: 250px;
@@ -400,10 +415,9 @@ button {
 /* ------------- CAROUSEL ------------- */
 .slider-wrapper {
   /* margin: 1rem; */
+  width: 100%;
   position: relative;
   overflow: hidden;
-  padding-left: var(--space-5);
-  padding-right: var(--space-5);
   padding-top: var(--space-1);
   padding-bottom: var(--space-1);
 }
@@ -413,8 +427,9 @@ button {
   height: calc(100vh - 2rem);
   width: 100%;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
+  overflow-y: hidden;
   list-style: none;
   margin: 0;
   padding: 0;
