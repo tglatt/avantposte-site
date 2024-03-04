@@ -3,9 +3,9 @@
 <main class="main">
     <section>
         <div class='section-hero'>
-            <div class="section-content">
-                <div class="titre">
-                    <h1><?= $page->title() ?></h1>
+            <div class="mx-auto max-w-4xl">
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h1 class="mb-1 text-5xl tracking-tight text-gray-900 md:text-5xl lg:text-6xl"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h2><?= $page->Sec2titre2() ?></h2>
             </div>
@@ -32,7 +32,7 @@
 
     <!-- Section 3 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="info">
                 <h2><?= $page->sec3Titre2() ?></h2>
                 <hr>

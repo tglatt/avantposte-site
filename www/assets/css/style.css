@@ -90,6 +90,7 @@ html {
 img {
   width: 100%;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -122,7 +123,7 @@ a {
 }
 
 .header .header-content {
-  max-width: var(--maxwidth-xxl);
+  /*max-width: var(--maxwidth-xxl);*/
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
@@ -204,12 +205,10 @@ section {
 .section-content-gallery {
   width: 100%;
   margin: 0 auto; /* Centre le contenu horizontalement */
-  padding-top: 20px; /* Ajoute un peu d'espace autour du contenu */
-  padding-bottom: 20px; /* Ajoute un peu d'espace autour du contenu */
 }
 
 .section-hero {
-  margin-top: 320px; /*Taille du header fixe sans le logo*/
+  margin-top: 220px; /*Taille du header fixe sans le logo*/
 }
 
 .sec_padd1 {
@@ -546,10 +545,34 @@ footer .heart {
 
 .gallery-cell {
   width: 33%;
-  /*height: 600px;*/
   margin-right: 100px;
   margin-left: 100px;
 }
+
+@media screen and (max-width: 976px) {
+  .gallery-cell {
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-cell {
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-cell {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 /* Appliquez le filtre grayscale à l'image par défaut */
 .gallery-cell img {
   filter: grayscale(100%);

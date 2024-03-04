@@ -1,7 +1,7 @@
 <!--OLD CARROUSEL
 
 <section >
-	<div class='section-content'>
+	<div class='mx-auto max-w-4xl'>
 		<div class="slider-wrapper">
 			<button class="slide-arrow" id="slide-arrow-prev">
 				&#8249;

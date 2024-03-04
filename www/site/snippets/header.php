@@ -8,6 +8,7 @@
     <link href="//webfonts3.radimpesko.com/RP-W-eeaadf78-9027-46dc-b0dc-378558cb6cf0" rel="stylesheet">
     <title><?= $site->title() ?></title>
     <?= css('assets/css/style.css') ?>
+    <?= css('assets/css/styles.css') ?>
     <?= css('assets/css/flickity.css') ?>
     <?= css('@auto') ?>
 
@@ -22,7 +23,7 @@
 <body>
 
     <header class="header">
-        <div class="header-content">
+        <div class="mx-auto max-w-4xl lg:max-w-3xl">
 
             <a href="<?= $site->url() ?>" class="logo">
                 <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
@@ -152,7 +153,7 @@
         // Vérifiez si la position de défilement est supérieure à la dernière position de défilement
         if (scrollTop > lastScrollTop) {
             // Faites défiler vers le bas
-            header.style.top = '-250px'; // Masquez le header en déplaçant vers le haut
+            header.style.top = '-150px'; // Masquez le header en déplaçant vers le haut
             logo.style.opacity = '0'; // Masquez le logo en le rendant transparent
             //header.style.backgroundColor = '#fff'; // Masquez le logo en le rendant transparent
             //header.style.border='1px solid #f4f4f4'

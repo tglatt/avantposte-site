@@ -5,7 +5,7 @@
     <!-- Section 1 -->
     <section>
         <div class='section-hero'>
-            <div class="section-content">
+            <div class="mx-auto max-w-4xl">
                 <div class="titre">
                     <h1><?= $page->title() ?></h1>
                 </div>
@@ -15,7 +15,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="info">
                 <div class="small_p"><?= $page->sec2text()->kt() ?></div>
 
@@ -34,7 +34,7 @@
 
     <!-- Section 3 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h2><?= $page->sec3titre2() ?></h2>
             </div>
@@ -62,7 +62,7 @@
 
     <!-- Section 5 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h2><?= $page->sec5titre2() ?></h2>
             </div>
@@ -76,7 +76,7 @@
 
     <!-- Section 6 -->
         <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h2><?= $page->sec6titre2() ?></h2>
             </div>
@@ -95,7 +95,7 @@
 
     <!-- Section 7 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h1><?= $page->sec7titre1bis() ?></h1>
             </div>
@@ -104,7 +104,7 @@
 
     <!-- Section 8 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="titre">
                 <h2><?= $page->sec8subtitle() ?></h2>
             </div>

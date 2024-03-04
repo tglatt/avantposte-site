@@ -4,9 +4,9 @@
     <!-- Section 1 -->
     <section>
         <div class='section-hero'>
-            <div class="section-content">
-                <div class="titre">
-                    <h1><?= $page->fulltitle() ?></h1>
+            <div class="mx-auto max-w-4xl">
+                <div class="lg:px-20 md:px-10 px-4">
+                <h1 class="mb-1 text-5xl tracking-tight text-gray-900 md:text-5xl lg:text-6xl"><?= $page->fulltitle() ?></h1>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content-gallery">
+        <div class="mx-auto mx-auto max-w-4xl-gallery py-2">
             <div class="sec_carousel">
                 <?php snippet('carousel-images', slots: true) ?>
                 <?php slot('images') ?>
@@ -26,10 +26,10 @@
 
     <!-- Section 3 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="listActivite">
-                <div class="chapeau">
-                    <p><?= $page->chapeau() ?></p>
+                <div class="lg:px-20 md:px-10 px-4">
+                <h1 class="mb-4 text-4xl tracking-tight text-gray-900 md:text-4xl lg:text-5xl"><?= $page->chapeau() ?></h1>
                 </div>
             </div>
         
@@ -61,11 +61,10 @@
 
     <!-- Section 4 -->
     <section>
-        <div class="section-content">
-            <div class="chapeau">
-
-                <p><?= $page->contactezNousText() ?></p>
-            </div>
+        <div class="mx-auto max-w-4xl">
+            <h1 class="mb-4 text-4xl tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
+               <?= $page->contactezNousText() ?>
+            </h1>
             <hr>
             <hr>
             <div class="bouton">
@@ -85,12 +84,14 @@
 
     <!-- Section 6 -->
     <section>
-        <div class="section-content">
-            <div class="titre">
-                <h1><?= $page->Sec6Title1() ?></h1>
-                <hr>
-                <hr>
-                <div class="medium_p"><?= $page->sec6Text()->kt() ?></div>
+        <div class="mx-auto max-w-4xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h1 class="mb-4 text-4xl tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
+                    <?= $page->Sec6Title1() ?>
+                </h1>
+                <p class="mb-6 text-lg font-normal lg:text-xl sm:px-16 xl:px-48">
+                    <?= $page->sec6Text()->kt() ?>
+                </p>
             </div>
             <hr>
             <hr>

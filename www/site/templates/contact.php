@@ -4,7 +4,7 @@
     <!-- Section 1 -->
     <section>
         <div class='section-hero'>
-            <div class="section-content">
+            <div class="mx-auto max-w-4xl">
                 <div class="title">
                     <h1><?= $page->title() ?></h1>
                 </div>
@@ -19,7 +19,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="info">
                 <h2><?= $page->sec2title2() ?></h2>
                 <hr>

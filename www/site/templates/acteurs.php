@@ -5,7 +5,7 @@
     <!-- Section 1 -->
     <section>
         <div class='section-hero'>
-            <div class="section-content">
+            <div class="mx-auto max-w-4xl">
                 <div class="titre">
                     <h1><?= $page->title() ?></h1>
                 </div>
@@ -15,7 +15,7 @@
 
     <!-- Section 2 -->
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="sec_padd1">
                 <div class="info">
                     <div class="small_p"><?= $page->sec2text()->kt() ?></div>
@@ -25,7 +25,7 @@
     </section>
 
     <section>
-        <div class="section-content">
+        <div class="mx-auto max-w-4xl">
             <div class="grid_personnnes">
                 <?php foreach ($page->children()->listed() as $personne) : ?>
                     <div class="personne">
