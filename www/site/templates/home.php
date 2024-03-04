@@ -70,8 +70,10 @@
             <div class="bouton">
 
                 <a href="<?= page('contact.php')->url() ?>">
-                    <button class="btn_primary">
-                        <?= $page->contactezNousButton() ?>
+                    <button class="px-3 py-1 border-1 hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring focus:ring-green-300">
+                        <h3 class="text-lg md:text-xl lg:text-2xl">
+                            <?= $page->contactezNousButton() ?>
+                        </h1>
                     </button>
                 </a>
             </div>
