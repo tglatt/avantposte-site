@@ -1,7 +1,7 @@
 <!--OLD CARROUSEL
 
 <section >
-	<div class='mx-auto max-w-4xl'>
+	<div class='mx-auto max-w-4xl lg:max-w-5xl'>
 		<div class="slider-wrapper">
 			<button class="slide-arrow" id="slide-arrow-prev">
 				&#8249;
@@ -23,7 +23,7 @@
 
 
 
-<section>
+<section class='py-16 md:py-32'>
 	<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,   "prevNextButtons": false }'>
 		<?php foreach ($page->images() as $img) : ?>
 			<?php if (!str_contains($img->name(), 'NOTONCAROUSEL')) : ?>

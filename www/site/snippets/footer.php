@@ -1,4 +1,4 @@
-<section class="footer">
+<section class="footer pb-10 pt-6">
     <div class="footer-content">
         <div class="abonnez_vous">
             Abonnez-vous à notre lettre d’informations :

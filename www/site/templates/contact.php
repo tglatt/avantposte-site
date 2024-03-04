@@ -2,14 +2,16 @@
 
 <main class="main">
     <!-- Section 1 -->
-    <section>
+    <section class='py-16 md:py-32'>
         <div class='section-hero'>
-            <div class="mx-auto max-w-4xl">
-                <div class="title">
-                    <h1><?= $page->title() ?></h1>
+            <div class="mx-auto max-w-4xl lg:max-w-5xl">
+                
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h1 class="mb-8 text-5xl tracking-normal text-gray-900 md:text-5xl lg:text-6xl"><?= $page->title() ?></h1>
                 </div>
-                <hr>
-                <p><?= $page->sec1text()->kt() ?></p>
+                <div class="lg:px-20 md:px-10 px-4">
+                    <p><?= $page->sec1text()->kt() ?></p>
+                </div>
                 <p class="link_blackToPrimary"><a href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></p>
                 <hr>
                 <p><?= $page->sec1text2()->kt() ?></p>
@@ -18,11 +20,13 @@
     </section>
 
     <!-- Section 2 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
-                <h2><?= $page->sec2title2() ?></h2>
-                <hr>
+                
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl"><?= $page->sec2title2() ?></h2>
+                </div>
 
                 <div class="two_col">
                     <div class="col1">

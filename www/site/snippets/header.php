@@ -23,7 +23,7 @@
 <body>
 
     <header class="header">
-        <div class="mx-auto max-w-4xl lg:max-w-3xl">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl">
 
             <a href="<?= $site->url() ?>" class="logo">
                 <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
@@ -48,10 +48,38 @@
                         </div>
                         <div class="sub_menu" id="sub_menu_activite">
                             <ul>
-                                <li><a href="/activites/coworking">Coworking</a></li>
-                                <li><a href="/activites/associations">Associations</a></li>
-                                <li><a href="/activites/logements">Logements</a></li>
-                                <li><a href="/activites/restaurant">Restaurant</a></li>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/activites/coworking">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                            Coworking
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/activites/associations">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                            Associations
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/activites/Logements">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                            Logements
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/activites/Logements">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                            Restaurant
+                                        </a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -71,19 +99,27 @@
 
                             <div class="sub_menu" id="sub_menu_avantposte">
                                 <ul>
-                                    <li><a href="/avantposte/la-cooperative">la coopérative</a></li>
-                                    <li><a href="/avantposte/le-lieu">le lieu</a></li>
+                                    
+                                    <li>
+                                        <div class="menu_item">
+                                            <a href="/avantposte/la-cooperative">
+                                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                                La coopérative
+                                            </a>
+                                        </div>
+                                    </li>
+                                        
+                                    <li>
+                                    <div class="menu_item">
+                                            <a href="/avantposte/le-lieu">
+                                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
+                                                Le lieu
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
-                        <!-- <li>
-                            <a href="/actualite">
-                                <div class="menu_item">
-                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
-                                    Actualités
-                                </div>
-                            </a>
-                        </li> -->
                         <li>
                             <a href="/contact">
                                 <div class="menu_item">
@@ -153,7 +189,7 @@
         // Vérifiez si la position de défilement est supérieure à la dernière position de défilement
         if (scrollTop > lastScrollTop) {
             // Faites défiler vers le bas
-            header.style.top = '-150px'; // Masquez le header en déplaçant vers le haut
+            header.style.top = '-180px'; // Masquez le header en déplaçant vers le haut
             logo.style.opacity = '0'; // Masquez le logo en le rendant transparent
             //header.style.backgroundColor = '#fff'; // Masquez le logo en le rendant transparent
             //header.style.border='1px solid #f4f4f4'

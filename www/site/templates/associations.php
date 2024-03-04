@@ -1,18 +1,18 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section>
+    <section class='py-16 md:py-24'>
         <div class='section-hero'>
-            <div class="mx-auto max-w-4xl">
-                <div class="titre">
-                    <h1><?= $page->title() ?></h1>
+            <div class="mx-auto max-w-4xl lg:max-w-5xl">
+                <div class="lg:px-20 md:px-10 px-4">
+                <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section>
+    <section class='py-16 md:py-24'>
             <div class="sec_carousel">
                 <?php snippet('carousel-images', slots: true) ?>
                 <?php slot('images') ?>
@@ -21,8 +21,8 @@
             </div>
     </section>
 
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <div class="medium_p"><?= $page->text1()->kt() ?></div>
                 <hr>
@@ -33,8 +33,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <h2><?= $page->sec4titre2() ?></h2>
                 <hr>
@@ -68,8 +68,8 @@
     </section>
 
     <!-- Section 5 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <h2><?= $page->sec5Titre2() ?></h2>
                 <hr>
@@ -87,8 +87,8 @@
     </section>
 
     <!-- Section 6 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <h2><?= $page->sec6Titre2() ?></h2>
             </div>
@@ -158,8 +158,8 @@
     </section>
 
     <!-- Section 7 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <h2><?= $page->sec7Titre2() ?></h2>
                 <hr>
@@ -173,8 +173,8 @@
     </section>
 
     <!-- Section 8 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
                 <h2><?= $page->sec8Titre2() ?></h2>
                 <hr>

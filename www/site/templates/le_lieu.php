@@ -3,23 +3,23 @@
 <main class="main">
 
     <!-- Section 1 -->
-    <section>
+    <section class='py-16 md:py-32'>
         <div class='section-hero'>
-            <div class="mx-auto max-w-4xl">
-                <div class="titre">
-                    <h1><?= $page->title() ?></h1>
+            <div class="mx-auto max-w-4xl lg:max-w-5xl">
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 2 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
-            <div class="titre">
-                <h2><?= $page->sec2titre2() ?></h2>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl"><?= $page->sec2titre2() ?></h2>
             </div>
-            <hr>
+            
             <div class="info">
                 <div class="small_p"><?= $page->sec2text()->kt() ?></div>
 
@@ -28,10 +28,13 @@
     </section>
 
     <!-- Section 3 -->
-    <section>
-        <div class="mx-auto max-w-4xl">
-            <div class="titre">
-                <h2><?= $page->sec3titre2() ?></h2>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl"><?= $page->sec3titre2() ?></h2>
+            </div>
+
+                
             </div>
             <hr>
             <div class="info">
@@ -70,25 +73,25 @@
     </section>
 
     <!-- Section 4 -->
-    <section>
-            <div class="sec_carousel">
-                <hr>
-                <div class="titre">
-                    <h2><?= $page->sec4titre2() ?></h2>
-                </div>
-                <hr>
-
-                <?php snippet('carousel-images', slots: true) ?>
-                <?php slot('images') ?>
-                <?php endslot() ?>
-                <?php endsnippet() ?>
-
-                <div class="info">
-                    <div class="small_p"><?= $page->sec4text()->kt() ?></div>
-                </div>
-                <hr>
-                <hr>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl"><?= $page->sec4titre2() ?></h2>
             </div>
+        </div>
+
+        <?php snippet('carousel-images', slots: true) ?>
+        <?php slot('images') ?>
+        <?php endslot() ?>
+        <?php endsnippet() ?>
+
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="info">
+                <div class="small_p"><?= $page->sec4text()->kt() ?></div>
+            </div>
+        </div>
+        <hr>
+        
     </section>
 
     <?php snippet('footer') ?>

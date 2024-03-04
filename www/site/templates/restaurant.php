@@ -1,9 +1,9 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section>
+    <section class='py-16 md:py-32'>
         <div class='section-hero'>
-            <div class='mx-auto max-w-4xl'>
+            <div class='mx-auto max-w-4xl lg:max-w-5xl'>
                 <div class="titre">
                     <h1><?= $page->title() ?></h1>
                 </div>
@@ -12,7 +12,7 @@
     </section>
 
     <!-- Section 2 Carrousel -->
-    <section>
+    <section class='py-16 md:py-32'>
             <div class="sec_carousel">
                 <?php snippet('carousel-images', slots: true) ?>
                 <?php slot('images') ?>
@@ -22,8 +22,8 @@
     </section>
 
     <!-- Section 3 -->
-    <section>
-        <div class='mx-auto max-w-4xl'>
+    <section class='py-16 md:py-32'>
+        <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="titre">
                 <h2><?= $page->Sec3titre2() ?></h2>
             </div>
@@ -37,8 +37,8 @@
     </section>
 
     <!-- Section 4 -->
-    <section>
-        <div class='mx-auto max-w-4xl'>
+    <section class='py-16 md:py-32'>
+        <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="info">
                 <h2><?= $page->sec4Titre2() ?></h2>
                 <hr>
@@ -56,7 +56,7 @@
     </section>
 
     <!-- Section 5 -->
-    <section>
+    <section class='py-16 md:py-32'>
         <div class='section-centent'>
             <div class="info">
                 <h2><?= $page->sec5Titre2() ?></h2>
