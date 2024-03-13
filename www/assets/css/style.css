@@ -676,3 +676,27 @@ footer .heart {
 .gallery-cell:hover::after {
   display: none;
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour la sortie du header-1 */
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Ajout de la transition */
+.header {
+  transition: transform 0.3s ease;
+}
