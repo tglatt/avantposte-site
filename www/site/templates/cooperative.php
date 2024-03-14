@@ -4,10 +4,10 @@
 
     <!-- Section 1 -->
     <section class='py-16 md:py-32'>
-    <div class='section-hero'>
+        <div class='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-4">
-                    <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
+                    <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl font-sans"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
@@ -37,7 +37,8 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec3titre2() ?></h1>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec3titre2() ?>
+                    </h1>
             </div>
             <hr>
             <div class="info">
@@ -62,9 +63,10 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec5titre2() ?></h1>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec5titre2() ?>
+                    </h1>
             </div>
-            
+
             <div class="info">
                 <div class="small_p"><?= $page->sec5text()->kt() ?></div>
             </div>
@@ -75,11 +77,12 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec6titre2() ?></h1>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec6titre2() ?>
+                    </h1>
             </div>
             <div class="image">
                 <?php if ($image = $page->image('NOTONCAROUSEL_gouvernance.png')) : ?>
-                    <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
+                <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
                 <?php endif ?>
             </div>
             <hr>
@@ -93,7 +96,8 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec7titre1bis() ?></h1>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec7titre1bis() ?>
+                    </h1>
             </div>
         </div>
     </section>
@@ -102,7 +106,8 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec8subtitle() ?></h1>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec8subtitle() ?>
+                    </h1>
             </div>
             <div class="info">
                 <div class="small_p"><?= $page->sec8text1()->kt() ?></div>

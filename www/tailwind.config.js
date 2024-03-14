@@ -9,7 +9,8 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      sans: ['Agipo', 'sans-serif'],
+      body: ['Agipo', 'Inter', 'ui-sans-serif', 'system-ui'],
+      sans: ['Agipo', 'Inter', 'ui-sans-serif', 'system-ui'],
     },
     extend: {
       spacing: {

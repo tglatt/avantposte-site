@@ -1,4 +1,3 @@
-
 <?php snippet('header') ?>
 
 <main class="main">
@@ -6,4 +5,4 @@
     <p><?= $page->text()->kt() ?></p>
 </main>
 
-<?php snippet('footer') ?> 
+<?php snippet('footer') ?>

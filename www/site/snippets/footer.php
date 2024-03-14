@@ -2,7 +2,7 @@
     <div class="footer-content">
         <div class="abonnez_vous">
             Abonnez-vous à notre lettre d’informations :
-                <input type="text" />
+            <input type="text" />
         </div>
         <div class="social_media">
 

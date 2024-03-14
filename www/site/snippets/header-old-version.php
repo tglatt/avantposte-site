@@ -16,54 +16,54 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <?php
+    <?php
   /*
     In the title tag we show the title of our
     site and the title of the current page
   */
   ?>
-  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
+    <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
 
-  <?php
+    <?php
   /*
     Stylesheets can be included using the `css()` helper.
     Kirby also provides the `js()` helper to include script file.
     More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers
   */
   ?>
-  <?= css([
+    <?= css([
     'assets/css/index.css',
   ]) ?>
 
-  <?php
+    <?php
   /*
     The `url()` helper is a great way to create reliable
     absolute URLs in Kirby that always start with the
     base URL of your site.
   */
   ?>
-  <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
 </head>
 
 <body>
 
-  <header class="header">
-    <?php
+    <header class="header">
+        <?php
     /*
       We use `$site->url()` to create a link back to the homepage
       for the logo and `$site->title()` as a temporary logo. You
       probably want to replace this with an SVG.
     */
     ?>
-    <a class="logo" href="<?= $site->url() ?>">
-      <?= svg('assets/icons/logo.svg') ?>
-    </a>
+        <a class="logo" href="<?= $site->url() ?>">
+            <?= svg('assets/icons/logo.svg') ?>
+        </a>
 
-    <nav class="menu">
-      <?php
+        <nav class="menu">
+            <?php
       /*
         In the menu, we only fetch listed pages,
         i.e. the pages that have a prepended number
@@ -76,11 +76,12 @@
         https://getkirby.com/docs/reference/panel/blueprints/page#statuses
       */
       ?>
-      <?php foreach ($site->children()->listed() as $item) : ?>
-        <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-      <?php endforeach ?>
-      <?php snippet('social') ?>
-    </nav>
-  </header>
+            <?php foreach ($site->children()->listed() as $item) : ?>
+            <a <?php e($item->isOpen(), 'aria-current="page"') ?>
+                href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
+            <?php endforeach ?>
+            <?php snippet('social') ?>
+        </nav>
+    </header>
 
-  <main class="main">
+    <main class="main">

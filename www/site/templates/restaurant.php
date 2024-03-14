@@ -13,12 +13,12 @@
 
     <!-- Section 2 Carrousel -->
     <section class='py-16 md:py-32'>
-            <div class="sec_carousel">
-                <?php snippet('carousel-images', slots: true) ?>
-                <?php slot('images') ?>
-                <?php endslot() ?>
-                <?php endsnippet() ?>
-            </div>
+        <div class="sec_carousel">
+            <?php snippet('carousel-images', slots: true) ?>
+            <?php slot('images') ?>
+            <?php endslot() ?>
+            <?php endsnippet() ?>
+        </div>
     </section>
 
     <!-- Section 3 -->
@@ -64,11 +64,13 @@
                 <div class="small_p"><?= $page->sec5Text1()->kt() ?></div>
                 <hr>
                 <div class="small_p">
-                    <a class="link_blackToPrimary" href="https://www.instagram.com/hobo_bistrot/"><?= $page->LienInstaHobo()->kt() ?></a>
+                    <a class="link_blackToPrimary"
+                        href="https://www.instagram.com/hobo_bistrot/"><?= $page->LienInstaHobo()->kt() ?></a>
                 </div>
                 <hr>
                 <div class="small_p">
-                    <a class="link_blackToPrimary" href="https://www.facebook.com/profile.php?id=100092677400813&locale=fr_FR"><?= $page->LienFacebookHobo()->kt() ?></a>
+                    <a class="link_blackToPrimary"
+                        href="https://www.facebook.com/profile.php?id=100092677400813&locale=fr_FR"><?= $page->LienFacebookHobo()->kt() ?></a>
                 </div>
             </div>
         </div>
