@@ -25,8 +25,8 @@
     <header class="header shadow-md" id='header-1'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl ">
 
-            <a href="<?= $site->url() ?>" class="flex mb-auto space-x-3 rtl:space-x-reverse">
-                <img id='logo-1' src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
+            <a href="<?= $site->url() ?>" class="logo">
+                <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
             </a>
 
             <nav class="menu">
@@ -336,14 +336,21 @@
         const header1 = document.getElementById('header-1');
         const header2 = document.getElementById('header-2');
 
-        // Fonction pour gérer le comportement en fonction de la taille de la fenêtre
-        function handleWindowSize() {
+         // Vérifie la largeur de l'écran
+         if (window.innerWidth < 768) {
+                header1.classList.add('hidden'); // Cache le header-1 sur les petits écrans
+                header2.classList.remove('hidden'); // Affiche le header-2 sur les petits écrans
+        } 
+
+        window.addEventListener('scroll', function () {
+
+
             // Vérifie la largeur de l'écran
             if (window.innerWidth < 768) {
                 header1.classList.add('hidden'); // Cache le header-1 sur les petits écrans
                 header2.classList.remove('hidden'); // Affiche le header-2 sur les petits écrans
             } else {
-                // Vérifie si la fenêtre est en haut de la page
+               // Vérifie si la fenêtre est en haut de la page
                 if (window.scrollY === 0) {
                     header1.classList.remove('hidden'); // Affiche le header-1
                     header2.classList.add('hidden'); // Cache le header-2
@@ -352,44 +359,8 @@
                     header2.classList.remove('hidden'); // Affiche le header-2
                 }
             }
-        }
-
-        // Événement de scroll
-        window.addEventListener('scroll', function () {
-            handleWindowSize();
         });
 
-        // Événement de redimensionnement de la fenêtre
-        window.addEventListener('resize', function () {
-            handleWindowSize();
-        });
-
-        // Appel initial de la fonction pour gérer le comportement lors du chargement initial de la page
-        handleWindowSize();
-
-    </script>
-
-<script>
-    /*
-        window.addEventListener('scroll', function () {
-            const header1 = document.getElementById('header-1');
-            const header2 = document.getElementById('header-2');
-            const logo = document.getElementById('logo-1');
-
-            // Vérifie si la fenêtre est en haut de la page
-            if (window.scrollY === 0) {
-                header1.classList.remove('hidden'); // Affiche le header-1
-                header2.classList.add('hidden'); // Cache le header-2
-                logo.style.height = 'auto'; // Réinitialise la taille du logo à sa valeur par défaut
-            } else {
-                //header1.classList.add('hidden'); // Cache le header-1
-                //header2.classList.remove('hidden'); // Affiche le header-2
-                const maxHeight = 90; // Taille finale souhaitée (40px dans votre cas)
-                const scrollRatio = window.scrollY / maxHeight;
-                const newHeight = Math.max(maxHeight - (scrollRatio * maxHeight), 32); // Taille minimale (8px)
-                logo.style.height = newHeight + 'px'; // Réduit progressivement la taille du logo lors du défilement vers le bas
-            }
-        });*/
     </script>
 
     <script>

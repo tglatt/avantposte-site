@@ -21,12 +21,12 @@
 
 
 <body>
+<!--
+    <header class="header">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl">
 
-    <header class="header shadow-md" id='header-1'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl ">
-
-            <a href="<?= $site->url() ?>" class="flex mb-auto space-x-3 rtl:space-x-reverse">
-                <img id='logo-1' src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
+            <a href="<?= $site->url() ?>" class="logo">
+                <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
             </a>
 
             <nav class="menu">
@@ -131,19 +131,14 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>-->
 
-    <header id='header-2' class="hidden">
-    <nav class="bg-primary fixed w-full z-20 top-0 start-0 shadow-md">
+    <header>
+    <nav class="bg-primary fixed w-full z-20 top-0 start-0">
         <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
-               <!-- Conteneur pour le logo -->
-   
-                    <a href="<?= $site->url() ?>" class="flex mb-auto items-center space-x-3 rtl:space-x-reverse">
-                        <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" class="h-8"> <!-- Ajustez la taille du logo selon vos besoins -->
-                    </a>
-                    <!-- Ajoutez ici d'autres éléments si nécessaire -->
-              
-            
+            <a href="<?= $site->url() ?>" class="logo"  class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="<?= $site->image('logo.svg')->url() ?>" alt="Logo Avant-Poste" />
+            </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <!--<button type="button" class="text-white bg-primary hover:bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">Contacter-nous</button>-->
             <button data-collapse-toggle="navbar-sticky" id='toogle-button' type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -153,12 +148,12 @@
                 </svg>
             </button>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ml-auto" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 
                     <li>
                         <a href="/">
-                            <div class="menu_item cursor-pointer">
+                            <div class="menu_item">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                                 Accueil
                             </div>
@@ -166,11 +161,11 @@
                     </li>
                     <li>
                   
-                        <div class="menu_item cursor-pointer" id="toggle_show_activite-2">
+                        <div class="menu_item" id="toggle_show_activite">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             Activités
                         </div>
-                        <div class="ml-4" id="sub_menu_activite-2">
+                        <div class="ml-4" id="sub_menu_activite">
                             <ul>
                                 <li>
                                     <div class="menu_item">
@@ -216,12 +211,12 @@
                         </a>
                     </li>
                     <li>
-                        <div class="menu_item cursor-pointer" id="toggle_show_avantposte-2">
+                        <div class="menu_item" id="toggle_show_avantposte">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>" alt="Cercle qui entoure le menu" />
                             l'Avant Poste
                         </div>
 
-                            <div class="sub_menu" id="sub_menu_avantposte-2">
+                            <div class="sub_menu" id="sub_menu_avantposte">
                                 <ul>
                                     
                                     <li>
@@ -304,96 +299,10 @@
                 })
     </script>
 
-<script>
-        document.getElementById("sub_menu_activite-2").style.display = 'none'
-        document
-            .getElementById("toggle_show_activite-2")
-            .addEventListener("click",
-                () => {
-                    if (document.getElementById("sub_menu_activite-2").style.display == 'block') {
-                        document.getElementById("sub_menu_activite-2").style.display = 'none'
-                    } else {
-                        document.getElementById("sub_menu_activite-2").style.display = 'block'
-                        document.getElementById("sub_menu_avantposte-2").style.display = 'none'
-                    }
-                })
 
-        document.getElementById("sub_menu_avantposte-2").style.display = 'none'
-        document
-            .getElementById("toggle_show_avantposte-2")
-            .addEventListener("click",
-                () => {
-                    if (document.getElementById("sub_menu_avantposte-2").style.display == 'block') {
-                        document.getElementById("sub_menu_avantposte-2").style.display = 'none'
-                    } else {
-                        document.getElementById("sub_menu_avantposte-2").style.display = 'block'
-                        document.getElementById("sub_menu_activite-2").style.display = 'none'
-                    }
-                })
-    </script>
+
 
     <script>
-        const header1 = document.getElementById('header-1');
-        const header2 = document.getElementById('header-2');
-
-        // Fonction pour gérer le comportement en fonction de la taille de la fenêtre
-        function handleWindowSize() {
-            // Vérifie la largeur de l'écran
-            if (window.innerWidth < 768) {
-                header1.classList.add('hidden'); // Cache le header-1 sur les petits écrans
-                header2.classList.remove('hidden'); // Affiche le header-2 sur les petits écrans
-            } else {
-                // Vérifie si la fenêtre est en haut de la page
-                if (window.scrollY === 0) {
-                    header1.classList.remove('hidden'); // Affiche le header-1
-                    header2.classList.add('hidden'); // Cache le header-2
-                } else {
-                    header1.classList.add('hidden'); // Cache le header-1
-                    header2.classList.remove('hidden'); // Affiche le header-2
-                }
-            }
-        }
-
-        // Événement de scroll
-        window.addEventListener('scroll', function () {
-            handleWindowSize();
-        });
-
-        // Événement de redimensionnement de la fenêtre
-        window.addEventListener('resize', function () {
-            handleWindowSize();
-        });
-
-        // Appel initial de la fonction pour gérer le comportement lors du chargement initial de la page
-        handleWindowSize();
-
-    </script>
-
-<script>
-    /*
-        window.addEventListener('scroll', function () {
-            const header1 = document.getElementById('header-1');
-            const header2 = document.getElementById('header-2');
-            const logo = document.getElementById('logo-1');
-
-            // Vérifie si la fenêtre est en haut de la page
-            if (window.scrollY === 0) {
-                header1.classList.remove('hidden'); // Affiche le header-1
-                header2.classList.add('hidden'); // Cache le header-2
-                logo.style.height = 'auto'; // Réinitialise la taille du logo à sa valeur par défaut
-            } else {
-                //header1.classList.add('hidden'); // Cache le header-1
-                //header2.classList.remove('hidden'); // Affiche le header-2
-                const maxHeight = 90; // Taille finale souhaitée (40px dans votre cas)
-                const scrollRatio = window.scrollY / maxHeight;
-                const newHeight = Math.max(maxHeight - (scrollRatio * maxHeight), 32); // Taille minimale (8px)
-                logo.style.height = newHeight + 'px'; // Réduit progressivement la taille du logo lors du défilement vers le bas
-            }
-        });*/
-    </script>
-
-    <script>
-        
         /*
         const header = document.querySelector('.header');
         const logo = document.querySelector('.logo');
