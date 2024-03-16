@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section class='py-16 md:py-32'>
-        <div class='section-hero'>
+    <section class='py-16 md:py-16'>
+        <div class='mt-12 md:mt-72' id='section-hero'>
             <div class='mx-auto max-w-4xl lg:max-w-5xl'>
                 <div class="titre">
                     <h1><?= $page->title() ?></h1>
@@ -12,7 +12,7 @@
     </section>
 
     <!-- Section 2 Carrousel -->
-    <section class='py-16 md:py-32'>
+    <section class='pt-8 md:pb-0'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>

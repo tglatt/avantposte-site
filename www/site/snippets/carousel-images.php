@@ -1,28 +1,3 @@
-<!--OLD CARROUSEL
-
-<section >
-	<div class='mx-auto max-w-4xl lg:max-w-5xl'>
-		<div class="slider-wrapper">
-			<button class="slide-arrow" id="slide-arrow-prev">
-				&#8249;
-			</button>
-			<button class="slide-arrow" id="slide-arrow-next">
-				&#8250;
-			</button>
-			<ul class="slides-container" id="slides-container">
-			<?php foreach ($page->images() as $img) : ?>
-				<?php if (!str_contains($img->name(), 'NOTONCAROUSEL')) : ?>
-					<?= $img ?>
-				<?php endif ?>
-
-			<?php endforeach ?>
-			</ul>
-		</div>	
-	</div>
-</section>-->
-
-
-
 <section class='py-16 md:py-16'>
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,   "prevNextButtons": false }'>
         <?php foreach ($page->images() as $img) : ?>
@@ -34,22 +9,16 @@
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-
+<style>
+.flickity-viewport {
+    overflow: visible;
+    position: relative;
+    height: 100%;
+}
+</style>
 <script>
 const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
-//const prevButton = document.getElementById("slide-arrow-prev");
-//const nextButton = document.getElementById("slide-arrow-next");
-
-/*nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
-});*/
 </script>
 
 <script>
@@ -80,5 +49,35 @@ cells.forEach(function(cell) {
         // Supprimez la classe .hovered lorsque la souris quitte la cellule
         this.classList.remove('hovered');
     });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery');
+    const flickity = new Flickity(gallery);
+
+    // Fonction pour appliquer le décalage aux diapositives qui ne sont pas au centre
+    function applyOffsetToNonCenteredSlides() {
+        const cells = gallery.querySelectorAll('.gallery-cell');
+        const centerIndex = flickity.selectedIndex;
+
+        // Parcours de toutes les diapositives
+        cells.forEach((cell, index) => {
+            if (index !== centerIndex) {
+                cell.style.transform =
+                    'translateY(-40px)'; // Appliquer le décalage de 40px vers le haut
+            } else {
+                cell.style.transform =
+                    'none'; // Réinitialiser le décalage pour la diapositive au centre
+            }
+        });
+    }
+
+    // Écouter l'événement lorsque le carrousel change de diapositive
+    flickity.on('change', applyOffsetToNonCenteredSlides);
+
+    // Appliquer le décalage initial
+    applyOffsetToNonCenteredSlides();
 });
 </script>

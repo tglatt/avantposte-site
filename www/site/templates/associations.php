@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section class='py-16 md:py-24'>
-        <div class='section-hero'>
+    <section class='py-16 md:py-16'>
+        <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-4">
                     <h1 class="mb-1 text-5xl leading-12 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
@@ -12,7 +12,7 @@
     </section>
 
 
-    <section class='py-16 md:py-24'>
+    <section class='pt-8 md:pb-0'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
@@ -24,12 +24,12 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="px-8 md:px-8">
-                <div class="text-2xl md:text-4xl mb-8">
+                <div class="text-2xl md:text-3xl mb-8">
                     <?= $page->text1()->kt() ?>
                 </div>
             </div>
             <div class="px-8 md:px-8 mb-8">
-                <a class="text-2xl md:text-4xl link_blackToPrimary" href="/contact"><?= $page->lien1()->kt() ?></a>
+                <a class="text-2xl md:text-3xl link_blackToPrimary" href="/contact"><?= $page->lien1()->kt() ?></a>
             </div>
         </div>
     </section>
@@ -76,7 +76,7 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
-                <h2><?= $page->sec5Titre2() ?></h2>
+                <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec5Titre2() ?></h2>
                 <hr>
                 <img>
                 <div class="two_col">
@@ -92,81 +92,82 @@
     </section>
 
     <!-- Section 6 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-16'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
-                <h2><?= $page->sec6Titre2() ?></h2>
+                <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec6Titre2() ?></h2>
             </div>
             <hr>
             <div class="info">
-                <div class="medium_p"><?= $page->sec6TextMediumA()->kt() ?></div>
+                <div class="text-center text-3xl"><?= $page->sec6TextMediumA()->kt() ?></div>
             </div>
             <hr>
-            <div class="tarifs">
-                <div class="tarif">
-                    <div class="tarif_prix">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6APrix1()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6AText1()->kt() ?>
                     </div>
                 </div>
-                <div class="tarif">
-                    <div class="tarif_prix">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6APrix2()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6AText2()->kt() ?>
                     </div>
                 </div>
-                <div class="tarif">
-                    <div class="tarif_prix">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6APrix3()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6AText3()->kt() ?>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="info">
-                <div class="medium_p"><?= $page->sec6TextMediumB()->kt() ?></div>
+                <div class="text-center text-3xl"><?= $page->sec6TextMediumB()->kt() ?></div>
             </div>
             <hr>
-            <div class="tarifs">
-                <div class="tarif">
-                    <div class="tarif_prix">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6BPrix1()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6BText1()->kt() ?>
                     </div>
                 </div>
-                <div class="tarif">
-                    <div class="tarif_prix">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6BPrix2()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6BText2()->kt() ?>
                     </div>
                 </div>
-                <div class="tarif">
-                    <div class="tarif_prix">
+                <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif_prix text-xl font-bold">
                         <?= $page->sec6BPrix3()->kt() ?>
                     </div>
-                    <div class="small_p">
+                    <div class="small_p mt-2">
                         <?= $page->sec6BText3()->kt() ?>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- Section 7 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-16'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
-                <h2><?= $page->sec7Titre2() ?></h2>
+                <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec7Titre2() ?></h2>
                 <hr>
                 <div class="medium_p">
                     <a class="link_blackToPrimary" href="/contact"><?= $page->sec7Link1()->kt() ?></a>

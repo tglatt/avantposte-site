@@ -370,9 +370,10 @@
         if (window.innerWidth < 768) {
             header1.classList.add('hidden'); // Cache le header-1 sur les petits écrans
             header2.classList.remove('hidden'); // Affiche le header-2 sur les petits écrans
+
         } else {
             // Vérifie si la fenêtre est en haut de la page
-            if (window.scrollY === 0) {
+            if (window.scrollY < 70) {
                 header1.classList.remove('hidden'); // Affiche le header-1
                 header2.classList.add('hidden'); // Cache le header-2
             } else {

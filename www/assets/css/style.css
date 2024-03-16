@@ -233,10 +233,6 @@ section {
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
-.section-hero {
-  margin-top: 280px; /*Taille du header fixe sans le logo*/
-}
-
 .sec_padd1 {
   padding-top: var(--space-1);
   padding-bottom: var(--space-1);

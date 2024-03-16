@@ -3,7 +3,7 @@
 <main class="main">
     <!-- Section 1 -->
     <section class='py-16 md:py-16'>
-        <div class='section-hero'>
+        <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-2">
                     <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->fulltitle() ?></h1>
@@ -13,7 +13,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section class='py-16 md:py-16'>
+    <section class='pt-8 md:pb-0'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
@@ -86,9 +86,9 @@
                 <h1 class="mb-4 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->Sec6Title1() ?>
                 </h1>
-                <p class="mb-6 text-lg font-normal lg:text-xl sm:px-16 xl:px-48">
+                <h2 class="mb-6 text-lg font-normal lg:text-xl sm:px-16 xl:px-48">
                     <?= $page->sec6Text()->kt() ?>
-                </p>
+                </h2>
             </div>
             <hr>
             <hr>
@@ -104,6 +104,10 @@
     <?php snippet('footer') ?>
 </main>
 
+
+
+
 </body>
+
 
 </html>

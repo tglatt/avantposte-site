@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'auth' => [
+      'methods' => ['password', 'password-reset']
+    ],
     'debug' => true,
     'routes' => [
         [

@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section class='py-16 md:py-32'>
-        <div class='section-hero'>
+    <section class='py-16 md:py-16'>
+        <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-4">
                     <h1 class="mb-1 text-5xl tracking-normal text-gray-900 md:text-5xl lg:text-6xl">

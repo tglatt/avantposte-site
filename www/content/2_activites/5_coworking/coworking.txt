@@ -2,7 +2,7 @@ Title: Des espaces de travail mutualisés dans un lieu dédié aux transitions �
 
 ----
 
-Sec3titre2: Nos tarifs standards
+Sec3titre2: Nos tarifs
 
 ----
 
@@ -10,13 +10,39 @@ Sec3titre3: Coworking
 
 ----
 
-Sec3text1:
+Sec3text1: En plein cœur de Die, l’Avant-Poste propose 30 postes de travail et différents types d’espaces pour répondre à vos besoins :
 
-En plein cœur de Die, l’Avant-Poste propose 30 postes de travail et différents types d’espaces pour répondre à vos besoins :
-<hr>Poste de travail - abonnement mensuel sans engagement : 156€ TTC
-<hr>Journée de coworking : 15€ TTC
-<hr>Carnet 10 jours de coworking :      120€ TTC
-<hr>Séminaire d'entreprise (réservation de plusieurs places, privatisation d'espaces, traiteur, etc.) : nous contacter
+----
+
+Sec3Prix1: 15€
+
+----
+
+Sec3Unite1: Journée de coworking
+
+----
+
+Sec3Prix2: 120€
+
+----
+
+Sec3Unite2: Carnet 10 jours de coworking
+
+----
+
+Sec3Prix3: 156€
+
+----
+
+Sec3Unite3: Abonnement mensuel sans engagement
+
+----
+
+Sec3Prix4: Nous contacter
+
+----
+
+Sec3Unite4: Séminaire d'entreprise (réservation de plusieurs places, privatisation d'espaces, traiteur, etc.)
 
 ----
 
