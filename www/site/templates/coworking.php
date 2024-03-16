@@ -31,7 +31,7 @@
 
             <div class="px-8 md:px-8">
                 <div class="text-4xl text-left py-8"><?= $page->sec3titre3()->kt() ?></div>
-                <div class="text-xl text-left py-8"><?= $page->sec3text1()->kt() ?></div>
+                <div class="text-2xl text-left py-8"><?= $page->sec3text1()->kt() ?></div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px-0 py-8">
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
                         <div class="text-8xl flex items-center justify-center mb-4">
@@ -64,7 +64,7 @@
             </div>
 
             <div class="px-8 md:px-8">
-                <div class="medium_p"><?= $page->sec3titre3bis()->kt() ?></div>
+                <div class="text-4xl text-left py-8"><?= $page->sec3titre3bis()->kt() ?></div>
                 <div style="column-count: 2;" class="text-2xl text-left">
                     <?= $page->sec3text2()->kt() ?>
                 </div>
@@ -107,25 +107,25 @@
                 <div class="text-2xl text-left"><?= $page->sec5Text1()->kt() ?></div>
                 <hr>
                 <hr>
-                <div class="info">
-                    <div class="medium_p"><?= $page->sec5titre3()->kt() ?></div>
-                    <hr>
-                    <div class="text-2xl text-left"><?= $page->sec5text2()->kt() ?></div>
-                </div>
+
+                <div class="medium_p"><?= $page->sec5titre3()->kt() ?></div>
+                <hr>
+                <div class="text-2xl text-left"><?= $page->sec5text2()->kt() ?></div>
+
                 <hr>
                 <hr>
-                <div class="info">
-                    <div class="medium_p"><?= $page->sec5titre3bis()->kt() ?></div>
-                    <hr>
-                    <div class="text-2xl text-left"><?= $page->sec5text3()->kt() ?></div>
-                </div>
+
+                <div class="medium_p"><?= $page->sec5titre3bis()->kt() ?></div>
+                <hr>
+                <div class="text-2xl text-left"><?= $page->sec5text3()->kt() ?></div>
+
                 <hr>
                 <hr>
-                <div class="info">
-                    <div class="medium_p"><?= $page->sec5titre3ter()->kt() ?></div>
-                    <hr>
-                    <div class="small_p"><?= $page->sec5text4()->kt() ?></div>
-                </div>
+
+                <div class="medium_p"><?= $page->sec5titre3ter()->kt() ?></div>
+                <hr>
+                <div class="text-2xl text-left"><?= $page->sec5text4()->kt() ?></div>
+
             </div>
         </div>
     </section>

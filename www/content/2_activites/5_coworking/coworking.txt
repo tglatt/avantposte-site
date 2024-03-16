@@ -87,9 +87,9 @@ Sec5titre2: Un bâtiment en plein centre-ville rénové de manière éco-respons
 
 Sec5text1:
 
-Dans un monde où la préservation de l’environnement et la durabilité sont de plus en plus importantes, il est essentiel de repenser notre façon de travailler.
-<br>C’est pourquoi nous avons créé un espace de coworking, conçu pour minimiser notre impact sur l’environnement tout en offrant un cadre de travail agréable et productif.
-<br>Notre espace de travail partagé est situé dans un bâtiment éco-conçu, qui intègre des matériaux durables et des technologies respectueuses de l’environnement. Voici quelques-unes des caractéristiques de notre lieu éco-responsable :
+Dans un monde où la préservation de l’environnement et la durabilité sont de plus en plus importantes, il est essentiel de repenser notre façon de travailler.<br>
+C’est pourquoi nous avons créé un espace de coworking, conçu pour minimiser notre impact sur l’environnement tout en offrant un cadre de travail agréable et productif.<br>
+Notre espace de travail partagé est situé dans un bâtiment éco-conçu, qui intègre des matériaux durables et des technologies respectueuses de l’environnement. Voici quelques-unes des caractéristiques de notre lieu éco-responsable :
 
 ----
 
@@ -99,9 +99,9 @@ Sec5titre3: Efficacité énergétique
 
 Sec5text2:
 
-Utilisation d’éclairage LED à faible consommation d’énergie
-<br>Chaufferie bois énergie sous contrat de performance énergétique
-<br>Isolation thermique performante pour réduire les besoins en chauffage
+Utilisation d’éclairage LED à faible consommation d’énergie<br>
+Chaufferie bois énergie sous contrat de performance énergétique<br>
+Isolation thermique performante pour réduire les besoins en chauffage
 
 ----
 
@@ -111,9 +111,9 @@ Sec5titre3bis: Matériaux durables
 
 Sec5text3:
 
-Utilisation de matériaux recyclés, de réemploi et/ou certifiés FSC pour la construction et      l’aménagement.
-<br>Isolation réalisée en ouate de cellulose et fibre de bois.
-<br>Mobilier éco-conçu et fabriqué localement ou de seconde vie
+Utilisation de matériaux recyclés, de réemploi et/ou certifiés FSC pour la construction et l’aménagement.<br>
+Isolation réalisée en ouate de cellulose et fibre de bois.<br>
+Mobilier éco-conçu et fabriqué localement ou de seconde vie
 
 ----
 
@@ -123,8 +123,8 @@ Sec5titre3ter: Gestion des déchets
 
 Sec5text4:
 
-Mise en place d’un système de tri sélectif et compost pour faciliter le recyclage
-<br>Sensibilisation des utilisateurs à la réduction des déchets et au recyclage
+Mise en place d’un système de tri sélectif et compost pour faciliter le recyclage<br>
+Sensibilisation des utilisateurs à la réduction des déchets et au recyclage
 
 ----
 

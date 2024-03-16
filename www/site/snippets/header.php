@@ -217,7 +217,7 @@
                                     </li>
                                     <li>
                                         <div class="menu_item">
-                                            <a href="/activites/Logements">
+                                            <a href="/activites/Restaurant">
                                                 <img class="menu_item_img"
                                                     src="<?= $site->image('entoure.svg')->url() ?>"
                                                     alt="Cercle qui entoure le menu" />
