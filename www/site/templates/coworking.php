@@ -32,8 +32,8 @@
             <div class="px-8 md:px-8">
                 <div class="text-4xl text-left py-8"><?= $page->sec3titre3()->kt() ?></div>
                 <div class="text-xl text-left py-8"><?= $page->sec3text1()->kt() ?></div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8">
-                    <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px-0 py-8">
+                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
                         <div class="text-8xl flex items-center justify-center mb-4">
                             <div><?= $page->sec3Prix1()->kt() ?></div>
                             <div class="text-xs ml-1 mt-auto">TTC</div>
@@ -42,7 +42,7 @@
                             <?= $page->sec3Unite1()->kt() ?>
                         </div>
                     </div>
-                    <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
                         <div class="text-8xl  flex items-center justify-center mb-4">
                             <div><?= $page->sec3Prix2()->kt() ?></div>
                             <div class="text-xs ml-1 mt-auto">TTC</div>
@@ -51,7 +51,7 @@
                             <?= $page->sec3Unite2()->kt() ?>
                         </div>
                     </div>
-                    <div class="tarif border border-gray-300 rounded-lg p-4 text-center">
+                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
                         <div class="text-8xl  flex items-center justify-center mb-4">
                             <div><?= $page->sec3Prix3()->kt() ?></div>
                             <div class="text-xs ml-1 mt-auto">TTC</div>
@@ -65,14 +65,15 @@
 
             <div class="px-8 md:px-8">
                 <div class="medium_p"><?= $page->sec3titre3bis()->kt() ?></div>
-                <div class="small_p"><?= $page->sec3text2()->kt() ?></div>
+                <div style="column-count: 2;" class="text-2xl text-left">
+                    <?= $page->sec3text2()->kt() ?>
+                </div>
             </div>
             <hr>
             <hr>
             <div class="bouton">
-
                 <a href="<?= page('contact.php')->url() ?>">
-                    <button class="px-6 py-4 border-1 hover:bg-white">
+                    <button class="px-6 py-4">
                         <h3 class="px-6 text-lg md:text-xl lg:text-5xl">
                             <?= $page->contactezNousButton() ?>
                         </h3>
@@ -90,7 +91,7 @@
                     <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
                         <?= $page->sec4Titre2() ?></h2>
                 </div>
-                <div class="small_p"><?= $page->sec4Text1()->kt() ?></div>
+                <div class="text-2xl text-left"><?= $page->sec4Text1()->kt() ?></div>
             </div>
         </div>
     </section>
@@ -103,20 +104,20 @@
                     <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
                         <?= $page->sec5Titre2() ?></h2>
                 </div>
-                <div class="small_p"><?= $page->sec5Text1()->kt() ?></div>
+                <div class="text-2xl text-left"><?= $page->sec5Text1()->kt() ?></div>
                 <hr>
                 <hr>
                 <div class="info">
                     <div class="medium_p"><?= $page->sec5titre3()->kt() ?></div>
                     <hr>
-                    <div class="small_p"><?= $page->sec5text2()->kt() ?></div>
+                    <div class="text-2xl text-left"><?= $page->sec5text2()->kt() ?></div>
                 </div>
                 <hr>
                 <hr>
                 <div class="info">
                     <div class="medium_p"><?= $page->sec5titre3bis()->kt() ?></div>
                     <hr>
-                    <div class="small_p"><?= $page->sec5text3()->kt() ?></div>
+                    <div class="text-2xl text-left"><?= $page->sec5text3()->kt() ?></div>
                 </div>
                 <hr>
                 <hr>

@@ -17,7 +17,7 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info">
-                <div class="small_p"><?= $page->sec2text()->kt() ?></div>
+                <div class="text-left text-2xl"><?= $page->sec2text()->kt() ?></div>
             </div>
             <hr>
             <div class="bouton">
@@ -42,7 +42,7 @@
             </div>
             <hr>
             <div class="info">
-                <div class="small_p"><?= $page->sec3text()->kt() ?></div>
+                <div class="text-left text-2xl"><?= $page->sec3text()->kt() ?></div>
 
             </div>
         </div>
@@ -68,7 +68,7 @@
             </div>
 
             <div class="info">
-                <div class="small_p"><?= $page->sec5text()->kt() ?></div>
+                <div class="text-left text-2xl"><?= $page->sec5text()->kt() ?></div>
             </div>
         </div>
     </section>

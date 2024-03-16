@@ -242,6 +242,7 @@ section {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 hr {
   padding-top: var(--space-1);
@@ -367,22 +368,25 @@ h2 {
 }
 
 main ul li {
-  list-style: disc;
+  list-style-type: '-';
   list-style-position: inside;
 }
 
 button {
   margin: 0;
-  padding: var(--space-agenda) var(--space-4);
-  /* padding: 1rem 6rem; */
-  font-size: var(--typosize-btn);
-  /* font-family: var(--font-family-sans); */
   text-align: center;
   border: black 1px solid;
   border-radius: 15px;
   background-color: transparent;
   cursor: pointer;
 }
+
+/* Style du bouton lorsqu'il est survolé */
+button:hover {
+  background-color: white; /* Ajoutez la couleur de fond blanche au survol */
+}
+
+/* Style du conteneur du bouton */
 .bouton {
   text-align: center;
 }
@@ -674,4 +678,58 @@ button {
 /* Ajout de la transition */
 .header {
   transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden; /* Assurez-vous que le filtre reste dans la zone de l'image */
+}
+
+.image-overlay-yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    204,
+    153,
+    0,
+    0.3
+  ); /* Couleur monochrome semi-transparente rouge */
+  transition: opacity 0.3s ease; /* Ajouter une transition pour une apparence plus fluide */
+  opacity: 1; /* Définir l'opacité initiale à 0 */
+}
+
+.image-overlay-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    87,
+    76,
+    254,
+    0.3
+  ); /* Couleur monochrome semi-transparente bleue */
+  opacity: 1; /* Définir l'opacité initiale à 0 */
+}
+
+.image-container:hover .image-overlay-blue {
+  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+}
+.image-container:hover .image-overlay-yellow {
+  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+}
+
+.image-activity {
+  transition: filter 0.3s ease; /* Ajouter une transition pour une apparence plus fluide */
+  filter: grayscale(
+    100%
+  ); /* Appliquer le filtre de niveau de gris par défaut */
+}
+
+.image-container:hover .image-activity {
+  filter: grayscale(0%); /* Au survol, retirer le filtre de niveau de gris */
 }

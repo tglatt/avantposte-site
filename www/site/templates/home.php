@@ -61,18 +61,15 @@
     <!-- Section 4 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <h1 class="mb-4 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+            <h1 class="mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                 <?= $page->contactezNousText() ?>
             </h1>
-            <hr>
-            <hr>
             <div class="bouton">
-
                 <a href="<?= page('contact.php')->url() ?>">
-                    <button class="px-6 py-4 border-1 hover:bg-white">
-                        <h3 class="px-6 text-lg md:text-xl lg:text-5xl">
+                    <button class="px-6 py-4 border-1 ">
+                        <div class="px-6 text-lg md:text-xl lg:text-5xl bg-white">
                             <?= $page->contactezNousButton() ?>
-                            </h1>
+                        </div>
                     </button>
                 </a>
             </div>
