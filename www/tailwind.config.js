@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
@@ -9,8 +9,7 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      body: ['Agipo', 'Inter', 'ui-sans-serif', 'system-ui'],
-      sans: ['Agipo', 'Inter', 'ui-sans-serif', 'system-ui'],
+      sans: ['Agipo', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       spacing: {

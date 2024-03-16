@@ -1,11 +1,6 @@
 * {
-  font-family: var(--font-family-sans);
   margin: 0;
   padding: 0;
-}
-@font-face {
-  font-family: 'Agipo';
-  src: url(../font/Agipo_Regular.otf);
 }
 .main {
   font-style: normal;
@@ -69,15 +64,9 @@
   /******** Tailles Typo Footer *********/
   --typosize-footer-p: 18px; /* Footer Taille*/
   --typointerline-footer-p: 22px; /* Footer Interligne*/
-
-  /******** Font Family *********/
-  --font-family-sans: 'Agipo';
-  --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
-    Courier, monospace;
 }
 
 html {
-  font-family: var(--font-family-sans);
   color: var(--color-text);
   background: var(--color-background);
   padding: 0;
@@ -94,8 +83,6 @@ html,
   /* 3 */
   -o-tab-size: 4;
   tab-size: 4;
-  /* 3 */
-  font-family: Agipo;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -318,7 +305,6 @@ h2 {
   padding: 0;
   margin: 0;
   font-weight: 100;
-  /* font-family: var(--font-family-sans); */
 }
 
 .link_blackToPrimary:hover {
@@ -361,7 +347,6 @@ h2 {
 .chapeau p {
   font-size: var(--typosize-chapeau);
   line-height: var(--typointerline-chapeau);
-  /* font-family: var(--font-family-sans); */
   text-align: center;
   margin: 0;
   padding: 0;
@@ -443,7 +428,6 @@ button:hover {
   border: none;
   border-bottom: #000 solid 1px;
   font-size: var(--typosize-p);
-  font-family: var(--font-family-sans);
 }
 .abonnez_vous input:focus {
   border-bottom: #000 solid 1px;

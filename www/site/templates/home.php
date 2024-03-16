@@ -6,7 +6,9 @@
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-2">
-                    <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->fulltitle() ?></h1>
+                    <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl font-sans">
+                        <?= $page->fulltitle() ?>
+                    </h1>
                 </div>
             </div>
         </div>
