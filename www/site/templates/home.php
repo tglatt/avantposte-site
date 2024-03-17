@@ -111,9 +111,9 @@ if ($randomChild) {
                 <h1 class="mb-4 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->Sec6Title1() ?>
                 </h1>
-                <h2 class="mb-6 text-lg font-normal lg:text-xl sm:px-16 xl:px-48">
-                    <?= $page->sec6Text()->kt() ?>
-                </h2>
+                <div class="mb-8 text-lg font-normal lg:text-xl text-center">
+                    <div class='support'><?= $page->sec6Text()->kt() ?></div>
+                </div>
             </div>
             <hr>
             <hr>
