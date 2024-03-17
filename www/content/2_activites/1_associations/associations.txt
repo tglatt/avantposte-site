@@ -33,7 +33,7 @@ Sec4textcol2: Cette belle salle avec parquet bois, située au second étage, a u
 
 ----
 
-Sec5titre2: Services et matériel disponibles
+Sec5titre2: Services & matériels disponibles
 
 ----
 
@@ -45,7 +45,7 @@ Sont compris dans les locations des espaces :<br><br>
 * Chaises et tables (dans la mesure de nos capacités) 
 * Accès WC
 
-<br><br>Sont compris spécifiquement dans la location de Grande salle : <br><br>
+<br><br>Sont compris spécifiquement dans la location de la Grande salle : <br><br>
 
 * Vaisselle
 * Mise à disposition de la cuisine pour réchauffer des plats ou se faire un café
@@ -57,11 +57,11 @@ Sont compris dans les locations des espaces :<br><br>
 Sec5textcol2:
 
 En option:<br><br>
-* Le Hobo, restaurant situé au sein de de l’Avant-Poste vous propose plusieurs formules pour accompagner vos événements : grands plats “à la bonne franquette” , service traiteur, etc.
+* Le Hobo, restaurant situé au sein de l’Avant-Poste, vous propose plusieurs formules pour accompagner vos événements : grands plats “à la bonne franquette” , service traiteur, etc.
 
 ----
 
-Sec6titre2: Nos tarifs standards
+Sec6titre2: Nos tarifs
 
 ----
 
@@ -76,7 +76,6 @@ Sec6aprix1: 24€
 Sec6atext1:
 
 2h <br>
-TTC
 Du lundi au vendredi
 En journée : 8h30 - 12h30 puis 14h - 18h
 En soirée : 18h30 – 22h30
@@ -90,7 +89,6 @@ Sec6aprix2: 40€
 Sec6atext2:
 
 Demi-journée<br>
-TTC
 Du lundi au vendredi
 8h30 - 12h30 / 14h - 18h
 
@@ -103,7 +101,6 @@ Sec6aprix3: 72€
 Sec6atext3:
 
 Journée<br>
-TTC 
 8h30 - 12h30 puis 14h - 18h
 
 ----
@@ -119,7 +116,6 @@ Sec6bprix1: 36€
 Sec6btext1:
 
 2h en journée<br>
-HT
 8h30-22h30
 
 ----
@@ -130,8 +126,7 @@ Sec6bprix2: 60€
 
 Sec6btext2:
 
-Demi-journée<br>
-HC
+Demi-journée
 
 ----
 
@@ -141,8 +136,7 @@ Sec6bprix3: 90€
 
 Sec6btext3:
 
-Journée<br>
-HC
+Journée
 
 ----
 Sec7titre2: Réservation des espaces
@@ -164,8 +158,8 @@ Sec8text1:
 
 En étant sociétaire de l’Avant-Poste [lien vers page SCIC], vous accédez également à un ensemble de services :
 <br>
-- Domiciliation du siège social & réception du courrier des associations
-- Location de la kangoo électrique
+- &nbsp; Domiciliation du siège social & réception du courrier des associations
+- &nbsp; Location de la kangoo électrique
 <br>et si vous en avez besoin, vous pouvez bien entendu <a class="link_blackToSecondary" href="/contact">réserver un poste de travail !</a>
 <br>Vous souhaitez en savoir plus ?
 

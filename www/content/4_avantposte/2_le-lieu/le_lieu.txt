@@ -37,7 +37,7 @@ Sec3titrecol2: Financement
 
 ----
 
-Sec3text2: Merci à tous ceux qui ont cru dans le projet et l’ont rendu possible ! <3
+Sec3text2: Merci à tous ceux qui ont cru dans le projet et l’ont rendu possible ! &#x2661;
 
 ----
 
@@ -48,13 +48,23 @@ Sec4titre2: Rénover efficacement tout en respectant le caractère du lieu
 Sec4text:
 
 En s’appuyant sur l’état des lieux proposé plus haut, le projet architectural avait notamment pour objectifs : 
-de faire du lieu de référence sur la transition énergétique et sociétale, 
-d’ouvrir le bâtiment sur la ville, de contribuer à en faire un lieu de rencontre,
-d’identifier les possibilités de mutualisation entre les espaces. 
-<br>La logique générale a été de s’appuyer au maximum sur l’existant pour conserver le caractère du bâtiment et réduire les coûts de chantier.
-<br>Les plans et la supervision du chantier ont été confiés à l’architecte Camille Behagel, architecte spécialisé dans les tiers-lieux et habitats participatifs (https://www.atelier108architecture.com/). 
-<br>Le chantier, supervisé par Bruno Daniel, a été mené tambour battant par des artisans majoritairement locaux et sensibles à nos enjeux. 
-<br>Merci aux entreprises GBat, Aplomb, Smarki, Menuiserie REYNAUD, Plomberie du Diois, Combet et Bessat !
+
+----
+
+Sec4textList:
+
+- de faire du lieu de référence sur la transition énergétique et sociétale, 
+- d’ouvrir le bâtiment sur la ville, de contribuer à en faire un lieu de rencontre,
+- d’identifier les possibilités de mutualisation entre les espaces. 
+
+----
+
+Sec4text2:
+
+La logique générale a été de s’appuyer au maximum sur l’existant pour conserver le caractère du bâtiment et réduire les coûts de chantier. <br>
+Les plans et la supervision du chantier ont été confiés à l’architecte Camille Behagel, architecte spécialisé dans les tiers-lieux et habitats participatifs (https://www.atelier108architecture.com/). <br>
+Le chantier, supervisé par Bruno Daniel, a été mené tambour battant par des artisans majoritairement locaux et sensibles à nos enjeux. <br>
+Merci aux entreprises GBat, Aplomb, Smarki, Menuiserie REYNAUD, Plomberie du Diois, Combet et Bessat !
 
 ----
 

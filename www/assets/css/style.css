@@ -1,14 +1,8 @@
 * {
-  font-family: var(--font-family-sans);
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: Agipo;
-  src: url(/assets/font/Agipo_Regular.otf);
-}
 .main {
-  font-family: 'Agipo';
   font-style: normal;
   font-weight: 200;
   font-stretch: normal;
@@ -70,26 +64,38 @@
   /******** Tailles Typo Footer *********/
   --typosize-footer-p: 18px; /* Footer Taille*/
   --typointerline-footer-p: 22px; /* Footer Interligne*/
-
-  /******** Font Family *********/
-  --font-family-sans: Agipo, 'Times New Roman', 'Lucida Handwriting', Verdana,
-    Baskerville, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
-    Courier, monospace;
 }
 
 html {
-  font-family: var(--font-family-sans);
   color: var(--color-text);
   background: var(--color-background);
   padding: 0;
   margin: 0;
 }
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
 img {
   width: 100%;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -100,6 +106,22 @@ li {
 a {
   color: currentColor;
   text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.contact p {
+  text-align: center;
+}
+.support p {
+  text-align: center;
 }
 
 /* ------------- HEADER ------------- */
@@ -122,7 +144,7 @@ a {
 }
 
 .header .header-content {
-  max-width: var(--maxwidth-xxl);
+  /*max-width: var(--maxwidth-xxl);*/
   margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
@@ -139,23 +161,38 @@ a {
 .header .menu .main_menu li .menu_item:hover {
   color: white;
 }
+.menu_item:hover {
+  color: white;
+}
+.header .menu .main_menu li a:hover {
+  color: white;
+}
 .menu_item {
   position: relative;
 }
+
 .menu ul {
   padding: 0;
   margin: 0;
 }
 
-.menu_item img {
+.menu_item {
+  position: relative;
+  display: inline-block; /* assure que le conteneur s'adapte à la taille du contenu */
+}
+
+.menu_item_img {
   opacity: 0;
   position: absolute;
-  width: 250%;
-  height: 200%;
-  left: -75%;
-  top: -50%;
+  min-width: 160px;
+  width: 150%; /* ajuste la taille de l'image pour remplir le conteneur parent */
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.menu_item_img:hover {
+
+.menu_item:hover .menu_item_img {
   opacity: 1;
 }
 
@@ -191,8 +228,28 @@ section:nth-child(even) {
 
 section {
   width: 100%;
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-4);
+  /*padding-top: var(--space-3);
+  padding-bottom: var(--space-4);*/
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Ajustez cette valeur pour définir la position de l'effet de peinture par rapport au bas de la section */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Ajustez la hauteur de l'effet de peinture selon vos préférences */
+  background-image: url('../icons/brush-effect-2.png'); /* Chemin vers votre image */
+  background-repeat: repeat-x; /* Répéter l'image horizontalement */
+  background-position: center bottom; /* Positionner l'image au centre en bas */
+  background-size: auto 100%; /* Ajuster la largeur de l'image pour s'adapter à la largeur de la section */
+  mix-blend-mode: multiply; /* Mélange la texture avec le contenu en dessous */
+  z-index: -1; /* Placez le pseudo-élément derrière le contenu de la section */
+  mask-image: linear-gradient(
+    to top,
+    transparent,
+    black
+  ); /* Appliquer un masque pour masquer la texture en haut de la section */
 }
 
 .section-content {
@@ -204,12 +261,6 @@ section {
 .section-content-gallery {
   width: 100%;
   margin: 0 auto; /* Centre le contenu horizontalement */
-  padding-top: 20px; /* Ajoute un peu d'espace autour du contenu */
-  padding-bottom: 20px; /* Ajoute un peu d'espace autour du contenu */
-}
-
-.section-hero {
-  margin-top: 320px; /*Taille du header fixe sans le logo*/
 }
 
 .sec_padd1 {
@@ -221,6 +272,7 @@ section {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 hr {
   padding-top: var(--space-1);
@@ -232,6 +284,16 @@ hr {
 .titre {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(14px);
+}
+
+.icon {
+  height: 0.8em;
 }
 .info {
   padding-left: var(--space-3);
@@ -296,16 +358,8 @@ h2 {
   padding: 0;
   margin: 0;
   font-weight: 100;
-  /* font-family: var(--font-family-sans); */
 }
-p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: var(--typosize-p);
-  line-height: var(--typointerline-p);
-  /* font-family: var(--font-family-sans); */
-}
+
 .link_blackToPrimary:hover {
   color: var(--color-primary);
 }
@@ -317,7 +371,7 @@ p {
 .medium_p li {
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: justify;
   font-size: var(--typosize-medium_p);
   line-height: var(--typointerline-medium_p);
 }
@@ -346,29 +400,33 @@ p {
 .chapeau p {
   font-size: var(--typosize-chapeau);
   line-height: var(--typointerline-chapeau);
-  /* font-family: var(--font-family-sans); */
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 main ul li {
-  list-style: disc;
+  list-style-type: '- ';
   list-style-position: inside;
+  margin-left: 10px;
 }
 
 button {
   margin: 0;
-  padding: var(--space-agenda) var(--space-4);
-  /* padding: 1rem 6rem; */
-  font-size: var(--typosize-btn);
-  /* font-family: var(--font-family-sans); */
   text-align: center;
   border: black 1px solid;
   border-radius: 15px;
   background-color: transparent;
   cursor: pointer;
 }
+
+/* Style du bouton lorsqu'il est survolé */
+button:hover {
+  background-color: white; /* Ajoutez la couleur de fond blanche au survol */
+  color: black;
+}
+
+/* Style du conteneur du bouton */
 .bouton {
   text-align: center;
 }
@@ -394,16 +452,12 @@ button {
   column-gap: var(--space-3);
   row-gap: var(--space-2);
 }
-.imageInCol {
-  padding-left: 0;
-  padding-right: 0;
-}
 .h100 {
   height: 100%;
 }
 /* ------------- FOOTER ------------- */
 .footer {
-  /* background-color: var(--color-primary); */
+  background-color: var(--color-primary);
   width: 100%;
 }
 .footer-content {
@@ -411,21 +465,14 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--space-1);
-  padding-left: var(--space-4);
-  margin: 0 auto;
-  padding-right: var(--space-4);
-  font-size: var(--typosize-footer-p);
   line-height: var(--typointerline-footer-p);
-  max-width: var(--maxwidth-xxl);
 }
 .abonnez_vous input {
-  width: 250px;
+  max-width: 250px;
   background: none;
   border: none;
   border-bottom: #000 solid 1px;
   font-size: var(--typosize-p);
-  font-family: var(--font-family-sans);
 }
 .abonnez_vous input:focus {
   border-bottom: #000 solid 1px;
@@ -505,38 +552,6 @@ button {
   /* height: 100px; */
 }
 
-/* .slide:nth-child(1) {
-  background-color: #49b293;
-}
-
-.slide:nth-child(2) {
-  background-color: #b03532;
-}
-
-.slide:nth-child(3) {
-  background-color: #6a478f;
-  margin: 0;
-}
-
-.slide:nth-child(4) {
-  background-color: #da6f2b;
-} */
-
-/* footer {
-  padding: 1em;
-  text-align: center;
-  background-color: #FFDFB9;
-}
-
-footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-footer .heart {
-  color: #DC143C;
-} */
-
 /* ----------------GALLERY------------------------*/
 
 .gallery {
@@ -546,10 +561,34 @@ footer .heart {
 
 .gallery-cell {
   width: 33%;
-  /*height: 600px;*/
   margin-right: 100px;
   margin-left: 100px;
 }
+
+@media screen and (max-width: 976px) {
+  .gallery-cell {
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-cell {
+    width: 80%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-cell {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 /* Appliquez le filtre grayscale à l'image par défaut */
 .gallery-cell img {
   filter: grayscale(100%);
@@ -644,4 +683,92 @@ footer .heart {
 /* Supprimez le filtre lorsque la cellule est survolée */
 .gallery-cell:hover::after {
   display: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour la sortie du header-1 */
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Ajout de la transition */
+.header {
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden; /* Assurez-vous que le filtre reste dans la zone de l'image */
+}
+
+.image-overlay-yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    204,
+    153,
+    0,
+    0.3
+  ); /* Couleur monochrome semi-transparente rouge */
+  transition: opacity 0.3s ease; /* Ajouter une transition pour une apparence plus fluide */
+  opacity: 1; /* Définir l'opacité initiale à 0 */
+}
+
+.image-overlay-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    87,
+    76,
+    254,
+    0.3
+  ); /* Couleur monochrome semi-transparente bleue */
+  opacity: 1; /* Définir l'opacité initiale à 0 */
+}
+
+.image-container:hover .image-overlay-blue {
+  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+}
+.image-container:hover .image-overlay-yellow {
+  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+}
+
+.image-activity {
+  transition: filter 0.3s ease; /* Ajouter une transition pour une apparence plus fluide */
+  filter: grayscale(
+    100%
+  ); /* Appliquer le filtre de niveau de gris par défaut */
+}
+
+.image-container:hover .image-activity {
+  filter: grayscale(0%); /* Au survol, retirer le filtre de niveau de gris */
+}
+
+.list ul li {
+  list-style-type: '- ';
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.list ul li::marker {
+  text-indent: 5px !important;
 }

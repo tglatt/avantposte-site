@@ -3,9 +3,7 @@ options:
   changeSlug: false
   delete: false
 
-
 columns:
-
   Partie1:
     width: 1
     sections:
@@ -17,12 +15,12 @@ columns:
     fields:
       Sec2text:
         width: 3/4
-        label : Section 2 Texte
+        label: Section 2 Texte
         type: textarea
         size: medium
       Sec2button:
         width: 1/4
-        label : Bouton vers contact
+        label: Bouton vers contact
         type: text
         size: small
   Partie3:
@@ -30,12 +28,12 @@ columns:
     fields:
       Sec3titre2:
         width: 1
-        label : Section 3 Titre
+        label: Section 3 Titre
         type: text
         size: small
       Sec3text:
         width: 1
-        label : Section 3 Texte
+        label: Section 3 Texte
         type: textarea
         size: large
   Partie4:
@@ -43,7 +41,7 @@ columns:
     fields:
       Sec4titre2:
         width: 1
-        label : Section 4 Titre
+        label: Section 4 Titre
         type: text
         size: small
   Partie5:
@@ -51,12 +49,12 @@ columns:
     fields:
       Sec5titre2:
         width: 1
-        label : Section 5 Titre
+        label: Section 5 Titre
         type: text
         size: small
       Sec5text:
         width: 1
-        label : Section 5 Texte
+        label: Section 5 Texte
         type: textarea
         size: large
   Partie6:
@@ -64,11 +62,11 @@ columns:
     width: 3/4
     fields:
       Sec6titre2:
-        label : Section 6 Titre
+        label: Section 6 Titre
         type: text
         size: small
       Sec6text:
-        label : Section 6 Texte
+        label: Section 6 Texte
         type: textarea
         size: large
   Partie6bis:
@@ -79,15 +77,15 @@ columns:
         width: 1/4
         label: Information sur l'image insérée ici
         type: info
-        text: | 
+        text: |
           Si vous souhaitez modifier l'image qui est insérée ici c'est possible. 
-          
+
           Pour celà il faut remplacer l'image qui a pour nom 
-          
+
           ```NOTONCAROUSEL_gouvernance.png```
-          
+
           avec la nouvelle image qui devra porter exactement le même nom ainsi que la même extension
-          
+
           Ici nous avons une image en png, la nouvelle image ne peut donc PAS être un jpg.
 
   Partie7:
@@ -95,7 +93,7 @@ columns:
     fields:
       Sec7titre1bis:
         width: 1
-        label : Section 7 Titre
+        label: Section 7 Titre
         type: text
 
   Partie8:
@@ -103,19 +101,19 @@ columns:
     fields:
       Sec8subtitle:
         width: 1
-        label : Section 8 Titre 1
+        label: Section 8 Titre 1
         type: text
       Sec8text1:
         width: 1
-        label : Section 8 Texte 1
+        label: Section 8 Texte 1
         type: textarea
         size: medium
       Sec8subtitle2:
         width: 1
-        label : Section 8 Titre 2
+        label: Section 8 Titre 2
         type: text
       Sec8text2:
         width: 1
-        label : Section 8 Texte 2
+        label: Section 8 Texte 2
         type: textarea
         size: medium

@@ -13,11 +13,11 @@ Sec2titre3: Coworking
 Sec2text1:
 
 L'Avant-Poste c'est aussi une offre de logements complètement rénovés en prenant à cœur la réduction des besoins en énergie.
-<br>4 appartements (un studio, 2 T2 et un T3)
-<br>2 chambres d'hébergement temporaire meublées de 14m²
-<br>une cuisine partagée
-<br>une buanderie partagée
-<br>l'accès au jardin
+- 4 appartements (un studio, 2 T2 et un T3)<br>
+- 2 chambres d'hébergement temporaire meublées de 14m²<br>
+- une cuisine partagée<br>
+- une buanderie partagée<br>
+- l'accès au jardin<br>
 
 ----
 

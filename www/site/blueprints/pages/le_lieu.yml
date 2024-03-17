@@ -3,9 +3,7 @@ options:
   changeSlug: false
   delete: false
 
-
 columns:
-
   Partie1:
     width: 1
     sections:
@@ -17,12 +15,12 @@ columns:
     fields:
       Sec2titre2:
         width: 1
-        label : Section 2 Titre
+        label: Section 2 Titre
         type: text
         size: small
       Sec2text:
         width: 1
-        label : Section 2 Texte
+        label: Section 2 Texte
         type: textarea
         size: medium
   Partie3:
@@ -30,55 +28,55 @@ columns:
     fields:
       Sec3titre2:
         width: 1
-        label : Section 3 Titre
+        label: Section 3 Titre
         type: text
         size: small
       Sec3text:
         width: 1
-        label : Section 3 Texte Central
+        label: Section 3 Texte Central
         type: textarea
         size: medium
       Sec3titrecol1:
         width: 1/2
-        label : Section 3 Titre col Gauche
+        label: Section 3 Titre col Gauche
         type: text
         size: small
       Sec3titrecol2:
         width: 1/2
-        label : Section 3 Texte col Droite
+        label: Section 3 Texte col Droite
         type: text
         size: small
       info:
         width: 1/2
         label: Information sur l'image de gauche
         type: info
-        text: | 
+        text: |
           Si vous souhaitez modifier l'image qui est inséré ici c'est possible. 
-          
+
           Pour celà il faut remplacer l'image qui a pour nom 
-          
+
           ```NOTONCAROUSEL_depenses.png```
-          
+
           avec la nouvelle image qui devra porter exactement le même nom ainsi que la même extension
-          
+
           Ici nous avons une image en png, la nouvelle image ne peut donc PAS être un jpeg ou jpg.
       info 2:
         width: 1/2
         label: Information sur l'image de droite
         type: info
-        text: | 
+        text: |
           Si vous souhaitez modifier l'image qui est inséré ici c'est possible. 
-          
+
           Pour celà il faut remplacer l'image qui a pour nom 
-          
+
           ```NOTONCAROUSEL_financements.png```
-          
+
           avec la nouvelle image qui devra porter exactement le même nom ainsi que la même extension
-          
+
           Ici nous avons une image en png, la nouvelle image ne peut donc PAS être un jpeg ou jpg.
       Sec3text2:
         width: 1
-        label : Section 3 Texte central bas
+        label: Section 3 Texte central bas
         type: textarea
         size: small
   Partie4:
@@ -86,17 +84,27 @@ columns:
     fields:
       Sec4titre2:
         width: 1
-        label : Section 4 Titre
+        label: Section 4 Titre
         type: text
         size: small
       info3:
         width: 1
         label: Information sur le carousel
         type: info
-        text: | 
+        text: |
           Ici se trouve le carrousel d'image. Le carousel contient toutes les images de la page sauf celles qui contiennent "NOTONCAROUSEL" dans leur nom.
       Sec4text:
         width: 1
-        label : Section 4 Texte
+        label: Section 4 Texte
+        type: textarea
+        size: medium
+      Sec4textList:
+        width: 1
+        label: Section 4 Texte List
+        type: list
+        size: medium
+      Sec4text2:
+        width: 1
+        label: Section 4 Texte
         type: textarea
         size: medium

@@ -3,44 +3,47 @@
 <main class="main">
 
     <!-- Section 1 -->
-    <section>
-        <div class='section-hero'>
-            <div class="section-content">
-                <div class="titre">
-                    <h1><?= $page->title() ?></h1>
+    <section class='py-16 md:py-16'>
+        <div class='mt-12 md:mt-72' id='section-hero'>
+            <div class="mx-auto max-w-4xl lg:max-w-5xl">
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl font-sans"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 2 -->
-    <section>
-        <div class="section-content">
-            <div class="info">
-                <div class="small_p"><?= $page->sec2text()->kt() ?></div>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <div class="text-justify text-2xl mb-12"><?= $page->sec2text()->kt() ?></div>
+                <div class="bouton">
 
-            </div>
-            <hr>
-            <div class="bouton">
-
-                <a href="<?= page('contact.php')->url() ?>">
-                    <button class="btn_primary">
-                        <?= $page->sec2Button() ?>
-                    </button>
-                </a>
+                    <a href="<?= page('contact.php')->url() ?>">
+                        <button class="px-6 py-4 border-1 hover:bg-white">
+                            <h3 class="px-6 text-lg md:text-xl lg:text-5xl">
+                                <?= $page->sec2Button() ?>
+                            </h3>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section 3 -->
-    <section>
-        <div class="section-content">
-            <div class="titre">
-                <h2><?= $page->sec3titre2() ?></h2>
-            </div>
-            <hr>
-            <div class="info">
-                <div class="small_p"><?= $page->sec3text()->kt() ?></div>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec3titre2() ?>
+                    </h1>
+
+
+
+                    <div class="text-justify text-2xl">
+                        <?= $page->sec3text()->kt() ?>
+                    </div>
 
             </div>
         </div>
@@ -48,12 +51,10 @@
 
     <!-- Section 4 -->
     <section class="sec_carousel">
-        <hr>
-        <hr>
-        <div class="titre">
-            <h2><?= $page->sec4titre2() ?></h2>
+        <div class="lg:px-20 md:px-10 px-4">
+            <h2 class="mb-8 mt-20  xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec4titre2() ?>
+                </h1>
         </div>
-        <hr>
         <?php snippet('carousel-images', slots: true) ?>
         <?php slot('images') ?>
         <?php endslot() ?>
@@ -61,65 +62,68 @@
     </section>
 
     <!-- Section 5 -->
-    <section>
-        <div class="section-content">
-            <div class="titre">
-                <h2><?= $page->sec5titre2() ?></h2>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec5titre2() ?>
+                </h2>
             </div>
-            <hr>
-            <div class="info">
-                <div class="small_p"><?= $page->sec5text()->kt() ?></div>
 
+            <div class="info">
+                <div class="text-justify text-2xl"><?= $page->sec5text()->kt() ?></div>
             </div>
         </div>
     </section>
 
     <!-- Section 6 -->
-        <section>
-        <div class="section-content">
-            <div class="titre">
-                <h2><?= $page->sec6titre2() ?></h2>
-            </div>
-            <hr>
-            <div class="image">
-                <?php if ($image = $page->image('NOTONCAROUSEL_gouvernance.png')) : ?>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec6titre2() ?>
+                </h2>
+
+                <div class="image">
+                    <?php if ($image = $page->image('NOTONCAROUSEL_gouvernance.png')) : ?>
                     <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
-                <?php endif ?>
-            </div>
-            <hr>
-            <div class="info">
-                <div class="small_p"><?= $page->sec6text()->kt() ?></div>
+                    <?php endif ?>
+                </div>
+                <hr>
+
+                <div class="text-justify text-2xl"><?= $page->sec6text()->kt() ?></div>
             </div>
         </div>
     </section>
 
     <!-- Section 7 -->
-    <section>
-        <div class="section-content">
-            <div class="titre">
-                <h1><?= $page->sec7titre1bis() ?></h1>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec7titre1bis() ?>
+                    </h1>
             </div>
         </div>
     </section>
 
     <!-- Section 8 -->
-    <section>
-        <div class="section-content">
-            <div class="titre">
-                <h2><?= $page->sec8subtitle() ?></h2>
+    <section class='py-16 md:py-32'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-10 px-4">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
+                    <?= $page->sec8subtitle() ?>
+                </h2>
             </div>
-            <hr>
             <div class="info">
-                <div class="small_p"><?= $page->sec8text1()->kt() ?></div>
+                <div class="text-justify text-2xl"><?= $page->sec8text1()->kt() ?></div>
             </div>
             <hr>
             <div class="titre">
-                <h2><?= $page->sec8subtitle2() ?></h2>
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec8subtitle2() ?>
+                </h2>
             </div>
 
             <hr>
             <div class="info">
-                <div class="small_p"><?= $page->sec8text2()->kt() ?></div>
+                <div class="text-justify text-2xl"><?= $page->sec8text2()->kt() ?></div>
             </div>
         </div>
     </section>
