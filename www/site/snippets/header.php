@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="header shadow-md" id='header-1'>
+    <header class="header section-border" id='header-1'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl ">
 
             <a href="<?= $site->url() ?>" class="flex mb-auto space-x-3 rtl:space-x-reverse">
