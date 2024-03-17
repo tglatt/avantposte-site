@@ -71,7 +71,7 @@
                                 </li>
                                 <li>
                                     <div class="menu_item">
-                                        <a href="/activites/Logements">
+                                        <a href="/activites/Restaurant">
                                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                                 alt="Cercle qui entoure le menu" />
                                             Restaurant
@@ -168,8 +168,8 @@
                         class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
 
                         <li>
-                            <a href="/">
-                                <div class="menu_item cursor-pointer">
+                            <a class="hover:text-white" href="/">
+                                <div class="menu_item cursor-pointer ">
                                     <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                         alt="Cercle qui entoure le menu" />
                                     Accueil
@@ -178,7 +178,7 @@
                         </li>
                         <li>
 
-                            <div class="menu_item cursor-pointer" id="toggle_show_activite-2">
+                            <div class="menu_item cursor-pointer hover:text-white" id="toggle_show_activite-2">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                     alt="Cercle qui entoure le menu" />
                                 Activités
@@ -359,6 +359,48 @@
             })
     document.getElementById("sub_menu_activite-2").style.display = 'none'
     document.getElementById("sub_menu_avantposte-2").style.display = 'none'
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const toggleActivite = document.getElementById("toggle_show_activite");
+        const toggleAvantposte = document.getElementById("toggle_show_avantposte");
+        const subMenuActivite = document.getElementById("sub_menu_activite");
+        const subMenuAvantposte = document.getElementById("sub_menu_avantposte");
+
+        const toggleActivite2 = document.getElementById("toggle_show_activite-2");
+        const toggleAvantposte2 = document.getElementById("toggle_show_avantposte-2");
+        const subMenuActivite2 = document.getElementById("sub_menu_activite-2");
+        const subMenuAvantposte2 = document.getElementById("sub_menu_avantposte-2");
+
+        // Fonction pour fermer les sous-menus lorsque le clic est en dehors
+        function closeSubMenus() {
+            subMenuActivite.style.display = 'none';
+            subMenuAvantposte.style.display = 'none';
+            subMenuActivite2.style.display = 'none';
+            subMenuAvantposte2.style.display = 'none';
+        }
+
+        // Ajouter un écouteur d'événements de clic au document
+        document.addEventListener("click", function(event) {
+            // Vérifie si le clic est sur toggle_show_activite ou sur son sous-menu
+            if (event.target === toggleActivite || event.target.parentElement === toggleActivite) {
+                // Ne rien faire, car le clic est sur toggle_show_activite ou sur son sous-menu
+            } else if (event.target === toggleAvantposte || event.target.parentElement ===
+                toggleAvantposte) {
+                // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
+            } else if (event.target === toggleAvantposte2 || event.target.parentElement ===
+                toggleAvantposte2) {
+                // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
+            } else if (event.target === toggleActivite2 || event.target.parentElement ===
+                toggleActivite2) {
+                // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
+            } else {
+                // Le clic est en dehors des éléments de menu, donc fermer les sous-menus
+                closeSubMenus();
+            }
+        });
+    });
     </script>
 
     <script>

@@ -13,16 +13,17 @@
         </div>
     </section>
 
+
+
     <!-- Section 2 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                    <?= $page->sec2titre2() ?></h2>
-            </div>
+                    <?= $page->sec2titre2() ?>
+                </h2>
 
-            <div class="info">
-                <div class="small_p"><?= $page->sec2text()->kt() ?></div>
+                <div class="text-justify text-2xl"><?= $page->sec2text()->kt() ?></div>
 
             </div>
         </div>
@@ -34,43 +35,37 @@
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->sec3titre2() ?></h2>
-            </div>
 
 
-        </div>
-        <hr>
-        <div class="info">
-            <div class="small_p"><?= $page->sec3text()->kt() ?></div>
-        </div>
-        <hr>
-        <div class="info">
-            <div class="medium_p"><?= $page->sec3subtitle()->kt() ?></div>
-        </div>
-        <hr>
-        <div class="two_col">
-            <div class="col1">
-                <div class="medium_p"><?= $page->sec3titreCol1()->kt() ?></div>
-                <hr>
-                <div class="imageInCol">
-                    <?php if ($image = $page->image('NOTONCAROUSEL_depenses.png')) : ?>
-                    <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
-                    <?php endif ?>
+                <div class="text-justify text-2xl mb-8"><?= $page->sec3text()->kt() ?></div>
+
+                <div class="text-justify text-2xl mb-12"><?= $page->sec3subtitle()->kt() ?></div>
+
+                <div class="two_col my-8">
+                    <div class="col1">
+                        <div class="text-justify text-3xl"><?= $page->sec3titreCol1()->kt() ?></div>
+
+                        <div class="imageInCol">
+                            <?php if ($image = $page->image('NOTONCAROUSEL_depenses.png')) : ?>
+                            <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
+                            <?php endif ?>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="text-justify text-3xl">
+                            <p><?= $page->sec3titreCol2()->kt() ?></p>
+                        </div>
+                        <hr>
+                        <div class="imageInCol">
+                            <?php if ($image = $page->image('NOTONCAROUSEL_financements.png')) : ?>
+                            <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
+                            <?php endif ?>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="text-justify text-2xl"><?= $page->sec3text2()->kt() ?></div>
             </div>
-            <div class="col2">
-                <div class="medium_p"><?= $page->sec3titreCol2()->kt() ?></div>
-                <hr>
-                <div class="imageInCol">
-                    <?php if ($image = $page->image('NOTONCAROUSEL_financements.png')) : ?>
-                    <img src="<?= $image->url() ?>" alt="<?= $image->alt()->esc() ?>">
-                    <?php endif ?>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="info">
-            <div class="medium_p"><?= $page->sec3text2()->kt() ?></div>
-        </div>
         </div>
     </section>
 
@@ -82,15 +77,20 @@
                     <?= $page->sec4titre2() ?></h2>
             </div>
         </div>
-
-        <?php snippet('carousel-images', slots: true) ?>
-        <?php slot('images') ?>
-        <?php endslot() ?>
-        <?php endsnippet() ?>
-
+        <div class='mb-12'>
+            <?php snippet('carousel-images', slots: true) ?>
+            <?php slot('images') ?>
+            <?php endslot() ?>
+            <?php endsnippet() ?>
+        </div>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="info">
-                <div class="small_p"><?= $page->sec4text()->kt() ?></div>
+            <div class="lg:px-20 md:px-10 px-4">
+                <div class="text-justify text-2xl mb-8"><?= $page->sec4text()->kt() ?></div>
+                <div class="text-justify text-2xl mb-8">
+                    <div class="list">
+                        <?= $page->sec4textList()->list()->kt() ?></div>
+                </div>
+                <div class="text-justify text-2xl"><?= $page->sec4text2()->kt() ?></div>
             </div>
         </div>
         <hr>

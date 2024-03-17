@@ -108,6 +108,22 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.contact {
+  text-align: center !important;
+  background-color: red;
+  width: 100%;
+  margin: auto;
+}
+
 /* ------------- HEADER ------------- */
 
 .header {
@@ -143,6 +159,12 @@ a {
   padding-bottom: var(--space-1);
 }
 .header .menu .main_menu li .menu_item:hover {
+  color: white;
+}
+.menu_item:hover {
+  color: white;
+}
+.header .menu .main_menu li a:hover {
   color: white;
 }
 .menu_item {
@@ -353,8 +375,9 @@ h2 {
 }
 
 main ul li {
-  list-style-type: '-';
+  list-style-type: '- ';
   list-style-position: inside;
+  margin-left: 10px;
 }
 
 button {
@@ -369,6 +392,7 @@ button {
 /* Style du bouton lorsqu'il est survolé */
 button:hover {
   background-color: white; /* Ajoutez la couleur de fond blanche au survol */
+  color: black;
 }
 
 /* Style du conteneur du bouton */
@@ -410,16 +434,10 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--space-1);
-  padding-left: var(--space-4);
-  margin: 0 auto;
-  padding-right: var(--space-4);
-  font-size: var(--typosize-footer-p);
   line-height: var(--typointerline-footer-p);
-  max-width: var(--maxwidth-xxl);
 }
 .abonnez_vous input {
-  width: 250px;
+  max-width: 250px;
   background: none;
   border: none;
   border-bottom: #000 solid 1px;
@@ -712,4 +730,14 @@ button:hover {
 
 .image-container:hover .image-activity {
   filter: grayscale(0%); /* Au survol, retirer le filtre de niveau de gris */
+}
+
+.list ul li {
+  list-style-type: '- ';
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.list ul li::marker {
+  text-indent: 5px !important;
 }

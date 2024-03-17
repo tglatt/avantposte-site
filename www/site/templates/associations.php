@@ -46,7 +46,7 @@
 
             <div class="two_col">
                 <div class="col1">
-                    <div class="medium_p mb-8"><?= $page->sec4titreCol1()->kt() ?></div>
+                    <div class="text-4xl mb-8"><?= $page->sec4titreCol1()->kt() ?></div>
                     <div class="imageInCol mb-8">
                         <?php if ($image = $page->image('NOTONCAROUSEL_GrandeSalle.jpg')) : ?>
                         <div class="image-container">
@@ -55,13 +55,13 @@
                         </div>
                         <?php endif ?>
                     </div>
-                    <div class="text-left text-3xl"><?= $page->sec4textCol1()->kt() ?></div>
+                    <div class="text-justify text-3xl"><?= $page->sec4textCol1()->kt() ?></div>
                 </div>
 
                 <div class="col2">
-                    <div class="medium_p"><?= $page->sec4titreCol2()->kt() ?></div>
+                    <div class="text-4xl"><?= $page->sec4titreCol2()->kt() ?></div>
                     <hr>
-                    <div class="text-left text-3xl"><?= $page->sec4textCol2()->kt() ?></div>
+                    <div class="text-justify text-3xl"><?= $page->sec4textCol2()->kt() ?></div>
                     <hr>
                     <div class="imageInCol">
                         <?php if ($image = $page->image('NOTONCAROUSEL_SalleActivite.jpg')) : ?>
@@ -86,10 +86,10 @@
             <img>
             <div class="two_col">
                 <div class="col1">
-                    <div class="text-left text-3xl"><?= $page->sec5textCol1()->kt() ?></div>
+                    <div class="text-justify text-3xl"><?= $page->sec5textCol1()->kt() ?></div>
                 </div>
                 <div class="col2">
-                    <div class="text-left text-3xl"><?= $page->sec5textCol2()->kt() ?></div>
+                    <div class="text-justify text-3xl"><?= $page->sec5textCol2()->kt() ?></div>
                 </div>
             </div>
 
@@ -104,7 +104,7 @@
             </div>
             <hr>
             <div class="info">
-                <div class="text-center text-3xl"><?= $page->sec6TextMediumA()->kt() ?></div>
+                <div class="text-center text-4xl"><?= $page->sec6TextMediumA()->kt() ?></div>
             </div>
             <hr>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px:0">
@@ -138,7 +138,7 @@
             </div>
             <hr>
             <div class="info">
-                <div class="text-center text-3xl"><?= $page->sec6TextMediumB()->kt() ?></div>
+                <div class="text-center text-4xl"><?= $page->sec6TextMediumB()->kt() ?></div>
             </div>
             <hr>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px:0">
@@ -180,11 +180,11 @@
             <div class="info">
                 <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec7Titre2() ?></h2>
 
-                <div class="text-left text-3xl mb-8">
+                <div class="text-justify text-3xl mb-8">
                     <a class="link_blackToPrimary" href="/contact"><?= $page->sec7Link1()->kt() ?></a>
                 </div>
 
-                <div class="text-left text-3xl"><?= $page->sec7Text1()->kt() ?></div>
+                <div class="text-justify text-3xl"><?= $page->sec7Text1()->kt() ?></div>
             </div>
         </div>
     </section>
@@ -194,7 +194,7 @@
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="info mb-8">
                 <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec8Titre2() ?></h2>
-                <div class="text-left text-3xl"><?= $page->sec8Text1()->kt() ?></div>
+                <div class="text-justify text-3xl"><?= $page->sec8Text1()->kt() ?></div>
             </div>
 
             <div class="bouton mt-8">

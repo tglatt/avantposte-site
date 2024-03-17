@@ -39,13 +39,14 @@
                 <?php foreach ($page->children()->listed() as $domain) : ?>
                 <div class='px-12 xl:px-4 mb-4 xl:mb-12'>
                     <a href="<?= page($domain->linkTo()) ?>" class="domain">
-                        <figure>
-                            <?php if ($domain->image()) {
+                        <div class='mb-8'>
+                            <figure>
+                                <?php if ($domain->image()) {
                                     echo $domain->image();
                                 }
                                 ?>
-                        </figure>
-                        <hr>
+                            </figure>
+                        </div>
                         <figcaption>
                             <h2 class="text-2xl lg:text-3xl"><?= $domain->title() ?></h2>
                             <hr>
@@ -63,17 +64,19 @@
     <!-- Section 4 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <h1 class="mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                <?= $page->contactezNousText() ?>
-            </h1>
-            <div class="bouton">
-                <a href="<?= page('contact.php')->url() ?>">
-                    <button class="px-6 py-4 border-1 ">
-                        <div class="px-6 text-lg md:text-xl lg:text-5xl bg-white">
-                            <?= $page->contactezNousButton() ?>
-                        </div>
-                    </button>
-                </a>
+            <div class="lg:px-20 md:px-10 px-4">
+                <h1 class="mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+                    <?= $page->contactezNousText() ?>
+                </h1>
+                <div class="bouton">
+                    <a href="<?= page('contact.php')->url() ?>">
+                        <button class="px-6 py-4 border-1 ">
+                            <div class="px-6 text-2xl md:text-2xl lg:text-5xl bg-white">
+                                <?= $page->contactezNousButton() ?>
+                            </div>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
