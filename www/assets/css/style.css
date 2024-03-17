@@ -117,11 +117,8 @@ p {
   text-align: justify;
 }
 
-.contact {
-  text-align: center !important;
-  background-color: red;
-  width: 100%;
-  margin: auto;
+.contact p {
+  text-align: center;
 }
 
 /* ------------- HEADER ------------- */
@@ -170,6 +167,7 @@ p {
 .menu_item {
   position: relative;
 }
+
 .menu ul {
   padding: 0;
   margin: 0;
@@ -263,6 +261,16 @@ hr {
 .titre {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(14px);
+}
+
+.icon {
+  height: 0.8em;
 }
 .info {
   padding-left: var(--space-3);
@@ -426,7 +434,7 @@ button:hover {
 }
 /* ------------- FOOTER ------------- */
 .footer {
-  /* background-color: var(--color-primary); */
+  background-color: var(--color-primary);
   width: 100%;
 }
 .footer-content {

@@ -1,12 +1,35 @@
 <?php snippet('header') ?>
 
+<?php
+function getRandomChild($page) {
+    $children = $page->children()->listed();
+    if ($children->count() > 0) {
+        $randomIndex = mt_rand(0, $children->count() - 1);
+        return $children->nth($randomIndex);
+    }
+    return null;
+}
+$fullTitle = $page->fulltitle();
+$randomChild = getRandomChild($page);
+$randomChild2 = getRandomChild($page);
+
+if ($randomChild) {
+    $icon = '<img class="icon" src="' . $randomChild->image()->url() . '" alt="' . $randomChild->title() . '" />';
+    $icon2 = '<img class="icon" src="' . $randomChild2->image()->url() . '" alt="' . $randomChild2->title() . '" />';
+    $fullTitle = str_replace('oo', '<span class="icon-container">' . $icon . $icon2 . '</span>', $fullTitle);
+}
+?>
+
 <main class="main">
     <!-- Section 1 -->
     <section class='py-16 md:py-16'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-2">
-                    <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl">
+                    <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl hidden xl:block">
+                        <?= $fullTitle ?>
+                    </h1>
+                    <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl xl:hidden ">
                         <?= $page->fulltitle() ?>
                     </h1>
                 </div>

@@ -3,21 +3,28 @@
 <main class="main">
     <!-- Section 1 -->
     <section class='py-16 md:py-16'>
-        <div class='mt-12 md:mt-72' id='section-hero'>
+        <div class='mt-12 md:mt-72'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-4 mb-8">
-                    <h1 class="mb-12     leading-12 text-5xl  md:text-5xl lg:text-7xl">
+                <div class="lg:px-20 md:px-10 px-4 mb-8 ">
+                    <h1 class="mb-12 leading-12 text-5xl  md:text-5xl lg:text-7xl">
                         <?= $page->title() ?>
                     </h1>
 
-                    <div class='text-2xl mb-4 contact'>
-                        <?= $page->sec1text()->kt() ?>
+                    <div class='text-2xl mb-4'>
+                        <div class='contact'><?= $page->sec1text()->kt() ?>
+                        </div>
                     </div>
 
-                    <div class="text-2xl text-center mb-12"><a class="link_blackToPrimary"
-                            href="mailto:<?= $page->mailContact() ?>"><?= $page->mailContact() ?></a></div>
+                    <div class="text-2xl mb-12 text-center">
+                        <a class="link_blackToPrimary" href="mailto:<?= $page->mailContact() ?>">
+                            <?= $page->mailContact() ?>
+                        </a>
+                    </div>
 
-                    <div class="text-2xl text-center mb-12"><?= $page->sec1text2()->kt() ?></div>
+                    <div class="text-2xl mb-12">
+                        <div class='contact'><?= $page->sec1text2()->kt() ?></div>
+                    </div>
+
                 </div>
             </div>
         </div>

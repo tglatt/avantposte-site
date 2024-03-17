@@ -550,6 +550,34 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -598,6 +626,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-1 {
@@ -658,6 +691,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .block {
@@ -858,6 +895,22 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {
@@ -1079,6 +1132,11 @@ video {
 }
 
 @media (min-width: 976px) {
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1131,8 +1189,20 @@ video {
 }
 
 @media (min-width: 1440px) {
+  .xl\:visible {
+    visibility: visible;
+  }
+
   .xl\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:grid-cols-3 {
@@ -1152,6 +1222,10 @@ video {
   .xl\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .xl\:pt-40 {
+    padding-top: 10rem;
   }
 }
 
