@@ -77,24 +77,29 @@
                     <?= $page->sec4titre2() ?></h2>
             </div>
         </div>
-        <div class='mb-12'>
+        <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
             <?php endslot() ?>
             <?php endsnippet() ?>
         </div>
+    </section>
+
+    <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
-                <div class="text-justify text-2xl mb-8"><?= $page->sec4text()->kt() ?></div>
-                <div class="text-justify text-2xl mb-8">
-                    <div class="list">
-                        <?= $page->sec4textList()->list()->kt() ?></div>
+                <div class="mx-auto max-w-4xl lg:max-w-5xl">
+                    <div class="lg:px-20 md:px-10 px-4">
+                        <div class="text-justify text-2xl mb-8"><?= $page->sec4text()->kt() ?></div>
+                        <div class="text-justify text-2xl mb-8">
+                            <div class="list">
+                                <?= $page->sec4textList()->list()->kt() ?></div>
+                        </div>
+                        <div class="text-justify text-2xl"><?= $page->sec4text2()->kt() ?></div>
+                    </div>
                 </div>
-                <div class="text-justify text-2xl"><?= $page->sec4text2()->kt() ?></div>
             </div>
         </div>
-        <hr>
-
     </section>
 
     <?php snippet('footer') ?>
