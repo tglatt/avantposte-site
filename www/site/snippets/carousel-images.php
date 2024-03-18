@@ -17,8 +17,19 @@
 }
 </style>
 <script>
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery');
+    const flickity = new Flickity(gallery);
+
+    // Mettre à jour la taille du carrousel après le chargement de la page
+    flickity.resize();
+});
+//const slidesContainer = document.getElementById("slides-container");
+//const slide = document.querySelector(".slide");
+</script>
+
+<script>
+
 </script>
 
 <script>
@@ -57,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const gallery = document.querySelector('.gallery');
     const flickity = new Flickity(gallery);
 
+
+
     // Fonction pour appliquer le décalage aux diapositives qui ne sont pas au centre
     function applyOffsetToNonCenteredSlides() {
         const cells = gallery.querySelectorAll('.gallery-cell');
@@ -80,4 +93,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Appliquer le décalage initial
     applyOffsetToNonCenteredSlides();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery');
+    const flickity = new Flickity(gallery);
+
+    // Mettre à jour la taille du carrousel après le chargement de la page
+    flickity.resize();
+});
+
+window.onload = function() {
+    const gallery = document.querySelector('.gallery');
+    const flickity = new Flickity(gallery);
+
+    // Mettre à jour la taille du carrousel après le chargement complet de la page
+    flickity.resize();
+};
 </script>
