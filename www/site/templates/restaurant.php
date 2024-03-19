@@ -25,37 +25,36 @@
     <section class='py-16 md:py-32'>
         <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                    <?= $page->Sec3titre2() ?>
-                </h2>
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+                        <?= $page->Sec3titre2() ?>
+                    </h2>
+                </div>
+                <div class="text-justify text-2xl"><?= $page->sec3text1()->kt() ?></div>
             </div>
-
-
-
-            <div class="text-justify text-2xl"><?= $page->sec3text1()->kt() ?></div>
-
         </div>
-
     </section>
 
     <!-- Section 4 -->
     <section class='py-16 md:py-32'>
         <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                    <?= $page->sec4Titre2() ?>
-                </h2>
-            </div>
-            <div class="text-justify text-2xl"><?= $page->sec4Text1()->kt() ?></div>
-            <div class="two_col">
-                <div class="col1">
-                    <div class="text-justify text-2xl"><?= $page->sec4textCol1()->kt() ?></div>
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+                        <?= $page->sec4Titre2() ?>
+                    </h2>
                 </div>
-                <div class="col2">
-                    <div class="text-justify text-2xl"><?= $page->sec4textCol2()->kt() ?></div>
+                <div class="text-justify text-2xl"><?= $page->sec4Text1()->kt() ?></div>
+                <div class="two_col">
+                    <div class="col1">
+                        <div class="text-justify text-2xl"><?= $page->sec4textCol1()->kt() ?></div>
+                    </div>
+                    <div class="col2">
+                        <div class="text-justify text-2xl"><?= $page->sec4textCol2()->kt() ?></div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
 
@@ -63,23 +62,25 @@
     <section class='py-16 md:py-32'>
         <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="lg:px-20 md:px-10 px-4">
-                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                    <?= $page->sec5Titre2() ?>
-                </h2>
-            </div>
-
-            <div class="text-justify text-2xl"><?= $page->sec5Text1()->kt() ?></div>
-            <div class="two_col">
-                <div class="col1">
-                    <div class="text-justify text-2xl">
-                        <a class="link_blackToPrimary"
-                            href="https://www.instagram.com/hobo_bistrot/"><?= $page->LienInstaHobo()->kt() ?></a>
-                    </div>
+                <div class="lg:px-20 md:px-10 px-4">
+                    <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+                        <?= $page->sec5Titre2() ?>
+                    </h2>
                 </div>
-                <div class="col2">
-                    <div class="text-justify text-2xl">
-                        <a class="link_blackToPrimary"
-                            href="https://www.facebook.com/profile.php?id=100092677400813&locale=fr_FR"><?= $page->LienFacebookHobo()->kt() ?></a>
+
+                <div class="text-justify text-2xl"><?= $page->sec5Text1()->kt() ?></div>
+                <div class="two_col">
+                    <div class="col1">
+                        <div class="text-justify text-2xl">
+                            <a class="link_blackToPrimary"
+                                href="https://www.instagram.com/hobo_bistrot/"><?= $page->LienInstaHobo()->kt() ?></a>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="text-justify text-2xl">
+                            <a class="link_blackToPrimary"
+                                href="https://www.facebook.com/profile.php?id=100092677400813&locale=fr_FR"><?= $page->LienFacebookHobo()->kt() ?></a>
+                        </div>
                     </div>
                 </div>
             </div>

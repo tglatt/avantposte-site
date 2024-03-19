@@ -71,8 +71,8 @@ if ($randomChild) {
                             </figure>
                         </div>
                         <figcaption>
-                            <h2 class="text-2xl lg:text-3xl"><?= $domain->title() ?></h2>
-                            <hr>
+                            <h2 class="text-2xl lg:text-3xl mb-8"><?= $domain->title() ?></h2>
+
                             <p class="text-lg font-normal text-gray-500">
                                 <?= $domain->text() ?>
                             </p>
