@@ -81,7 +81,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="/acteurs">
                             <div class="menu_item">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
@@ -89,7 +89,7 @@
                                 Acteurs
                             </div>
                         </a>
-                    </li>
+                    </li>-->
                     <li>
                         <div class="menu_item" id="toggle_show_avantposte">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
@@ -228,7 +228,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="/acteurs">
                                 <div class="menu_item">
                                     <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
@@ -236,7 +236,7 @@
                                     Acteurs
                                 </div>
                             </a>
-                        </li>
+                        </li>-->
                         <li>
                             <div class="menu_item cursor-pointer" id="toggle_show_avantposte-2">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
