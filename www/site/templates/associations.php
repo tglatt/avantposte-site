@@ -22,7 +22,7 @@
     </section>
 
     <section class='py-16 md:py-32'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
             <div class="lg:px-20 md:px-10 px-4">
                 <div class="text-2xl md:text-3xl mb-8">
                     <?= $page->text1()->kt() ?>

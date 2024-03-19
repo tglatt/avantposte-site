@@ -252,6 +252,46 @@ section {
   ); /* Appliquer un masque pour masquer la texture en haut de la section */
 }
 
+.section-border-top {
+  position: relative;
+}
+
+.section-border-top::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Ajustez la hauteur de l'effet de peinture selon vos préférences */
+  background-image: url('../icons/brush-effect-3.png');
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: auto 100%;
+  mix-blend-mode: multiply;
+  z-index: 1000;
+  mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+.section-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Ajustez cette valeur pour définir la position de l'effet de peinture par rapport au bas de la section */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Ajustez la hauteur de l'effet de peinture selon vos préférences */
+  background-image: url('../icons/brush-effect-2.png'); /* Chemin vers votre image */
+  background-repeat: repeat-x; /* Répéter l'image horizontalement */
+  background-position: center bottom; /* Positionner l'image au centre en bas */
+  background-size: auto 100%; /* Ajuster la largeur de l'image pour s'adapter à la largeur de la section */
+  mix-blend-mode: multiply; /* Mélange la texture avec le contenu en dessous */
+  z-index: 1000; /* Placez le pseudo-élément derrière le contenu de la section */
+  mask-image: linear-gradient(
+    to top,
+    transparent,
+    black
+  ); /* Appliquer un masque pour masquer la texture en haut de la section */
+}
+
 .section-content {
   max-width: var(--maxwidth-xxl);
   margin: 0 auto; /* Centre le contenu horizontalement */

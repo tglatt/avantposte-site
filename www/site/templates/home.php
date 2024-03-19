@@ -22,8 +22,8 @@ if ($randomChild) {
 
 <main class="main">
     <!-- Section 1 -->
-    <section class='py-16 md:py-16'>
-        <div class='mt-12 md:mt-72' id='section-hero'>
+    <section class='py-16 md:py-16 '>
+        <div class=' mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-2">
                     <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl hidden xl:block">
@@ -38,7 +38,7 @@ if ($randomChild) {
     </section>
 
     <!-- Section 2 -->
-    <section class='pt-8 md:pb-0'>
+    <section class='pt-8 md:pb-0 section-border-top section-border-bottom'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
@@ -85,7 +85,7 @@ if ($randomChild) {
     </section>
 
     <!-- Section 4 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h1 class="mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
