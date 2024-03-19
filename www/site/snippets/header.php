@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="header section-border" id='header-1'>
+    <header class="header" id='header-1'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl lg:max-w-5xl ">
 
             <a href="<?= $site->url() ?>" class="flex mb-auto space-x-3 rtl:space-x-reverse">
@@ -137,7 +137,7 @@
         </div>
     </header>
 
-    <header id='header-2' class="hidden">
+    <header id='header-2' class="hidden ">
         <nav class="bg-primary fixed w-full z-20 top-0 start-0 shadow-md">
             <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <!-- Conteneur pour le logo -->
