@@ -268,7 +268,7 @@ section {
   background-position: center top;
   background-size: auto 100%;
   mix-blend-mode: multiply;
-  z-index: -1;
+  z-index: 1000;
   mask-image: linear-gradient(to bottom, transparent, black);
 }
 
@@ -284,7 +284,7 @@ section {
   background-position: center bottom; /* Positionner l'image au centre en bas */
   background-size: auto 100%; /* Ajuster la largeur de l'image pour s'adapter à la largeur de la section */
   mix-blend-mode: multiply; /* Mélange la texture avec le contenu en dessous */
-  z-index: -1; /* Placez le pseudo-élément derrière le contenu de la section */
+  z-index: 1000; /* Placez le pseudo-élément derrière le contenu de la section */
   mask-image: linear-gradient(
     to top,
     transparent,

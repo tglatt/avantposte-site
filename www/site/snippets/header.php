@@ -137,7 +137,7 @@
         </div>
     </header>
 
-    <header id='header-2' class="hidden ">
+    <header id='header-2' class="hidden z-50">
         <nav class="bg-primary fixed w-full z-20 top-0 start-0 shadow-md">
             <div class="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <!-- Conteneur pour le logo -->
