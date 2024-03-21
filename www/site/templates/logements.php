@@ -14,7 +14,7 @@
 
 
     <!-- Section 2 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="titre">
                 <div class="lg:px-20 md:px-10 px-4">
@@ -29,7 +29,7 @@
     </section>
 
     <!-- Section 3 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 '>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
 
 

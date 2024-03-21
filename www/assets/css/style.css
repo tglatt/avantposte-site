@@ -351,6 +351,9 @@ hr {
   padding: var(--space-2) var(--space-1) var(--space-1) var(--space-1);
   text-align: center;
 }
+.tarif:hover {
+  border: 1px solid var(--color-secondary);
+}
 .tarif_prix p {
   font-size: var(--typosize-h1);
   line-height: var(--typointerline-h1);

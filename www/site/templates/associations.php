@@ -12,7 +12,7 @@
     </section>
 
 
-    <section class='pt-8 md:pb-0'>
+    <section class='pt-8 md:pb-0 section-border-top section-border-bottom'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-16 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="listActivite">
                 <div class="lg:px-20 md:px-10 px-4">
@@ -78,7 +78,7 @@
     </section>
 
     <!-- Section 5 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 '>
         <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
             <div class="lg:px-20 md:px-10 px-4">
 
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Section 6 -->
-    <section class='py-16 md:py-16'>
+    <section class='py-16 md:py-16 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-12 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl mb-8"><?= $page->sec6Titre2() ?></h2>
@@ -107,31 +107,37 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6APrix1()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6AText1()->kt() ?>
-                        </div>
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6APrix1()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6AText1()->kt() ?>
+                            </div>
+                        </a>
                     </div>
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6APrix2()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6AText2()->kt() ?>
-                        </div>
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6APrix2()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6AText2()->kt() ?>
+                            </div>
+                        </a>
                     </div>
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6APrix3()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6AText3()->kt() ?>
-                        </div>
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6APrix3()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6AText3()->kt() ?>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -140,32 +146,39 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6BPrix1()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">HT</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6BText1()->kt() ?>
-                        </div>
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6BPrix1()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">HT</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6BText1()->kt() ?>
+                            </div>
+                        </a>
                     </div>
                     <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6BPrix2()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">HT</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6BText2()->kt() ?>
-                        </div>
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6BPrix2()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">HT</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6BText2()->kt() ?>
+                            </div>
+                        </a>
                     </div>
-                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec6BPrix3()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">HT</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec6BText3()->kt() ?>
-                        </div>
+                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center hover:border-white">
+                        <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec6BPrix3()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">HT</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec6BText3()->kt() ?>
+                            </div>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -185,7 +198,7 @@
     </section>
 
     <!-- Section 8 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl  px-12 xl:px-0">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl mb-8"><?= $page->sec8Titre2() ?></h2>

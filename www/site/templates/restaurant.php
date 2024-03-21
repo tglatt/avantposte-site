@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section class='py-16 md:py-16'>
+    <section class='py-16 md:py-16 '>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-4">
@@ -12,7 +12,7 @@
     </section>
 
     <!-- Section 2 Carrousel -->
-    <section class='pt-8 md:pb-0'>
+    <section class='pt-8 md:pb-0 section-border-top section-border-bottom'>
         <div class="sec_carousel">
             <?php snippet('carousel-images', slots: true) ?>
             <?php slot('images') ?>
@@ -36,7 +36,7 @@
     </section>
 
     <!-- Section 4 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class='mx-auto max-w-4xl lg:max-w-5xl'>
             <div class="lg:px-20 md:px-10 px-4">
                 <div class="lg:px-20 md:px-10 px-4">
