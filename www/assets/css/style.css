@@ -354,6 +354,22 @@ hr {
 .tarif:hover {
   border: 1px solid var(--color-secondary);
 }
+
+.tarif-co:hover a {
+  color: var(--color-text) !important;
+  background-color: #f4f4f4;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.tarif-co:hover {
+  color: var(--color-text) !important;
+  background-color: #f4f4f4;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
 .tarif_prix p {
   font-size: var(--typosize-h1);
   line-height: var(--typointerline-h1);

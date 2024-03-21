@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="main">
-    <section class='py-16 md:py-16'>
+    <section class='py-16 md:py-18'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
                 <div class="lg:px-20 md:px-10 px-4">
@@ -33,32 +33,38 @@
                 <div class="text-4xl text-justify py-8"><?= $page->sec3titre3()->kt() ?></div>
                 <div class="text-2xl text-justify py-8"><?= $page->sec3text1()->kt() ?></div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px-0 py-8">
-                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl flex items-center justify-center mb-4">
-                            <div><?= $page->sec3Prix1()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec3Unite1()->kt() ?>
-                        </div>
+                    <div class="tarif-co border border-gray-300 rounded-lg p-4 py-8 text-center">
+                        <a href="https://avantposte.dokos.cloud/coworking" target="_blank">
+                            <div class="text-8xl flex items-center justify-center mb-4">
+                                <div><?= $page->sec3Prix1()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec3Unite1()->kt() ?>
+                            </div>
+                        </a>
                     </div>
-                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl  flex items-center justify-center mb-4">
-                            <div><?= $page->sec3Prix2()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec3Unite2()->kt() ?>
-                        </div>
+                    <div class="tarif-co border border-gray-300 rounded-lg p-4 py-8 text-center">
+                        <a href="https://avantposte.dokos.cloud/coworking" target="_blank">
+                            <div class="text-8xl  flex items-center justify-center mb-4">
+                                <div><?= $page->sec3Prix2()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec3Unite2()->kt() ?>
+                            </div>
+                        </a>
                     </div>
-                    <div class="tarif border border-gray-300 rounded-lg p-4 py-8 text-center">
-                        <div class="text-8xl  flex items-center justify-center mb-4">
-                            <div><?= $page->sec3Prix3()->kt() ?></div>
-                            <div class="text-xs ml-1 mt-auto">TTC</div>
-                        </div>
-                        <div class="small_p mt-2">
-                            <?= $page->sec3Unite3()->kt() ?>
-                        </div>
+                    <div class="tarif-co border border-gray-300 rounded-lg p-4 py-8 text-center">
+                        <a href="/contact">
+                            <div class="text-8xl  flex items-center justify-center mb-4">
+                                <div><?= $page->sec3Prix3()->kt() ?></div>
+                                <div class="text-xs ml-1 mt-auto">TTC</div>
+                            </div>
+                            <div class="small_p mt-2">
+                                <?= $page->sec3Unite3()->kt() ?>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
