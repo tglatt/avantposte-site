@@ -41,19 +41,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    const screenWidth = window.innerWidth;
+    const largeScreenSize = 1024;
+
     const galleryCells = document.querySelectorAll('.gallery-cell');
     galleryCells.forEach(function(cell, index) {
-        if (index % 4 === 0) {
-            cell.classList.add('image-container-yellow');
-        } else if (index % 4 === 1) {
-            cell.classList.add('image-container-blue');
-        } else if (index % 4 === 2) {
-            cell.classList.add('image-container-orange');
-        } else {
-            cell.classList.add('image-container-green');
+        // Supprimez les classes existantes pour éviter des conflits
+        cell.classList.remove('image-container-yellow', 'image-container-blue',
+            'image-container-orange', 'image-container-green');
+
+        // Vérifiez si l'écran est considéré comme grand avant d'ajouter des classes
+        if (screenWidth >= largeScreenSize) {
+            if (index % 4 === 0) {
+                cell.classList.add('image-container-yellow');
+            } else if (index % 4 === 1) {
+                cell.classList.add('image-container-blue');
+            } else if (index % 4 === 2) {
+                cell.classList.add('image-container-orange');
+            } else {
+                cell.classList.add('image-container-green');
+            }
         }
     });
 });
+
 var cells = document.querySelectorAll('.gallery-cell');
 
 // Pour chaque cellule, ajoutez des écouteurs d'événements pour détecter le survol de la souris
