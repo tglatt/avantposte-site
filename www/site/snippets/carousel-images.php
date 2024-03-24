@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryCells = document.querySelectorAll('.gallery-cell');
     galleryCells.forEach(function(cell, index) {
         if (index % 4 === 0) {
-            cell.classList.add('yellow-filter');
+            cell.classList.add('image-container-yellow');
         } else if (index % 4 === 1) {
-            cell.classList.add('blue-filter');
+            cell.classList.add('image-container-blue');
         } else if (index % 4 === 2) {
-            cell.classList.add('orange-filter');
+            cell.classList.add('image-container-orange');
         } else {
-            cell.classList.add('green-filter');
+            cell.classList.add('image-container-green');
         }
     });
 });

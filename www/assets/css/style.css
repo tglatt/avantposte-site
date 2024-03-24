@@ -651,7 +651,7 @@ button:hover {
 
 /* Appliquez le filtre grayscale à l'image par défaut */
 .gallery-cell img {
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 /* Retirez le filtre grayscale lorsque l'image est survolée */
@@ -805,22 +805,141 @@ button:hover {
   opacity: 1; /* Définir l'opacité initiale à 0 */
 }
 
-.image-container:hover .image-overlay-blue {
-  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container-blue {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #ffffff;
 }
-.image-container:hover .image-overlay-yellow {
-  opacity: 0; /* Au survol, afficher le filtre en modifiant l'opacité */
+.image-container-blue::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  background: #6254ff;
+  opacity: 1;
+}
+.image-container-blue > img {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
 }
 
-.image-activity {
-  transition: filter 0.3s ease; /* Ajouter une transition pour une apparence plus fluide */
-  filter: grayscale(
-    100%
-  ); /* Appliquer le filtre de niveau de gris par défaut */
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container-yellow {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #f5eacc;
+}
+.image-container-yellow::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  background: #cc9e0d;
+  opacity: 1;
+}
+.image-container-yellow > img {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: multiply;
 }
 
-.image-container:hover .image-activity {
-  filter: grayscale(0%); /* Au survol, retirer le filtre de niveau de gris */
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container-orange {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #ffffff;
+}
+.image-container-orange::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  background: #fd753b;
+  opacity: 1;
+}
+.image-container-orange > img {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container-green {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #089600;
+}
+.image-container-green::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  background: #09ab00;
+  opacity: 1;
+}
+.image-container-green > img {
+  -webkit-filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  filter: contrast(120%) grayscale(100%) hue-rotate(0deg) invert(0%)
+    opacity(100%) saturate(100%) sepia(0%);
+  mix-blend-mode: none;
+}
+
+.image-activity.image-container-yellow:hover,
+.image-activity.image-container-blue:hover,
+.image-activity.image-container-orange:hover,
+.image-activity.image-container-green:hover {
+  background: none !important; /* Assurez-vous que le fond du conteneur est transparent */
+}
+
+.image-activity.image-container-yellow:hover::after,
+.image-activity.image-container-blue:hover::after,
+.image-activity.image-container-orange:hover::after,
+.image-activity.image-container-green:hover::after {
+  opacity: 0 !important; /* Cachez le pseudoelement */
+  background: none !important; /* Assurez-vous que le fond du pseudoelement est transparent */
+  mix-blend-mode: normal !important; /* Rétablir le mode de fusion normal */
+}
+
+.image-activity.image-container-yellow:hover > img,
+.image-activity.image-container-blue:hover > img,
+.image-activity.image-container-orange:hover > img,
+.image-activity.image-container-green:hover > img {
+  -webkit-filter: none !important; /* Annuler tous les filtres appliqués aux images */
+  filter: none !important;
+  mix-blend-mode: normal !important; /* Rétablir le mode de fusion normal */
 }
 
 .list ul li {

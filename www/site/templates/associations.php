@@ -48,10 +48,9 @@
                         <div class="text-4xl mb-8"><?= $page->sec4titreCol1()->kt() ?></div>
                         <div class="imageInCol mb-8">
                             <?php if ($image = $page->image('NOTONCAROUSEL_GrandeSalle.jpg')) : ?>
-                            <div class="image-container">
-                                <img class='image-activity w-full max-w-full md:max-w-none' src="<?= $image->url() ?>"
+                            <div class="image-activity  image-container-blue">
+                                <img class='w-full max-w-full md:max-w-none' src="<?= $image->url() ?>"
                                     alt="<?= $image->alt()->esc() ?>">
-                                <div class="image-overlay-yellow"></div>
                             </div>
                             <?php endif ?>
                         </div>
@@ -61,10 +60,9 @@
                         <div class="text-4xl mb-8"><?= $page->sec4titreCol2()->kt() ?></div>
                         <div class="imageInCol mb-8">
                             <?php if ($image = $page->image('NOTONCAROUSEL_SalleActivite.jpg')) : ?>
-                            <div class="image-container">
-                                <img class='image-activity w-full max-w-full md:max-w-none' src="<?= $image->url() ?>"
+                            <div class="image-activity image-container-yellow">
+                                <img class='w-full max-w-full md:max-w-none' src="<?= $image->url() ?>"
                                     alt="<?= $image->alt()->esc() ?>">
-                                <div class="image-overlay-blue"></div>
                             </div>
                             <?php endif ?>
                         </div>
