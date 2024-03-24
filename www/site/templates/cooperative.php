@@ -14,7 +14,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <div class="text-justify text-2xl mb-12"><?= $page->sec2text()->kt() ?></div>
@@ -50,15 +50,18 @@
     </section>
 
     <!-- Section 4 -->
-    <section class="sec_carousel">
-        <div class="lg:px-20 md:px-10 px-4">
-            <h2 class="mb-8 mt-20  xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec4titre2() ?>
-                </h1>
+    <section class='pt-4 md:pb-0 section-border-top section-border-bottom'>
+
+        <div class="lg:px-20 md:px-10 px-4 ">
+            <h2 class="mb-4 mt-20  xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec4titre2() ?>
+            </h2>
         </div>
-        <?php snippet('carousel-images', slots: true) ?>
-        <?php slot('images') ?>
-        <?php endslot() ?>
-        <?php endsnippet() ?>
+        <div class="sec_carousel">
+            <?php snippet('carousel-images', slots: true) ?>
+            <?php slot('images') ?>
+            <?php endslot() ?>
+            <?php endsnippet() ?>
+        </div>
     </section>
 
     <!-- Section 5 -->
@@ -76,7 +79,7 @@
     </section>
 
     <!-- Section 6 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec6titre2() ?>
@@ -105,7 +108,7 @@
     </section>
 
     <!-- Section 8 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">

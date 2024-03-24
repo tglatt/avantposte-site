@@ -586,6 +586,10 @@ video {
   z-index: 20;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -865,6 +869,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-40 {
   padding-top: 10rem;
 }
@@ -875,6 +883,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-justify {

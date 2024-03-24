@@ -2,7 +2,18 @@
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,   "prevNextButtons": false }'>
         <?php foreach ($page->images() as $img) : ?>
         <?php if (!str_contains($img->name(), 'NOTONCAROUSEL')) : ?>
-        <div class="gallery-cell"><?= $img ?></div>
+        <div class="gallery-cell"><?php if ($img): ?>
+            <img alt="<?= $img->alt() ?>" src="<?= $img->resize(900)->url() ?>" srcset="<?= $img->srcset(
+            [
+                '300w'  => ['width' => 300],
+                '600w'  => ['width' => 600],
+                '900w'  => ['width' => 900],
+                '1200w' => ['width' => 1200],
+                '1800w' => ['width' => 1800],
+            ]
+        )?>" width="<?= $img->resize(1800)->width() ?>" height="<?= $img->resize(1800)->height() ?>">
+            <?php endif ?>
+        </div>
         <?php endif ?>
         <?php endforeach ?>
     </div>
@@ -20,12 +31,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const gallery = document.querySelector('.gallery');
     const flickity = new Flickity(gallery);
-
-    // Mettre à jour la taille du carrousel après le chargement de la page
     flickity.resize();
 });
-//const slidesContainer = document.getElementById("slides-container");
-//const slide = document.querySelector(".slide");
 </script>
 
 <script>
@@ -37,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryCells = document.querySelectorAll('.gallery-cell');
     galleryCells.forEach(function(cell, index) {
         if (index % 4 === 0) {
-            cell.classList.add('yellow-filter');
+            cell.classList.add('image-container-yellow');
         } else if (index % 4 === 1) {
-            cell.classList.add('blue-filter');
+            cell.classList.add('image-container-blue');
         } else if (index % 4 === 2) {
-            cell.classList.add('orange-filter');
+            cell.classList.add('image-container-orange');
         } else {
-            cell.classList.add('green-filter');
+            cell.classList.add('image-container-green');
         }
     });
 });
