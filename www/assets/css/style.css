@@ -942,6 +942,31 @@ button:hover {
     filter: none !important;
     mix-blend-mode: normal !important; /* Rétablir le mode de fusion normal */
   }
+
+  .personne-image.image-container-yellow:hover,
+  .personne-image.image-container-blue:hover,
+  .personne-image.image-container-orange:hover,
+  .personne-image.image-container-green:hover {
+    background: none !important; /* Assurez-vous que le fond du conteneur est transparent */
+  }
+
+  .personne-image.image-container-yellow:hover::after,
+  .personne-image.image-container-blue:hover::after,
+  .personne-image.image-container-orange:hover::after,
+  .personne-image.image-container-green:hover::after {
+    opacity: 0 !important; /* Cachez le pseudoelement */
+    background: none !important; /* Assurez-vous que le fond du pseudoelement est transparent */
+    mix-blend-mode: normal !important; /* Rétablir le mode de fusion normal */
+  }
+
+  .personne-image.image-container-yellow:hover > img,
+  .personne-image.image-container-blue:hover > img,
+  .personne-image.image-container-orange:hover > img,
+  .personne-image.image-container-green:hover > img {
+    -webkit-filter: none !important; /* Annuler tous les filtres appliqués aux images */
+    filter: none !important;
+    mix-blend-mode: normal !important; /* Rétablir le mode de fusion normal */
+  }
 }
 
 .list ul li {

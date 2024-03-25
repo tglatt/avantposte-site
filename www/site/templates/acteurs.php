@@ -15,7 +15,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-8 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="sec_padd1">
                 <div class="info">
@@ -25,37 +25,36 @@
         </div>
     </section>
 
-    <section class='py-16 md:py-32'>
+    <section class='py-16 md:py-16'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="grid_personnnes">
-                <?php foreach ($page->children()->listed() as $personne) : ?>
-                <div class="personne">
+            <div class="lg:px-20 md:px-10 px-4">
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                    <?php foreach ($page->children()->listed() as $personne) : ?>
+                    <div class="personne">
+                        <div class="personne-image">
+                            <?php if ($cover = $personne->image()) : ?>
 
-                    <figure>
-                        <?php if ($cover = $personne->image()) : ?>
-                        <img src="<?= $cover->crop(500, 426)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
-                        <?php endif ?>
-                        <figcaption class="img-caption">
-                            <hr>
-                            <p><?= $personne->title()->esc() ?></p>
-                        </figcaption>
-                    </figure>
-                    <?php if ($personne->job() != "") : ?>
-                    <p><?= $personne->job()->esc() ?></p>
-                    <?php endif ?>
-                    <hr>
-                    <?php if ($personne->entreprise() != "") : ?>
-                    <p><?= $personne->entreprise()->esc() ?></p>
-                    <?php endif ?>
-                    <?php if ($personne->siteweb() != "") : ?>
-                    <p>
-                        <a href="https://<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary">
-                            <?= $personne->siteweb()->esc() ?>
-                        </a>
-                    </p>
-                    <?php endif ?>
+                            <img src="<?= $cover->crop(500, 426)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
+                            <?php endif ?>
+                        </div>
+                        <div class=" py-4 text-left">
+                            <div class="font-medium text-xl mb-2"><?= $personne->title()->esc() ?></div>
+                            <?php if ($personne->job() != "") : ?>
+                            <div class="text-gray-500 text-base">
+                                <?= $personne->job()->esc() ?>
+                            </div>
+                            <?php endif ?>
+                            <?php if ($personne->siteweb() != "" && $personne->entreprise() != "") : ?>
+                            <div class="text-gray-700 text-base">
+                                <a href="https://<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary">
+                                    <?= $personne->entreprise()->esc() ?>
+                                </a>
+                            </div>
+                            <?php endif ?>
+                        </div>
+                    </div>
+                    <?php endforeach ?>
                 </div>
-                <?php endforeach ?>
             </div>
         </div>
     </section>
@@ -63,3 +62,30 @@
     <?php snippet('footer') ?>
 
 </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const screenWidth = window.innerWidth;
+    const largeScreenSize = 1024;
+
+    const galleryCells = document.querySelectorAll('.personne-image');
+    galleryCells.forEach(function(cell, index) {
+        // Supprimez les classes existantes pour éviter des conflits
+        cell.classList.remove('image-container-yellow', 'image-container-blue',
+            'image-container-orange', 'image-container-green');
+
+        // Vérifiez si l'écran est considéré comme grand avant d'ajouter des classes
+        if (screenWidth >= largeScreenSize) {
+            if (index % 4 === 0) {
+                cell.classList.add('image-container-yellow');
+            } else if (index % 4 === 1) {
+                cell.classList.add('image-container-blue');
+            } else if (index % 4 === 2) {
+                cell.classList.add('image-container-orange');
+            } else {
+                cell.classList.add('image-container-green');
+            }
+        }
+    });
+});
+</script>
