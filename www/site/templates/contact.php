@@ -9,7 +9,7 @@
                     <h1 class="mb-12 leading-12 text-5xl  md:text-5xl lg:text-7xl">
                         <?= $page->title() ?>
                     </h1>
-
+                    <!--
                     <div class='text-2xl mb-4'>
                         <div class='contact'><?= $page->sec1text()->kt() ?>
                         </div>
@@ -23,8 +23,11 @@
 
                     <div class="text-2xl mb-12">
                         <div class='contact'><?= $page->sec1text2()->kt() ?></div>
-                    </div>
-
+                    </div>-->
+                    <iframe width="540" height="750"
+                        src="https://7508c924.sibforms.com/serve/MUIFANUYIKC_ibgCo61X5Fu-LaOG4Gw1bND_zVnTsPH0mEmg7s2fSoLNjP1WiWWuOqjZRfcx1pLKwCe41v5lJgLZGmOv4GBMEwzrGUFo7g6iDzabpJYgZMS3hdCskqzV22OZIZ2_cewGAmz_RRs5lYp7WHsCtP090I4sVAkUAyax9ataqwMwGS57f0zUrw6cL4HkW5tm7_ybGYTG"
+                        frameborder="0" scrolling="auto" allowfullscreen
+                        style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
                 </div>
             </div>
         </div>
