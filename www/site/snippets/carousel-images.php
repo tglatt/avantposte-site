@@ -1,7 +1,7 @@
 <section class='py-16 md:py-16'>
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true,   "prevNextButtons": false }'>
         <?php foreach ($page->images() as $img) : ?>
-        <?php if (!str_contains($img->name(), 'NOTONCAROUSEL')) : ?>
+        <?php if (!str_contains(strtolower($img->name()), 'notoncarousel')) : ?>
         <div class="gallery-cell"><?php if ($img): ?>
             <img alt="<?= $img->alt() ?>" src="<?= $img->resize(900)->url() ?>" srcset="<?= $img->srcset(
             [

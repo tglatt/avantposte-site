@@ -81,9 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (index % 4 === 1) {
                 cell.classList.add('image-container-blue');
             } else if (index % 4 === 2) {
-                cell.classList.add('image-container-orange');
-            } else {
                 cell.classList.add('image-container-green');
+            } else {
+                cell.classList.add('image-container-blue');
             }
         }
     });

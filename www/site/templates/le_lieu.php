@@ -70,7 +70,7 @@
     </section>
 
     <!-- Section 4 -->
-    <section class='py-16 md:py-32 section-border-top section-border-bottom'>
+    <section class='py-16 md:py-16 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">

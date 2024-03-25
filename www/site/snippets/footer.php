@@ -5,7 +5,7 @@
                 Abonnez-vous à notre lettre d’informations :
                 <input type="text" />
             </div>-->
-            <div class="mentions_legales mt-4 mb-4 lg:mb-0 mr-auto pl-4 lg:mx-4 text-right w-full">
+            <div class="mentions_legales mt-4 mb-4 lg:mb-0 mr-auto pl-4 lg:mx-4 text-center w-full">
                 <a href="<?= url('mentionsLegales') ?>">Mentions légales</a>
             </div>
         </div>

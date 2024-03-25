@@ -2,7 +2,7 @@ title: Page d'accueil
 options:
   changeSlug: false
   delete: false
-  
+
 columns:
   Partie1:
     width: 1/2
@@ -33,15 +33,38 @@ columns:
         type: pages
         template: domaine
   Partie3:
-    width: 3/4
+    width: 1/2
     fields:
       contactezNousText:
         label: Texte contactez-nous
         type: textarea
         size: small
   Partie3bis:
-    width: 1/4
+    width: 1/2
     fields:
       ContactezNousButton:
         label: Bouton contactez-nous
         type: text
+  Partie4:
+    width: 1/3
+    type: fields
+    fields:
+      SupportTitle:
+        label: SupportTitle
+        type: textarea
+        size: small
+  Partie4bis:
+    width: 1/3
+    type: fields
+    fields:
+      SupportSubTitle:
+        label: SupportSubTitle
+        type: textarea
+        size: small
+  Partie4ter:
+    width: 1/3
+    type: fields
+    fields:
+      SupportGallery:
+        type: files
+        layout: card

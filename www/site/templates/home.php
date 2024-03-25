@@ -109,18 +109,19 @@ if ($randomChild) {
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-10 px-4">
                 <h1 class="mb-4 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
-                    <?= $page->Sec6Title1() ?>
+                    <?= $page->SupportTitle() ?>
                 </h1>
                 <div class="mb-8 text-lg font-normal lg:text-xl text-center">
-                    <div class='support'><?= $page->sec6Text()->kt() ?></div>
+                    <div class='support'><?= $page->SupportSubTitle()->kt() ?></div>
                 </div>
             </div>
-            <hr>
-            <hr>
-            <div class="mecenes">
+
+            <div class="grid grid-cols-4 gap-12 w-full">
                 <?php foreach ($page->images() as $img) : ?>
-                <?php if (str_contains($img->name(), 'MECENE_LOGO')) : ?>
-                <?= $img ?>
+                <?php if (str_contains(strtolower($img->name()), 'mecene_logo')) : ?>
+                <div class='flex items-center'>
+                    <?= $img ?>
+                </div>
                 <?php endif ?>
                 <?php endforeach ?>
             </div>

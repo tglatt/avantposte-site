@@ -17,8 +17,13 @@ ContactezNousText: Vous souhaitez réserver un espace, une place de coworking, p
 Contacteznousbutton: Contactez-nous !
 
 ----
-Sec6Title1 : Ils nous soutiennent
+
+SupportTitle : Ils nous soutiennent
+
 ----
-sec6Text : des centaines de sociétaires citoyens et aussi :
+
+SupportSubTitle : des centaines de sociétaires citoyens et aussi :
+
 ----
+
 Uuid: 3OKmjkjVo4th8yXe
