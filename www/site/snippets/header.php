@@ -102,7 +102,7 @@
                         <div class="menu_item" id="toggle_show_avantposte">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                 alt="Cercle qui entoure le menu" />
-                            l'Avant Poste
+                            l'Avant-Poste
                         </div>
 
                         <div class="sub_menu" id="sub_menu_avantposte">
@@ -158,6 +158,13 @@
 
 
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="https://7508c924.sibforms.com/serve/MUIFABrpteFNJ6oIAGBmr4stiuKfpwS49lF3Atic-7zZhZm2XOlXp_K5VQA4Xx7yRcUKPfrE9Vfr7AraUCXT3GaVPe1DUJ-lOXX2ZtiZ-3N5Lvw42AUccxGVYilNyJSM9TDfUvzT7M3Zc8t00qojgjJAr_u95evWIBwcl6k-WqrbOpEAlEjqRPuKgTuCX_ykExrteIy4YbJ1IkpE"
+                        target="_blank">
+                        <button type="button" id="button-newsletter"
+                            class="x:ml-12 text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">
+                            S'inscrire
+                        </button>
+                    </a>
                     <!--<button type="button" class="text-white bg-primary hover:bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">Contacter-nous</button>-->
                     <button data-collapse-toggle="navbar-sticky" id='toogle-button' type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -174,7 +181,6 @@
                     id="navbar-sticky">
                     <ul
                         class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-
                         <li>
                             <a class="hover:text-white" href="/">
                                 <div class="menu_item cursor-pointer ">
@@ -249,7 +255,7 @@
                             <div class="menu_item cursor-pointer" id="toggle_show_avantposte-2">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                     alt="Cercle qui entoure le menu" />
-                                l'Avant Poste
+                                l'Avant-Poste
                             </div>
 
                             <div class="sub_menu" id="sub_menu_avantposte-2">
@@ -292,8 +298,12 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
+
     </header>
+
+
 
 
 

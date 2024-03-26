@@ -116,7 +116,7 @@ if ($randomChild) {
                 </div>
             </div>
 
-            <div class="grid grid-cols-4 gap-12 w-full">
+            <div class="grid grid-cols-6 gap-8 w-full">
                 <?php foreach ($page->images() as $img) : ?>
                 <?php if (str_contains(strtolower($img->name()), 'mecene_logo')) : ?>
                 <div class='flex items-center'>
@@ -129,11 +129,6 @@ if ($randomChild) {
     </section>
     <?php snippet('footer') ?>
 </main>
-
-
-
-
 </body>
-
 
 </html>

@@ -25,9 +25,10 @@
                         <div class='contact'><?= $page->sec1text2()->kt() ?></div>
                     </div>-->
                     <iframe width="540" height="750"
-                        src="https://7508c924.sibforms.com/serve/MUIFANUYIKC_ibgCo61X5Fu-LaOG4Gw1bND_zVnTsPH0mEmg7s2fSoLNjP1WiWWuOqjZRfcx1pLKwCe41v5lJgLZGmOv4GBMEwzrGUFo7g6iDzabpJYgZMS3hdCskqzV22OZIZ2_cewGAmz_RRs5lYp7WHsCtP090I4sVAkUAyax9ataqwMwGS57f0zUrw6cL4HkW5tm7_ybGYTG"
+                        src="https://7508c924.sibforms.com/serve/MUIFAFMgqVXS_B5eVP0GgWmHmFduNYVnUNhajqvC6c2Zny9hE19g9GwC5dAnUG7surypirQD8-AMc0XU6Cs1YFOJsOatLSutuiDPjSIt058b03-1k5RBWJTt5c_XZ_UsZra8p2Tu2gHO-je-T8gzjSY8Knquk1fElA4072V8HPiu1xMuWijtv2xL758j_iBmrXowgAzjMBwm-wCL"
                         frameborder="0" scrolling="auto" allowfullscreen
                         style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+
                 </div>
             </div>
         </div>
