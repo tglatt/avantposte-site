@@ -6,8 +6,8 @@
     <section class='py-16 md:py-16'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-4">
-                    <h1 class="mb-1 text-5xl leading-8 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
+                <div class="lg:px-20 md:px-12 px-12">
+                    <h1 class="mb-1 text-5xl leading-12 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
     <!-- Section 2 -->
     <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->sec2titre2() ?>
                 </h2>
@@ -32,7 +32,7 @@
     <!-- Section 3 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->sec3titre2() ?></h2>
 
@@ -72,7 +72,7 @@
     <!-- Section 4 -->
     <section class='py-16 md:py-16 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->sec4titre2() ?></h2>
             </div>
@@ -87,7 +87,7 @@
 
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <div class="text-justify text-2xl mb-8"><?= $page->sec4text()->kt() ?></div>
                 <div class="text-justify text-2xl mb-8">
                     <div class="list">

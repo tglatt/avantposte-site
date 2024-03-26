@@ -4,7 +4,7 @@
     <section class='py-16 md:py-18'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-4">
+                <div class="lg:px-20 md:px-12 px-12">
                     <h1 class="mb-1 text-5xl leading-12 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
                 </div>
             </div>
@@ -24,12 +24,12 @@
     <!-- Section 3 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h1 class="mb-1 text-5xl leading-12 md:text-5xl lg:text-7xl"><?= $page->Sec3titre2() ?>
                 </h1>
             </div>
 
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <div class="text-4xl text-justify py-8"><?= $page->sec3titre3()->kt() ?></div>
                 <div class="text-2xl text-justify py-8"><?= $page->sec3text1()->kt() ?></div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 xl:px-0 py-8">
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <div class="text-4xl text-justify py-8"><?= $page->sec3titre3bis()->kt() ?></div>
                 <div class="text-2xl text-justify mb-12">
                     <?= $page->sec3text2()->kt() ?>
@@ -92,7 +92,7 @@
     <!-- Section 4 -->
     <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-8 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
                     <?= $page->sec4Titre2() ?>
                 </h2>
@@ -109,7 +109,7 @@
     <section class=' py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
 
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
                     <?= $page->sec5Titre2() ?></h2>
 
@@ -134,11 +134,9 @@
     <!-- Section 6 -->
     <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
-                <div class="lg:px-20 md:px-10 px-4">
-                    <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
-                        <?= $page->sec6Titre2() ?></h1>
-                </div>
+            <div class="lg:px-20 md:px-12 px-12">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
+                    <?= $page->sec6Titre2() ?></h2>
                 <div class="text-2xl text-justify"><?= $page->sec6Text1()->kt() ?></div>
 
             </div>

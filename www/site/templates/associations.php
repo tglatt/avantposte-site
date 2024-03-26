@@ -4,7 +4,7 @@
     <section class='py-16 md:py-16'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-4">
+                <div class="px-12 md:px-12 lg:px-20 ">
                     <h1 class="mb-1 text-5xl leading-12 md:text-5xl lg:text-7xl"><?= $page->title() ?></h1>
                 </div>
             </div>
@@ -22,8 +22,8 @@
     </section>
 
     <section class='py-16 md:py-32'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
-            <div class="lg:px-20 md:px-10 px-4">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="px-12 md:px-12 lg:px-20 ">
                 <div class="text-2xl md:text-3xl mb-8">
                     <?= $page->text1()->kt() ?>
                 </div>
@@ -35,15 +35,15 @@
     <section class='py-16 md:py-16 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="listActivite">
-                <div class="lg:px-20 md:px-10 px-4">
+                <div class="px-12 md:px-12 lg:px-20 ">
                     <h2 class="mb-12 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl">
                         <?= $page->sec4titre2() ?>
                     </h2>
                 </div>
             </div>
 
-            <div class="lg:px-20 md:px-10 px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 xl:px-0">
+            <div class="px-12 md:px-12 lg:px-20 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="mb-12">
                         <div class="text-4xl mb-8"><?= $page->sec4titreCol1()->kt() ?></div>
                         <div class="imageInCol mb-8">
@@ -77,8 +77,8 @@
 
     <!-- Section 5 -->
     <section class='py-16 md:py-32 '>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
-            <div class="lg:px-20 md:px-10 px-4">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="px-12 md:px-12 lg:px-20 ">
 
                 <h2 class="mb-12 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl"><?= $page->sec5Titre2() ?></h2>
 
@@ -96,8 +96,8 @@
 
     <!-- Section 6 -->
     <section class='py-16 md:py-16 section-border-top section-border-bottom'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl px-12 xl:px-0">
-            <div class="lg:px-20 md:px-10 px-4">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="px-12 md:px-12 lg:px-20 ">
                 <h2 class="mb-12 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl mb-8"><?= $page->sec6Titre2() ?></h2>
 
                 <div class="mb-8">
@@ -184,8 +184,8 @@
 
     <!-- Section 7 -->
     <section class='py-16 md:py-16'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl  px-12 xl:px-0">
-            <div class="lg:px-20 md:px-10 px-4">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="px-12 md:px-12 lg:px-20 ">
                 <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl mb-8"><?= $page->sec7Titre2() ?></h2>
                 <div class="text-justify text-2xl mb-8">
                     <a class="link_blackToPrimary" href="/contact"><?= $page->sec7Link1()->kt() ?></a>
@@ -197,8 +197,8 @@
 
     <!-- Section 8 -->
     <section class='py-16 md:py-32 section-border-top section-border-bottom'>
-        <div class="mx-auto max-w-4xl lg:max-w-5xl  px-12 xl:px-0">
-            <div class="lg:px-20 md:px-10 px-4">
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="px-12 md:px-12 lg:px-20 ">
                 <h2 class="mb-4 xl:mb-12 text-5xl  md:text-5xl lg:text-7xl mb-8"><?= $page->sec8Titre2() ?></h2>
                 <div class="text-justify text-2xl mb-8"><?= $page->sec8Text1()->kt() ?></div>
 

@@ -6,7 +6,7 @@
     <section class='py-16 md:py-16'>
         <div class='mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-4">
+                <div class="lg:px-20 md:px-12 px-12">
                     <h1 class="mb-1 text-5xl tracking-normal text-gray-900 md:text-5xl lg:text-6xl">
                         <?= $page->title() ?></h1>
                 </div>
@@ -17,17 +17,17 @@
     <!-- Section 2 -->
     <section class='py-16 md:py-8 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="sec_padd1">
-                <div class="info">
-                    <div class="small_p"><?= $page->sec2text()->kt() ?></div>
-                </div>
+            <div class="lg:px-20 md:px-12 px-12">
+                <h1 class="mb-12 text-4xl tracking-normal  md:text-4xl lg:text-5xl">
+                    <?= $page->sec2text()->kt() ?>
+                </h1>
             </div>
         </div>
     </section>
 
     <section class='py-16 md:py-16'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
                     <?php foreach ($page->children()->listed() as $personne) : ?>
                     <div class="personne">

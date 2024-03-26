@@ -25,7 +25,7 @@ if ($randomChild) {
     <section class='py-16 md:py-16 '>
         <div class=' mt-12 md:mt-72' id='section-hero'>
             <div class="mx-auto max-w-4xl lg:max-w-5xl">
-                <div class="lg:px-20 md:px-10 px-2">
+                <div class="lg:px-20 md:px-12 px-12">
                     <h1 class="mb-1 leading-12 text-5xl  md:text-5xl lg:text-7xl hidden xl:block">
                         <?= $fullTitle ?>
                     </h1>
@@ -51,7 +51,7 @@ if ($randomChild) {
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="listActivite">
-                <div class="lg:px-20 md:px-10 px-4">
+                <div class="lg:px-20 md:px-12 px-12">
                     <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                         <?= $page->chapeau() ?></h2>
                 </div>
@@ -87,7 +87,7 @@ if ($randomChild) {
     <!-- Section 4 -->
     <section class='py-16 md:py-32 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h1 class="mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->contactezNousText() ?>
                 </h1>
@@ -107,7 +107,7 @@ if ($randomChild) {
     <!-- Section 6 -->
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
-            <div class="lg:px-20 md:px-10 px-4">
+            <div class="lg:px-20 md:px-12 px-12">
                 <h1 class="mb-4 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
                     <?= $page->SupportTitle() ?>
                 </h1>
@@ -116,7 +116,7 @@ if ($randomChild) {
                 </div>
             </div>
 
-            <div class="grid grid-cols-6 gap-8 w-full">
+            <div class="px-12 xl:px-0 grid grid-cols-4 xl:grid-cols-6 gap-8 w-full">
                 <?php foreach ($page->images() as $img) : ?>
                 <?php if (str_contains(strtolower($img->name()), 'mecene_logo')) : ?>
                 <div class='flex items-center'>

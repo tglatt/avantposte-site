@@ -21,11 +21,11 @@ Sec4titrecol1: Grande Salle
 
 ----
 
-Sec4textcol1: Cette salle, d’une capacité maximum de 40 personnes, est accessible pour les personnes à mobilité réduite.<br><br>Elle est située au rez-de-chaussée et donne directement accès au joli jardin de l’Avant-Poste !
+Sec4titrecol2: Salle d’activité
 
 ----
 
-Sec4titrecol2: Salle d’activité
+Sec4textcol1: Cette salle, d’une capacité maximum de 40 personnes, est accessible pour les personnes à mobilité réduite.<br><br>Elle est située au rez-de-chaussée et donne directement accès au joli jardin de l’Avant-Poste !
 
 ----
 
@@ -124,22 +124,20 @@ Sec6bprix2: 60€
 
 ----
 
-Sec6btext2:
-
-Demi-journée
+Sec6btext2: Demi-journée
 
 ----
 
-Sec6bprix3: 90€
+Sec6bprix3: 95€
 
 ----
 
-Sec6btext3:
-
-Journée
+Sec6btext3: Journée
 
 ----
+
 Sec7titre2: Réservation des espaces
+
 ----
 
 Sec7link1: Réservez vos espaces via le formulaire de contact.

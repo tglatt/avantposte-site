@@ -14,39 +14,31 @@ Sec3text1: En plein cœur de Die, l’Avant-Poste propose 30 postes de travail e
 
 ----
 
-Sec3Prix1: 15€
-
-----
-
-Sec3Unite1: Journée de coworking
-
-----
-
-Sec3Prix2: 120€
-
-----
-
-Sec3Unite2: Carnet 10 jours de coworking
-
-----
-
-Sec3Prix3: 156€
-
-----
-
-Sec3Unite3: Abonnement mensuel sans engagement
-
-----
-
-Sec3Prix4: Nous contacter
-
-----
-
-Sec3Unite4: Séminaire d'entreprise (réservation de plusieurs places, privatisation d'espaces, traiteur, etc.)
-
-----
-
 Sec3titre3bis: Services
+
+----
+
+Sec3prix1: 15€
+
+----
+
+Sec3unite1: Journée de coworking
+
+----
+
+Sec3prix2: 120€
+
+----
+
+Sec3unite2: Carnet 10 jours de coworking
+
+----
+
+Sec3prix3: 156€
+
+----
+
+Sec3unite3: Abonnement mensuel sans engagement
 
 ----
 
@@ -57,8 +49,8 @@ Internet très haut débit par fibre optique wifi ou cablé
 <br>Boites aux lettres, domiciliation inclus pour les coworkers au forfait mois, 100€ TTC par an pour les structures extérieures.
 <br>Imprimante-scanner professionnelle en libre-service : 10€ TTC le forfait de 100 impressions
 <br>Location de véhicule Kangoo électrique : 36€ TTC par jour
-<br>Espaces détente et tisanerie :      pour vous ressourcer et échanger avec les autres membres dans un cadre      convivial
-<br>Cuisine partagée, salle de restauration et jardin ombragée
+<br>Espaces détente et tisanerie :      pour vous ressourcer et échanger avec les autres membres dans un cadre convivial
+<br>Cuisine partagée, salle de restauration et jardin ombragé
 
 ----
 
@@ -139,6 +131,14 @@ Découvrez notre espace unique pour vos séminaires d'entreprise, niché au cœu
 <br>Avec une capacité d'accueil de 50 personnes, nous proposons des installations modernes et confortables pour garantir le succès de vos réunions et ateliers.
 <br>Notre service de restauration sur place ravira vos papilles avec des options culinaires locales et saisonnières.
 <br>Faites de votre prochain séminaire une expérience mémorable et engagée en choisissant notre espace !
+
+----
+
+Sec3prix4: Nous contacter
+
+----
+
+Sec3unite4: Séminaire d'entreprise (réservation de plusieurs places, privatisation d'espaces, traiteur, etc.)
 
 ----
 

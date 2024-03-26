@@ -161,7 +161,7 @@
                     <a href="https://7508c924.sibforms.com/serve/MUIFABrpteFNJ6oIAGBmr4stiuKfpwS49lF3Atic-7zZhZm2XOlXp_K5VQA4Xx7yRcUKPfrE9Vfr7AraUCXT3GaVPe1DUJ-lOXX2ZtiZ-3N5Lvw42AUccxGVYilNyJSM9TDfUvzT7M3Zc8t00qojgjJAr_u95evWIBwcl6k-WqrbOpEAlEjqRPuKgTuCX_ykExrteIy4YbJ1IkpE"
                         target="_blank">
                         <button type="button" id="button-newsletter"
-                            class="x:ml-12 text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">
+                            class="ml-1 md:ml-8 xl:ml-12 text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">
                             S'inscrire
                         </button>
                     </a>
