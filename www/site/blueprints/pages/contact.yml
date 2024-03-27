@@ -1,0 +1,37 @@
+title: Formulaire de contact
+options:
+  changeSlug: false
+  delete: false
+
+columns:
+  Partie1:
+    type: fields
+    fields:
+      sec1text:
+        width: 1
+        label: Section 1 Text 1
+        type: textarea
+        size: small
+      mailContact:
+        width: 1
+        label: Section 1 mail Contact
+        type: text
+        size: small
+      sec1text2:
+        width: 1
+        label: Section 1 Text 2
+        type: textarea
+        size: small
+  Partie2:
+    type: fields
+    fields:
+      sec2title2:
+        width: 1
+        label: Section 2 Title 2
+        type: text
+        size: small
+      sec2textCol1:
+        width: 1
+        label: Section 2 Text Col 1
+        type: textarea
+        size: small

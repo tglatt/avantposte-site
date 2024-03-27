@@ -25,7 +25,7 @@
                         <div class='contact'><?= $page->sec1text2()->kt() ?></div>
                     </div>-->
                     <iframe width="540" height="750"
-                        src="https://7508c924.sibforms.com/serve/MUIFAEs63wIJhQs0huO74SIpvVEmBDEFAz5xGauWIgHUDVke2jpOopICtH3zS8U9PEDqukifqmqTtYdCFcimZ1H2AX5drMwfs69XjmXBak1nG1cB_Cjo3I_N6ZeniI_anHCe9OCJgw-CfSy_eSnL8T7t4oyyp_vYcj0YOy67qwBRAXV6t7qAOR-NAH1e8m_YqtBThafEzaseYLX4"
+                        src="https://7508c924.sibforms.com/serve/MUIFANcz-BQEY1-MttzS8UfqFi8D41KqVh4-DukB8y6BtxT2T2HJjskcP7p4tlwlKp4dfru2AEsVqwhJUg6PY0giMkktDEnLyHroBqqIYCyhhHSe8GYfjMV5Pryqq-_3UkObpGVb5lwUUoHNMRvsvsItxCPuv6N-qjfYhYKmQpIHbUrOU6f-sHrmm-HlTWFKumP_8VpA9KqHAqo1"
                         frameborder="0" scrolling="auto" allowfullscreen
                         style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
 
