@@ -967,3 +967,26 @@ button:hover {
 .list ul li::marker {
   text-indent: 5px !important;
 }
+
+.custom-button {
+  background-color: transparent; /* Définir la couleur de fond du bouton comme transparent */
+  border: none; /* Supprimer les bordures */
+  cursor: pointer; /* Définir le curseur de la souris comme un pointeur */
+  color: #000;
+  margin: 0;
+  text-align: center;
+  border: black 1px solid;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #f4f4f4; /* Changer la couleur de fond au survol */
+  color: #000 !important;
+}
+
+.custom-button:hover a {
+  background-color: #f4f4f4; /* Changer la couleur de fond au survol */
+  color: #000 !important;
+}

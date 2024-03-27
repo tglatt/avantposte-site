@@ -143,3 +143,8 @@ columns:
         label: Section 6 Texte
         type: textarea
         size: small
+      Sec6cta:
+        width: 1
+        label: Section 6 CTA
+        type: text
+        size: small

@@ -30,7 +30,7 @@
             <div class="lg:px-20 md:px-12 px-12">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
                     <?php foreach ($page->children()->listed() as $personne) : ?>
-                    <div class="personne">
+                    <div class="personne  flex flex-col justify-between">
                         <div class="personne-image">
                             <?php if ($cover = $personne->image()) : ?>
 
@@ -45,8 +45,12 @@
                             </div>
                             <?php endif ?>
                             <?php if ($personne->siteweb() != "" && $personne->entreprise() != "") : ?>
-                            <div class="text-gray-700 text-base">
-                                <a href="https://<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary">
+                        </div>
+                        <div class='mt-auto'>
+                            <div class="text-gray-700 text-base text-capitalize">
+
+                                <a href="https://<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary"
+                                    style=" text-decoration: underline !important;">
                                     <?= $personne->entreprise()->esc() ?>
                                 </a>
                             </div>

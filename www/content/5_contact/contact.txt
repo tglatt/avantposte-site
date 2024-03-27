@@ -2,18 +2,27 @@ Title: Formulaire <br>de contact
 
 ----
 
-sec1text: N'hésitez pas à nous contacter sur :
-----
-mailContact : contact@avant-poste.org
-----
-sec1text2: Notre équipe fera le maximum pour vous répondre au plus vite !
+Sec1text: N'hésitez pas à nous contacter sur :
 
 ----
-sec2title2: Se rendre à l’Avant-Poste
+
+Mailcontact: contact@avant-poste.org
+
 ----
-sec2textCol1 : Adresse : 3 rue notre dame, 26150 – Die
+
+Sec1text2: Notre équipe fera le maximum pour vous répondre au plus vite !
+
+----
+
+Sec2title2: Se rendre à l’Avant-Poste
+
+----
+
+Sec2textcol1:
+
+Adresse : 3 rue notre dame, 26150 – Die
 Horaires de permanence :
-Tous les jours de X à Y heures<br>
+lundi, mardi et jeudi de 9h à 17h<br>
 À PIED
 Accès derrière la Cathédrale,
 à côté de la poste. Accès PMR<br>
@@ -28,6 +37,5 @@ Parking en face de l’ESCDD
 Parking de Meyrosse
 
 ----
-
 
 Uuid: OSldK5hXe1jCy7Zb

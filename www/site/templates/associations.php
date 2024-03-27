@@ -24,10 +24,20 @@
     <section class='py-16 md:py-32'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="px-12 md:px-12 lg:px-20 ">
-                <div class="text-2xl md:text-3xl mb-8">
+                <div class="text-2xl md:text-3xl mb-8 xl:mb-20">
                     <?= $page->text1()->kt() ?>
                 </div>
-                <a class="text-2xl md:text-3xl link_blackToPrimary" href="/contact"><?= $page->lien1()->kt() ?></a>
+
+                <button class="px-6 py-4 mx-auto custom-button">
+                    <a href="https://avantposte.dokos.cloud/location-de-salles" target="_blank">
+                        <!-- Ajout de la classe mx-auto -->
+                        <h2 class="text-3xl md:text-4xl">
+                            <?= $page->lien1()->kt() ?>
+                        </h2>
+                    </a>
+                </button>
+
+
             </div>
         </div>
     </section>

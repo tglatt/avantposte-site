@@ -20,11 +20,11 @@ Sec4titre2: Hobo c'est aussi 2 ambiances :
 
 ----
 
-Sec4textcol1: en intérieur une atmosphère chaleureuse dans une salle aménagée par des artisans du Diois et pavées de tomettes anciennes. Une bibliothèque de romans de Jack London, John Steinbeck, Jim Tully ou Nels Anderson sur la thématique des Hobos et des livres de cuisine qui inspirent l'équipe en cuisine.
+Sec4textcol1: En intérieur, une atmosphère chaleureuse dans une salle aménagée par des artisans du Diois et pavées de tomettes anciennes. Une bibliothèque de romans de Jack London, John Steinbeck, Jim Tully ou Nels Anderson sur la thématique des Hobos et des livres de cuisine qui inspirent l'équipe en cuisine.
 
 ----
 
-Sec4textcol2: en extérieur, loin de l'agitation de la ville, dans le calme du jardin, à l'ombre du grand tilleul, entouré d'herbes aromatiques
+Sec4textcol2: En extérieur, loin de l'agitation de la ville, dans le calme du jardin, à l'ombre du grand tilleul, entouré d'herbes aromatiques
 
 ----
 
