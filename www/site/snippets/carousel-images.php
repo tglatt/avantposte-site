@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryCells = document.querySelectorAll('.gallery-cell');
     galleryCells.forEach(function(cell, index) {
         // Supprimez les classes existantes pour éviter des conflits
-        cell.classList.remove('image-container-yellow', 'image-container-blue',
-            'image-container-orange', 'image-container-green');
+        /*cell.classList.remove('image-container-yellow', 'image-container-blue',
+            'image-container-orange', 'image-container-green');*/
 
         // Vérifiez si l'écran est considéré comme grand avant d'ajouter des classes
-        if (screenWidth >= largeScreenSize) {
-            if (index % 4 === 0) {
-                cell.classList.add('image-container-yellow');
-            } else if (index % 4 === 1) {
-                cell.classList.add('image-container-blue');
-            } else if (index % 4 === 2) {
-                cell.classList.add('image-container-orange');
-            } else {
-                cell.classList.add('image-container-green');
-            }
+        //if (screenWidth >= largeScreenSize) {
+        if (index % 4 === 0) {
+            cell.classList.add('image-container-yellow');
+        } else if (index % 4 === 1) {
+            cell.classList.add('image-container-blue');
+        } else if (index % 4 === 2) {
+            cell.classList.add('image-container-orange');
+        } else {
+            cell.classList.add('image-container-green');
         }
+        //}
     });
 });
 

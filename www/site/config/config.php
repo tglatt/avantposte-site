@@ -4,7 +4,6 @@ return [
     'auth' => [
       'methods' => ['password', 'password-reset']
     ],
-    'debug' => true,
     'routes' => [
         [
           'pattern' => 'accueil/espacesdetravail',
@@ -20,6 +19,8 @@ return [
             // ...
           }
         ]
-      ]
-
+        ],
+    'sylvainjule.matomo.url'        => 'https://avantposte.matomo.cloud/',
+    'sylvainjule.matomo.id'         => '1',
+    'sylvainjule.matomo.token'      => '93978a3b86df24aeeb10e8575f0b1c67',
 ];

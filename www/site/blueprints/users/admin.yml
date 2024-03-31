@@ -1,7 +1,4 @@
-title: Activités
-options:
-  changeSlug: false
-  delete: false
+title: Metrics
 
 columns:
   - width: 3/4

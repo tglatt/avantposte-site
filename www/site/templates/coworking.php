@@ -76,11 +76,11 @@
                 </div>
 
 
-                <a href="https://avantposte.dokos.cloud/coworking" target="_blank">
+                <a href="https://avantposte.dokos.cloud/coworking">
                     <button class="px-6 py-4" onmouseover="this.style.backgroundColor='#f4f4f4';"
                         onmouseout="this.style.backgroundColor='';">
                         <h3 class="px-6 text-2xl md:text-2xl lg:text-5xl">
-                            <?= $page->sec6cta() ?>
+                            Réservez directement votre place de coworking
                         </h3>
                     </button>
                 </a>
@@ -137,10 +137,10 @@
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
                     <?= $page->sec6Titre2() ?></h2>
                 <div class="text-2xl text-justify mb-12"><?= $page->sec6Text1()->kt() ?></div>
-                <a href="https://avantposte.dokos.cloud/coworking" target="_blank">
+                <a href="/contact">
                     <button class="px-6 py-4">
                         <h3 class="px-6 text-2xl md:text-2xl lg:text-5xl">
-                            <?= $page->sec6cta() ?>
+                            Contactez nous pour organiser votre séminaire
                         </h3>
                     </button>
                 </a>

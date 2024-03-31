@@ -52,13 +52,13 @@
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-12 px-12">
                 <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl"><?= $page->sec3titre2() ?>
-                    </h1>
+                </h2>
 
 
 
-                    <div class="text-justify text-2xl">
-                        <?= $page->sec3text()->kt() ?>
-                    </div>
+                <div class="text-justify text-2xl">
+                    <?= $page->sec3text()->kt() ?>
+                </div>
 
             </div>
         </div>

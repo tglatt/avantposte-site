@@ -41,9 +41,11 @@
 
                 <div class="text-justify text-2xl mb-12"><?= $page->sec3subtitle()->kt() ?></div>
 
-                <div class="two_col my-8">
-                    <div class="col1">
-                        <div class="text-justify text-3xl"><?= $page->sec3titreCol1()->kt() ?></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="mb-12">
+
+                        <div class="text-justify text-3xl mb-8"><?= $page->sec3titreCol1()->kt() ?></div>
 
                         <div class="imageInCol">
                             <?php if ($image = $page->image('NOTONCAROUSEL_depenses.png')) : ?>
@@ -51,8 +53,8 @@
                             <?php endif ?>
                         </div>
                     </div>
-                    <div class="col2">
-                        <div class="text-justify text-3xl">
+                    <div class="mb-12">
+                        <div class="text-justify text-3xl mb-8">
                             <p><?= $page->sec3titreCol2()->kt() ?></p>
                         </div>
                         <hr>

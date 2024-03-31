@@ -18,7 +18,7 @@
     <section class='py-16 md:py-8 section-border-top section-border-bottom'>
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
             <div class="lg:px-20 md:px-12 px-12">
-                <h1 class="mb-12 text-4xl tracking-normal  md:text-4xl lg:text-5xl">
+                <h1 class="mb-12 text-3xl tracking-normal  md:text-3xl lg:text-4xl text-justify">
                     <?= $page->sec2text()->kt() ?>
                 </h1>
             </div>
@@ -49,7 +49,7 @@
                         <div class='mt-auto'>
                             <div class="text-gray-700 text-base text-capitalize">
 
-                                <a href="https://<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary"
+                                <a href="<?= $personne->siteweb()->esc() ?>" class="link_blackToPrimary"
                                     style=" text-decoration: underline !important;">
                                     <?= $personne->entreprise()->esc() ?>
                                 </a>
