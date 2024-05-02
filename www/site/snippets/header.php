@@ -42,6 +42,15 @@
                         </a>
                     </li>
                     <li>
+                        <a href="/events">
+                            <div class="menu_item">
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                    alt="Cercle qui entoure le menu" />
+                                Agenda
+                            </div>
+                        </a>
+                    </li>
+                    <li>
 
                         <div class="menu_item" id="toggle_show_activite">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
@@ -187,6 +196,15 @@
                                     <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                         alt="Cercle qui entoure le menu" />
                                     Accueil
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-white" href="/events">
+                                <div class="menu_item cursor-pointer ">
+                                    <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                        alt="Cercle qui entoure le menu" />
+                                    Agenda
                                 </div>
                             </a>
                         </li>

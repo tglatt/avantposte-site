@@ -31,7 +31,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
                     <?php foreach ($page->children()->listed() as $personne) : ?>
                     <div class="personne  flex flex-col justify-between">
-                        <div class="personne-image">
+                        <div class="card-image">
                             <?php if ($cover = $personne->image()) : ?>
 
                             <img src="<?= $cover->crop(500, 426)->url() ?>" alt="<?= $cover->alt()->esc() ?>">
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const screenWidth = window.innerWidth;
     const largeScreenSize = 1024;
 
-    const galleryCells = document.querySelectorAll('.personne-image');
+    const galleryCells = document.querySelectorAll('.card-image');
     galleryCells.forEach(function(cell, index) {
         // Supprimez les classes existantes pour éviter des conflits
         cell.classList.remove('image-container-yellow', 'image-container-blue',
