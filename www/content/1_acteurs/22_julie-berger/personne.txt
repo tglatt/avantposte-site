@@ -10,7 +10,7 @@ Entreprise: Jouer pour VIvre
 
 ----
 
-Siteweb: www.jouerpourvivre.org
+Siteweb: https://www.jouerpourvivre.org
 
 ----
 

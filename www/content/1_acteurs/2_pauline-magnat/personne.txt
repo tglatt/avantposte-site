@@ -10,7 +10,7 @@ Entreprise: The Week
 
 ----
 
-Siteweb: www.theweek.ooo
+Siteweb: https://www.theweek.ooo
 
 ----
 

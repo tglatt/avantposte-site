@@ -10,7 +10,7 @@ Entreprise: Hisseo
 
 ----
 
-Siteweb: www.hisseo.org
+Siteweb: https://www.hisseo.org
 
 ----
 

@@ -117,3 +117,12 @@ columns:
         label: Section 8 Texte 2
         type: textarea
         size: medium
+      Sec8subtitle3:
+        width: 1
+        label: Section 8 Titre 3
+        type: text
+      Sec8text3:
+        width: 1
+        label: Section 8 Texte 3
+        type: textarea
+        size: medium

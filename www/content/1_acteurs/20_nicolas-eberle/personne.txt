@@ -10,7 +10,7 @@ Entreprise: Nabu
 
 ----
 
-Siteweb: https://www.nabu.io/
+Siteweb: https://www.nabu.io
 
 ----
 

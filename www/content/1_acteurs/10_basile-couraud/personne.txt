@@ -10,7 +10,7 @@ Entreprise:
 
 ----
 
-Siteweb: www.basilecouraud.fr
+Siteweb: https://www.basilecouraud.fr
 
 ----
 

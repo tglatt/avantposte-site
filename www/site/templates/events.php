@@ -14,15 +14,24 @@
     </section>
     <section class=''>
     </section>
-    <section class='py-16 md:py-16'>
+    <section class="py-16 md:py-16">
         <div class="mx-auto max-w-4xl lg:max-w-5xl">
 
+            <!-- Événements à venir -->
             <div class="gallery-container">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-4">
                     <?php
-                        $events = $page->children()->listed();
-                        if ($events->count() > 0): ?>
-                    <?php foreach ($events as $event): ?>
+                // Récupère tous les événements listés
+                $events = $page->children()->listed();
+
+                // Sépare les événements passés et futurs
+                $currentDate = date('Y-m-d');
+                $futureEvents = $events->filterBy('to', '>=', $currentDate)->sortBy('from', 'asc');
+                $pastEvents = $events->filterBy('to', '<', $currentDate)->sortBy('from', 'asc');
+
+                // Affiche les événements futurs s'il y en a
+                if ($futureEvents->count() > 0): 
+                    foreach ($futureEvents as $event): ?>
                     <div class="card-container">
                         <div class="card max-w-sm bg-white rounded-lg shadow mb-10">
                             <a href="/events/<?= $event->slug() ?>">
@@ -35,14 +44,14 @@
                                 <div class="p-5 h-64">
                                     <div class="text-center xl:text-base">
                                         <?php
-                                            $startDate = $event->from()->toDate('d.m.Y');
-                                            $endDate = $event->to()->toDate('d.m.Y');
+                                        $startDate = $event->from()->toDate('d.m.Y');
+                                        $endDate = $event->to()->toDate('d.m.Y');
 
-                                            if ($startDate === $endDate) {
-                                                echo $startDate; // Affiche uniquement la première date si elles sont égales
-                                            } else {
-                                                echo "$startDate - $endDate"; // Affiche les deux dates si elles sont différentes
-                                            }
+                                        if ($startDate === $endDate) {
+                                            echo $startDate; // Affiche uniquement la première date si elles sont égales
+                                        } else {
+                                            echo "$startDate - $endDate"; // Affiche les deux dates si elles sont différentes
+                                        }
                                         ?>
                                     </div>
 
@@ -51,16 +60,55 @@
                             </a>
                         </div>
                     </div>
-                    <?php endforeach ?>
-                    <?php endif ?>
+                    <?php endforeach; 
+                endif; ?>
                 </div>
             </div>
 
+            <!-- Événements passés -->
+            <div class="gallery-container">
+                <h2 class="my-4 xl:my-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">Événements passés</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-4">
+                    <?php
+                // Affiche les événements passés s'il y en a
+                if ($pastEvents->count() > 0): 
+                    foreach ($pastEvents as $event): ?>
+                    <div class="card-container">
+                        <div class="card max-w-sm bg-white rounded-lg shadow mb-10">
+                            <a href="/events/<?= $event->slug() ?>">
+                                <div class="card-image card-event-image rounded-t-lg">
+                                    <?php if ($image = $event->image()): ?>
+                                    <!-- Force landscape mode -->
+                                    <img src="<?= $image->url() ?>" alt="<?= $event->title()->html() ?>" class="w-full">
+                                    <?php endif ?>
+                                </div>
+                                <div class="p-5 h-64">
+                                    <div class="text-center xl:text-base">
+                                        <?php
+                                        $startDate = $event->from()->toDate('d.m.Y');
+                                        $endDate = $event->to()->toDate('d.m.Y');
 
+                                        if ($startDate === $endDate) {
+                                            echo $startDate; // Affiche uniquement la première date si elles sont égales
+                                        } else {
+                                            echo "$startDate - $endDate"; // Affiche les deux dates si elles sont différentes
+                                        }
+                                        ?>
+                                    </div>
 
+                                    <div class="text-center text-xl md:text-2xl"><?= $event->title()->html() ?></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <?php endforeach; 
+                endif; ?>
+                </div>
+            </div>
 
         </div>
     </section>
+
 
 </main>
 

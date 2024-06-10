@@ -127,6 +127,15 @@
             <div class="lg:px-20 md:px-12 px-12">
                 <div class="text-justify text-2xl"><?= $page->sec8text2()->kt() ?></div>
             </div>
+            <div class="lg:px-20 md:px-12 px-12 mt-12">
+                <h2 class="mb-4 xl:mb-12 text-4xl tracking-normal md:text-4xl lg:text-5xl">
+                    <?= $page->sec8subtitle3() ?>
+                </h2>
+            </div>
+
+            <div class="lg:px-20 md:px-12 px-12">
+                <div class="text-justify text-2xl"><?= $page->sec8text3()->kt() ?></div>
+            </div>
         </div>
     </section>
 
