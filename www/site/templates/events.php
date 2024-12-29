@@ -33,7 +33,7 @@
                 if ($futureEvents->count() > 0): 
                     foreach ($futureEvents as $event): ?>
                     <div class="card-container">
-                        <div class="card max-w-sm bg-white rounded-lg shadow mb-10">
+                        <div class="card max-w-sm bg-white rounded-lg shadow-md hover:shadow-lg mb-10">
                             <a href="/events/<?= $event->slug() ?>">
                                 <div class="card-image card-event-image rounded-t-lg">
                                     <?php if ($image = $event->image()): ?>
@@ -74,7 +74,8 @@
                 if ($pastEvents->count() > 0): 
                     foreach ($pastEvents as $event): ?>
                     <div class="card-container">
-                        <div class="card max-w-sm bg-white rounded-lg shadow mb-10">
+                        <div class="card max-w-sm border rounded-lg shadow hover:shadow-md  mb-10 "
+                            style="border: 1px solid rgb(229 231 235);">
                             <a href="/events/<?= $event->slug() ?>">
                                 <div class="card-image card-event-image rounded-t-lg">
                                     <?php if ($image = $event->image()): ?>
@@ -108,6 +109,7 @@
 
         </div>
     </section>
+    <?php snippet('footer') ?>
 
 
 </main>

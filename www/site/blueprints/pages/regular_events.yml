@@ -1,0 +1,89 @@
+title: Regular Events
+icon: 📅
+
+# Les sections de la page
+sections:
+  # Section qui contient les champs avec une mise en page en colonnes
+  content:
+    type: fields
+    fields:
+      # Partie 1 avec des champs texte et un call to action
+      Partie1:
+        type: group
+        width: 1/2
+        fields:
+          Sec1titre1:
+            label: Titre
+            type: text
+          Sec1text1:
+            label: Résumé
+            type: textarea
+            size: small
+          Sec1textLinkTo:
+            label: Call to action
+            type: text
+      Partie2:
+        type: group
+        width: 1/2
+        fields:
+          Sec2titre1:
+            label: Titre
+            type: text
+
+      # Partie 2 avec la galerie
+      Partie3:
+        type: group
+        width: 1/2
+        fields:
+          gallery:
+            label: Galerie
+            type: files
+            layout: cards
+
+  # Section des événements publiés
+  monday_listed:
+    type: pages
+    headline: Monday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "monday")
+
+  tuesday_listed:
+    type: pages
+    headline: Tuesday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "tuesday")
+
+  wednesday_listed:
+    type: pages
+    headline: Wednesday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "wednesday")
+
+  thursday_listed:
+    type: pages
+    headline: Thursday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "thursday")
+
+  friday_listed:
+    type: pages
+    headline: Friday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "friday")
+
+  saturday_listed:
+    type: pages
+    headline: Saturday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "saturday")
+
+  sunday_listed:
+    type: pages
+    headline: Sunday Events
+    template: regular_event
+    query: site.find('regular_events').children.filterBy("day_of_week", "sunday")
+
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false

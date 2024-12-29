@@ -1,0 +1,6 @@
+type: pages
+label: Regular Events
+parent: site.find("regular_events")
+sortBy: from desc
+template: regular_event
+empty: No events yet

@@ -42,16 +42,35 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/events">
-                            <div class="menu_item">
-                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
-                                    alt="Cercle qui entoure le menu" />
-                                Agenda
-                            </div>
-                        </a>
+                        <div class="menu_item" id="toggle_show_events">
+                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                alt="Cercle qui entoure le menu" />
+                            Agenda
+                        </div>
+                        <div class="sub_menu" id="sub_menu_events">
+                            <ul>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/events">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                                alt="Cercle qui entoure le menu" />
+                                            Evènements
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu_item">
+                                        <a href="/regular_events">
+                                            <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                                alt="Cercle qui entoure le menu" />
+                                            Activités régulières
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-
                         <div class="menu_item" id="toggle_show_activite">
                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                 alt="Cercle qui entoure le menu" />
@@ -206,16 +225,38 @@
                             </a>
                         </li>
                         <li>
-                            <a class="hover:text-white" href="/events">
-                                <div class="menu_item cursor-pointer ">
-                                    <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
-                                        alt="Cercle qui entoure le menu" />
-                                    Agenda
-                                </div>
-                            </a>
+
+                            <div class="menu_item cursor-pointer hover:text-white" id="toggle_show_events-2">
+                                <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
+                                    alt="Cercle qui entoure le menu" />
+                                Agenda
+                            </div>
+                            <div class="ml-4" id="sub_menu_events-2">
+                                <ul>
+                                    <li>
+                                        <div class="menu_item">
+                                            <a href="/events">
+                                                <img class="menu_item_img"
+                                                    src="<?= $site->image('entoure.svg')->url() ?>"
+                                                    alt="Cercle qui entoure le menu" />
+                                                Evènements
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu_item">
+                                            <a href="/regular_events">
+                                                <img class="menu_item_img"
+                                                    src="<?= $site->image('entoure.svg')->url() ?>"
+                                                    alt="Cercle qui entoure le menu" />
+                                                Activités régulières
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-
                             <div class="menu_item cursor-pointer hover:text-white" id="toggle_show_activite-2">
                                 <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                     alt="Cercle qui entoure le menu" />
@@ -348,6 +389,19 @@
 
     <script>
     document
+        .getElementById("toggle_show_events")
+        .addEventListener("click",
+            () => {
+                if (document.getElementById("sub_menu_events").style.display == 'block') {
+                    document.getElementById("sub_menu_events").style.display = 'none'
+                } else {
+                    document.getElementById("sub_menu_events").style.display = 'block'
+                    document.getElementById("sub_menu_avantposte").style.display = 'none'
+                    document.getElementById("sub_menu_activite").style.display = 'none'
+                }
+            })
+
+    document
         .getElementById("toggle_show_activite")
         .addEventListener("click",
             () => {
@@ -356,6 +410,7 @@
                 } else {
                     document.getElementById("sub_menu_activite").style.display = 'block'
                     document.getElementById("sub_menu_avantposte").style.display = 'none'
+                    document.getElementById("sub_menu_events").style.display = 'none'
                 }
             })
 
@@ -368,14 +423,29 @@
                 } else {
                     document.getElementById("sub_menu_avantposte").style.display = 'block'
                     document.getElementById("sub_menu_activite").style.display = 'none'
+                    document.getElementById("sub_menu_events").style.display = 'none'
                 }
             })
 
     document.getElementById("sub_menu_activite").style.display = 'none'
     document.getElementById("sub_menu_avantposte").style.display = 'none'
+    document.getElementById("sub_menu_events").style.display = 'none'
     </script>
 
     <script>
+    document
+        .getElementById("toggle_show_events-2")
+        .addEventListener("click",
+            () => {
+                if (document.getElementById("sub_menu_events-2").style.display == 'block') {
+                    document.getElementById("sub_menu_events-2").style.display = 'none'
+                } else {
+                    document.getElementById("sub_menu_events-2").style.display = 'block'
+                    document.getElementById("sub_menu_activite-2").style.display = 'none'
+                    document.getElementById("sub_menu_avantposte-2").style.display = 'none'
+                }
+            })
+
     document
         .getElementById("toggle_show_activite-2")
         .addEventListener("click",
@@ -383,6 +453,7 @@
                 if (document.getElementById("sub_menu_activite-2").style.display == 'block') {
                     document.getElementById("sub_menu_activite-2").style.display = 'none'
                 } else {
+                    document.getElementById("sub_menu_events-2").style.display = 'none'
                     document.getElementById("sub_menu_activite-2").style.display = 'block'
                     document.getElementById("sub_menu_avantposte-2").style.display = 'none'
                 }
@@ -395,30 +466,39 @@
                 if (document.getElementById("sub_menu_avantposte-2").style.display == 'block') {
                     document.getElementById("sub_menu_avantposte-2").style.display = 'none'
                 } else {
-                    document.getElementById("sub_menu_avantposte-2").style.display = 'block'
+                    document.getElementById("sub_menu_events-2").style.display = 'none'
                     document.getElementById("sub_menu_activite-2").style.display = 'none'
+                    document.getElementById("sub_menu_avantposte-2").style.display = 'block'
                 }
             })
+    document.getElementById("sub_menu_events-2").style.display = 'none'
     document.getElementById("sub_menu_activite-2").style.display = 'none'
     document.getElementById("sub_menu_avantposte-2").style.display = 'none'
     </script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function() {
+        const toggleEvents = document.getElementById("toggle_show_events");
         const toggleActivite = document.getElementById("toggle_show_activite");
         const toggleAvantposte = document.getElementById("toggle_show_avantposte");
+        const subMenuEvents = document.getElementById("sub_menu_events");
         const subMenuActivite = document.getElementById("sub_menu_activite");
         const subMenuAvantposte = document.getElementById("sub_menu_avantposte");
 
+        const toggleEvents2 = document.getElementById("toggle_show_events-2");
         const toggleActivite2 = document.getElementById("toggle_show_activite-2");
         const toggleAvantposte2 = document.getElementById("toggle_show_avantposte-2");
+        const subMenuEvents2 = document.getElementById("sub_menu_events-2");
         const subMenuActivite2 = document.getElementById("sub_menu_activite-2");
         const subMenuAvantposte2 = document.getElementById("sub_menu_avantposte-2");
 
         // Fonction pour fermer les sous-menus lorsque le clic est en dehors
         function closeSubMenus() {
+            subMenuEvents.style.display = 'none';
             subMenuActivite.style.display = 'none';
             subMenuAvantposte.style.display = 'none';
+
+            subMenuEvents.style.display = 'none';
             subMenuActivite2.style.display = 'none';
             subMenuAvantposte2.style.display = 'none';
         }
@@ -436,6 +516,12 @@
                 // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
             } else if (event.target === toggleActivite2 || event.target.parentElement ===
                 toggleActivite2) {
+                // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
+            } else if (event.target === toggleEvents2 || event.target.parentElement ===
+                toggleEvents2) {
+                // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
+            } else if (event.target === toggleEvents || event.target.parentElement ===
+                toggleEvents) {
                 // Ne rien faire, car le clic est sur toggle_show_avantposte ou sur son sous-menu
             } else {
                 // Le clic est en dehors des éléments de menu, donc fermer les sous-menus

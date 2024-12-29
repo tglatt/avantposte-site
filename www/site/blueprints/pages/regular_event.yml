@@ -1,0 +1,48 @@
+title: Regular Event
+icon: 📅
+num: "{{ page.from.toDate('Ymd') }}"
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      intervenant:
+        label: Intervenant
+        type: text
+        width: 1/2
+      day_of_week:
+        label: Day of the week
+        type: select
+        options:
+          monday: Monday
+          tuesday: Tuesday
+          wednesday: Wednesday
+          thursday: Thursday
+          friday: Friday
+          saturday: Saturday
+          sunday: Sunday
+      from:
+        label: Start
+        type: time
+        width: 1/2
+        default: today
+      to:
+        label: End
+        type: time
+        width: 1/2
+      location:
+        label: Location
+        type: text
+        width: 1/2
+      link:
+        label: Link
+        type: url
+        width: 1/2
+      text:
+        label: Description
+        type: textarea
+  sidebar:
+    width: 1/3
+    sections:
+      files:
+        type: files
