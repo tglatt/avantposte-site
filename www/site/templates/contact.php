@@ -60,5 +60,17 @@
         </div>
 
     </section>
+    <section class=' py-16 md:py-32 section-border-top section-border-bottom'>
+        <div class="mx-auto max-w-4xl lg:max-w-5xl">
+            <div class="lg:px-20 md:px-12 px-12">
+                <h2 class="mb-8 xl:mb-12 text-4xl tracking-normal text-gray-900 md:text-4xl lg:text-5xl">
+                    Calculez l'impact de votre moyen de transport et comparez ce résultat à d'autres pratiques</h2>
+            </div>
+            <script name="impact-co2" src="https://impactco2.fr/iframe.js" data-type="transport/itineraire"
+                data-search="?theme=default&language=fr&itineraireEnd=Hobo 3 Rue Notre-Dame Die 26150 France&defaultMode=list&modes=tgv,voiturethermique+1,voiturethermique,voitureelectrique,velo,veloelectrique,busthermique,moto,ter,busgnv">
+            </script>
+        </div>
+
+    </section>
     <?php snippet('footer') ?>
 </main>
