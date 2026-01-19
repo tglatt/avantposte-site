@@ -92,7 +92,7 @@
                                         <a href="/activites/associations">
                                             <img class="menu_item_img" src="<?= $site->image('entoure.svg')->url() ?>"
                                                 alt="Cercle qui entoure le menu" />
-                                            Associations
+                                            Salles
                                         </a>
                                     </div>
                                 </li>
@@ -280,7 +280,7 @@
                                                 <img class="menu_item_img"
                                                     src="<?= $site->image('entoure.svg')->url() ?>"
                                                     alt="Cercle qui entoure le menu" />
-                                                Associations
+                                                Salles
                                             </a>
                                         </div>
                                     </li>

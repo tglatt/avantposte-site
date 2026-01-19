@@ -27,7 +27,7 @@
                 // Sépare les événements passés et futurs
                 $currentDate = date('Y-m-d');
                 $futureEvents = $events->filterBy('to', '>=', $currentDate)->sortBy('from', 'asc');
-                $pastEvents = $events->filterBy('to', '<', $currentDate)->sortBy('from', 'asc');
+                $pastEvents = $events->filterBy('to', '<', $currentDate)->sortBy('from', 'desc');
 
                 // Affiche les événements futurs s'il y en a
                 if ($futureEvents->count() > 0): 
